@@ -310,7 +310,7 @@ a:link {
 }
 
 .mob-nav__link--active, .mob-nav__link.section, .mob-nav__link:focus, .mob-nav__link:hover, .mob-nav__trigger--active, .mob-nav__trigger.section, .mob-nav__trigger:focus, .mob-nav__trigger:hover {
-  color: # #fff711;
+  color: #fff711;
 }
 
 .mob-nav__link--active svg, .mob-nav__link.section svg, .mob-nav__link:focus svg, .mob-nav__link:hover svg, .mob-nav__trigger--active svg, .mob-nav__trigger.section svg, .mob-nav__trigger:focus svg, .mob-nav__trigger:hover svg {
@@ -402,7 +402,7 @@ a:link {
   font-size: 3vh;
   letter-spacing: 4px;
   text-transform: uppercase;
-  height: 5vh;
+  height: 6vh;
   display: block;
 }
 
@@ -582,23 +582,23 @@ div.site-nav__link:focus, div.site-nav__link:hover {
 }
 
 #rapidCard {
-  background-image: url("../../views/Designs/Logos/Rapid Photo.png");
+  background-image: url("../../views/images/Logos/Rapid Photo.png");
 }
 
 #reachCard {
-  background-image: url("../../views/Designs/Logos/Reach Photo 2.png");
+  background-image: url("../../views/images/Logos/Reach Photo 2.png");
 }
 
 #overseerCard {
-  background-image: url("../../views/Designs/Logos/Overseer Photo 2.png");
+  background-image: url("../../views/images/Logos/Overseer Photo 2.png");
 }
 
 #sandboxCard {
-  background-image: url("../../views/Designs/Logos/Sandbox Photo 2.png");
+  background-image: url("../../views/images/Logos/Sandbox Photo 2.png");
 }
 
 #endeavourCard {
-  background-image: url("../../views/Designs/Logos/Endeavour Photo.png");
+  background-image: url("../../views/images/Logos/Endeavour Photo.png");
 }
 
 .light > .card {
