@@ -14,6 +14,12 @@
 	  <link rel="stylesheet" type="text/css" href="public/css/design.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto" rel="stylesheet">
 
+		<link rel="apple-touch-icon" sizes="180x180" href="views/images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="views/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="views/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="views/images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="views/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
@@ -26,12 +32,12 @@
 		<div id="page-wrapper">
 			<div class="mob-nav__container">
 				<nav class="mob-nav mob-nav--closed" id="MobMenu">
-					<ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parents">
+					<ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
 						<li class="mob-nav__item">
 							<a href="views/sponsor.html" class="mob-nav__link link">Sponsor Us</a>
 						</li>
 						<li class="mob-nav__item">
-							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu('menu1')">
 								Projects
 								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
 									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
@@ -42,9 +48,9 @@
 							<a href="views/our_team.html" class="mob-nav__link link">Our Team</a>
 						</li>
 					</ul>
-					<ul class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-menu="menu1" data-parent="menu0">
+					<ul id="menu1" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu1">
 						<li class="mob-nav__back">
-							<button type="button" class="mob-nav__trigger mob-nav__trigger--back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu1')">
 								Projects
 								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
 									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
@@ -65,7 +71,7 @@
 			</div>
 			<div class="main-wrap">
 				<header class="site-header animated fadeIn" id="SiteHeader" role="banner">
-					<a class="brand" href="/">
+					<a class="brand" href="#">
 						<img src="views/images/logo.png">
 					</a>
 					<nav class="site-nav" role="navigation">
@@ -74,16 +80,16 @@
 								<a href="views/sponsor.html" class="site-nav__link site-nav__link--link">Sponsor Us</a>
 							</li>
 							<li class="site-nav__item site-nav__item--parent">
-								<a href="views/projects/AllProjects.html" class="site-nav__item site-nav__link site-nav__link--link">Projects</a>
-								<ul class="site-nav__sub" style="opacity: 0; display:none; transform: translateY(0px);">
-									<li class="site-nav__sub-item">
-										<a class="site-nav__sub-link site-nav__sub-link--link" href="views/projects/overseer.html">Overseer</a>
+								<p class="site-nav__item site-nav__link site-nav__link--link">Projects</p>
+								<ul class="site-nav__dropdown">
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="views/projects/overseer.html">Overseer</a>
 									</li>
-									<li class="site-nav__sub-item">
-										<a class="site-nav__sub-link site-nav__sub-link--link" href="views/projects/reach.html">Reach</a>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="views/projects/reach.html">Reach</a>
 									</li>
-									<li class="site-nav__sub-item">
-										<a class="site-nav__sub-link site-nav__sub-link--link" href="views/projects/rapid.html">Rapid</a>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="views/projects/rapid.html">Rapid</a>
 									</li>
 								</ul>
 							</li>
@@ -93,9 +99,7 @@
 						</ul>
 					</nav>
 					<button class="mob-nav__burger" id="MobMenuToggle" onclick="toggleMobileNav()">
-						<span class="mob-nav__burger-box">
-							<span class="mob-nav__burger-inner"></span>
-						</span>
+						<img id="burger" src="views/images/burger.png">
 					</button>
 				</header>
 				<main class="animatedSlow fadeIn">
