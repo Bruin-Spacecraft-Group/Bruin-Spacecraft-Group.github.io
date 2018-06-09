@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+	<head>
+		<title>Bruin Spacecraft Group</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../../public/js/main.js"></script>
+		<script type="text/javascript" src="../../public/js/parallax.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../public/css/animate.css">
+	  <link rel="stylesheet" type="text/css" href="../../public/css/design.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto" rel="stylesheet">
+
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	</head>
+
+  <body cz-shortcut-listen="true">
+		<div class="page-loader" id="PageLoader">
+			<img class="page-loader__spinner" src="../images/pageSpinner2.png" alt="Page spinner">
+		</div>
+		<div id="page-wrapper">
+			<div class="mob-nav__container">
+				<nav class="mob-nav mob-nav--closed" id="MobMenu">
+					<ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
+						<li class="mob-nav__item">
+							<a href="../sponsor.html" class="mob-nav__link link">Sponsor Us</a>
+						</li>
+						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../our_team.html" class="mob-nav__link link">Our Team</a>
+						</li>
+					</ul>
+					<ul id="menu1" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu1">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="overseer.html" class="mob-nav__link link">Overseer</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="reach.html" class="mob-nav__link link">Reach</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="rapid.html" class="mob-nav__link link">Rapid</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main-wrap">
+				<header class="site-header animated fadeIn" id="SiteHeader" role="banner">
+					<a class="brand" href="#">
+						<img src="../images/logo.png">
+					</a>
+					<nav class="site-nav" role="navigation">
+						<ul class="site-nav__list">
+							<li class="site-nav__item">
+								<a href="../sponsor.html" class="site-nav__link site-nav__link--link">Sponsor Us</a>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Projects</p>
+								<ul class="site-nav__dropdown">
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="overseer.html">Overseer</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="reach.html">Reach</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="rapid.html">Rapid</a>
+									</li>
+								</ul>
+							</li>
+							<li class="site-nav__item">
+								<a href="../our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="mob-nav__burger" id="MobMenuToggle" onclick="toggleMobileNav()">
+						<img id="burger" src="../images/burger.png">
+					</button>
+				</header>
+				<main>
+					<div id="parallax-wrapper">
+						<div id="parallax-field">
+							<img class="js-plaxify" id="parallax-bg" data-invert="true" data-xrange="0" data-yrange="20" src="../images/earth.jpg">
+						</div>
+						<div id="parallax-illustration">
+							<img class="js-plaxify" id="parallax-payload" data-xrange="20" data-yrange="10" src="../images/Pump blue.png">
+						</div>
+					</div>
+				</main>
+				<script type="text/javascript">
+					document.getElementById("PageLoader").classList.add("loaded");
+				</script>
+				<footer>
+					<a href="https://www.facebook.com/uclaBruinSpace/" target="_blank"><img src="../images/facebook_circle.svg"></a>
+					<a href="https://www.instagram.com/uclabruinspace/" target="_blank"><img src="../images/instagram_circle.svg"></a>
+					<a href="https://twitter.com/uclabruinspace" target="_blank"><img src="../images/twitter_circle.svg"></a>
+					<a href="https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/" target="_blank"><img src="../images/linkedin_circle.svg"></a>
+				</footer>
+			</div>
+  </body>
+</html>
