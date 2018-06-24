@@ -639,13 +639,34 @@ footer {
     width: 100vw;
     max-height: 5vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    .social-media-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
     img {
         height: 4vw;
         width: 4vw;
         padding: .5vw;
     }
+    h2 {
+      font-size: 2vw;
+      width: 100%;
+    }
+    h3 {
+      font-size: 1.5vw;
+    }
+}
+#mc_embed_signup {
+  padding: 1vw;
+}
+#mc_embed_signup_scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*
@@ -707,12 +728,11 @@ footer {
   display: inline-block;
   padding: 0 1vw;
   position: absolute;
-  top: 8vh;
+  top: 5vh;
   left: 1vw;
-  background-color: $white-semi-transparent;
-  box-shadow: 0 0 5px 10px $white-semi-transparent;
   h1 {
-    font-size: 10vw;
+    width: 100%;
+    font-size: 10vh;
     font-weight: bolder;
     font-style: oblique;
     padding-right: 1.5vw;
@@ -728,6 +748,30 @@ footer {
   }
 }
 
+.project-description__content {
+  display: flex;
+  flex-direction: row-reverse;
+  .paragraph-container {
+    width: 50%;
+  }
+  img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media (min-width: $tablet) {
+    .project-description__content > .paragraph-container {
+        padding: 1vw 2vw;
+    }
+}
+
+@media (min-width: $laptop) {
+    .project-description__content > .paragraph-container {
+        padding: 0.5vw 2vw;
+    }
+}
+
 .parallax-image-header {
   height: 30vh;
 }
@@ -739,6 +783,14 @@ footer {
 }
 
 #rapid-wrapper{
+  .parallax-image-header {
+    background-image: url('../../views/images/PCBs.jpg');
+  }
+  .parallax-image-1 {
+    background-image: url('../../views/images/Pump blue.png');
+  }
+}
+#team-wrapper{
   .parallax-image-header {
     background-image: url('../../views/images/PCBs.jpg');
   }
