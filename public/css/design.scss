@@ -750,25 +750,54 @@ footer {
 
 .project-description__content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   .paragraph-container {
-    width: 50%;
+    width: 100%;
   }
-  img {
-    max-width: 50%;
+  .image-container{
+    width: 100%;
+    margin: 1vw;
     height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
   }
 }
 
 @media (min-width: $tablet) {
-    .project-description__content > .paragraph-container {
+    .project-description__content {
+      flex-direction: row-reverse;
+      .paragraph-container {
+        width: 50%;
         padding: 1vw 2vw;
+        height: auto;
+      }
+      .image-container {
+        width: 50%;
+        background-size: cover;
+      }
+      img {
+        display: none;
+      }
     }
 }
 
 @media (min-width: $laptop) {
-    .project-description__content > .paragraph-container {
-        padding: 0.5vw 2vw;
+    .project-description__content {
+      .paragraph-container {
+          padding: 0.5vw 2vw;
+      }
+      .image-container{
+        background-size: cover;
+        background-position: center;
+        min-height: 30vh;
+      }
     }
 }
 
@@ -788,6 +817,9 @@ footer {
   }
   .parallax-image-1 {
     background-image: url('../../views/images/Pump blue.png');
+  }
+  .project-description__content > .image-container {
+    background-image: url("../../views/images/Rapid Team Photo.jpg");
   }
 }
 #team-wrapper{

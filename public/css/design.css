@@ -758,27 +758,54 @@ footer h3 {
 
 .project-description__content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 .project-description__content .paragraph-container {
-  width: 50%;
+  width: 100%;
+}
+
+.project-description__content .image-container {
+  width: 100%;
+  margin: 1vw;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .project-description__content img {
-  max-width: 50%;
-  height: auto;
+  display: block;
+  object-fit: contain;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
-  .project-description__content > .paragraph-container {
+  .project-description__content {
+    flex-direction: row-reverse;
+  }
+  .project-description__content .paragraph-container {
+    width: 50%;
     padding: 1vw 2vw;
+    height: auto;
+  }
+  .project-description__content .image-container {
+    width: 50%;
+    background-size: cover;
+  }
+  .project-description__content img {
+    display: none;
   }
 }
 
 @media (min-width: 1024px) {
-  .project-description__content > .paragraph-container {
+  .project-description__content .paragraph-container {
     padding: 0.5vw 2vw;
+  }
+  .project-description__content .image-container {
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
   }
 }
 
@@ -800,6 +827,10 @@ footer h3 {
 
 #rapid-wrapper .parallax-image-1 {
   background-image: url("../../views/images/Pump blue.png");
+}
+
+#rapid-wrapper .project-description__content > .image-container {
+  background-image: url("../../views/images/Rapid Team Photo.jpg");
 }
 
 #team-wrapper .parallax-image-header {
