@@ -840,3 +840,65 @@ footer h3 {
 #team-wrapper .parallax-image-1 {
   background-image: url("../../views/images/Pump blue.png");
 }
+
+/*
+articles
+*/
+.page-header {
+  width: 100vw;
+  text-align: center;
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.article-preview__text {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.article-preview__text p {
+  width: 100%;
+}
+
+.article-preview__text img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .article-list {
+    margin: auto;
+    width: 80vw;
+  }
+  .article-preview {
+    flex-direction: row;
+    width: 80vw;
+    margin: 10px;
+    padding: 2vw;
+  }
+  .article-preview__text {
+    width: 70%;
+  }
+  .article-preview__image {
+    width: 30%;
+  }
+  .article-preview__image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}
