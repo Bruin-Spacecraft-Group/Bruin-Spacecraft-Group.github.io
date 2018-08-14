@@ -8,6 +8,7 @@ $moon: #D5DDE1;
 $stone: #7CA2B5;
 $ozone: #00EBFA;
 $bloom: #2CE993;
+$bright-blue: #00BBFF;
 $phone: 480px;
 $tablet: 768px;
 $laptop: 1024px;
@@ -542,7 +543,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 }
 @media (min-width: $tablet) {
     .paragraph-container {
-        padding: 5vw 10vw;
+        padding: 5vw 12vh;
     }
     .title {
       padding: 1vw 5vw;
@@ -551,7 +552,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 
 @media (min-width: $laptop) {
     .paragraph-container {
-        padding: 5vw 20vw;
+        padding: 5vw 25vh;
     }
     .title {
       padding: 1vw 2vw;
@@ -734,12 +735,12 @@ footer {
     width: 100%;
     font-size: 10vh;
     font-weight: bolder;
-    font-style: oblique;
     padding-right: 1.5vw;
     color: $black;
   }
 }
 .project-intro {
+  padding-left: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -771,34 +772,35 @@ footer {
 }
 
 @media (min-width: $tablet) {
-    .project-description__content {
-      flex-direction: row-reverse;
-      .paragraph-container {
-        width: 50%;
-        padding: 1vw 2vw;
-        height: auto;
-      }
-      .image-container {
-        width: 50%;
-        background-size: cover;
-      }
-      img {
-        display: none;
-      }
+  .project-description__content {
+    flex-direction: row-reverse;
+    .paragraph-container {
+      width: 55%;
+      padding: 1vw 2vw;
+      height: auto;
     }
+    .image-container {
+      width: 45%;
+      max-height: 40vh;
+    }
+    img {
+      height: 100%;
+      margin: auto;
+    }
+  }
 }
 
 @media (min-width: $laptop) {
-    .project-description__content {
-      .paragraph-container {
-          padding: 0.5vw 2vw;
-      }
-      .image-container{
-        background-size: cover;
-        background-position: center;
-        min-height: 30vh;
-      }
+  .project-description__content {
+    .paragraph-container {
+        padding: 0.5vw 2vw;
+        width: 60%;
     }
+    .image-container{
+      width: 40%;
+      min-height: 30vh;
+    }
+  }
 }
 
 .parallax-image-header {
@@ -818,8 +820,49 @@ footer {
   .parallax-image-1 {
     background-image: url('../../views/images/Pump blue.png');
   }
+}
+#reach-wrapper{
+  .parallax-image-header {
+    background-image: url('../../views/images/background.jpg');
+  }
+  .parallax-image-1 {
+    background-image: url('../../views/images/satellite.jpg');
+  }
   .project-description__content > .image-container {
-    background-image: url("../../views/images/Rapid Team Photo.jpg");
+    background-image: url("../../views/images/StandardFamily.jpg");
+  }
+}
+#overseer-wrapper{
+  .parallax-image-header {
+    background-image: url('../../views/images/background.jpg');
+  }
+  .parallax-image-1 {
+    background-image: url('../../views/images/satellite.jpg');
+  }
+  .project-description__content > .image-container {
+    background-image: url("../../views/images/StandardFamily.jpg");
+  }
+}
+#sandbox-wrapper{
+  .parallax-image-header {
+    background-image: url('../../views/images/background.jpg');
+  }
+  .parallax-image-1 {
+    background-image: url('../../views/images/satellite.jpg');
+  }
+  .project-description__content > .image-container {
+    background-image: url("../../views/images/StandardFamily.jpg");
+  }
+}
+#endeavour-wrapper{
+  .parallax-image-header {
+    background-image: url('../../views/images/background.jpg');
+  }
+  .parallax-image-1 {
+    background-image: url('../../views/images/satellite.jpg');
+  }
+  .project-description__content > .image-container {
+    background-image: url("../../views/images/StandardFamily.jpg");
   }
 }
 #team-wrapper{
@@ -831,6 +874,57 @@ footer {
   }
 }
 
+.scrollable-content {
+  display: flex;
+}
+.scrollable-content__textboxes {
+  flex: 65%
+}
+.scrollable-content__textbox {
+  margin-bottom: 25vh;
+  padding: 1vw;
+  h2 {
+    border-bottom: 2px solid $bright-blue;
+  }
+}
+.scrollable-content__images {
+  flex: 35%;
+  img {
+    position: sticky;
+    top: 20%;
+    margin: auto;
+    max-height: 75vh;
+  }
+}
+
+@media (min-width: $tablet) {
+  .scrollable-content__textboxes {
+    flex: 50%;
+  }
+  .scrollable-content__textbox {
+    margin-bottom: 25vh;
+    padding: 1vw;
+  }
+  .scrollable-content__images {
+    flex: 50%;
+    img {
+      top: 15%;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .scrollable-content__textboxes {
+    flex: 40%;
+  }
+  .scrollable-content__textbox {
+    margin-bottom: 30vh;
+  }
+  .scrollable-content__images {
+    top: 10%;
+    flex: 60%;
+  }
+}
 /*
 articles
 */

@@ -11,16 +11,240 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="../../public/css/animate.css">
-	  <link rel="stylesheet" type="text/css" href="../../public/css/design.css">
+	  <link rel="stylesheet" type="text/css" href="../../public/css/design.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<meta name="theme-color" content="#000"/>
 	</head>
 
-  <body>
-    <h1>Hey..</h1>
-    <a href="../../index.html">Please take me back</a>
+  <body cz-shortcut-listen="true">
+		<div class="page-loader" id="PageLoader">
+			<img class="page-loader__spinner" src="../images/Icons/pageSpinner2.png" alt="Page spinner">
+		</div>
+		<div id="page-wrapper">
+			<div class="mob-nav__container">
+				<nav class="mob-nav mob-nav--closed" id="MobMenu">
+					<ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
+						<li class="mob-nav__item">
+							<a href="../sponsor.html" class="mob-nav__link link">Sponsor Us</a>
+						</li>
+						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../our_team.html" class="mob-nav__link link">Our Team</a>
+						</li>
+						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu2" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../join.html" class="mob-nav__link link">Join</a>
+						</li>
+					</ul>
+					<ul id="menu1" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu1">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="overseer.html" class="mob-nav__link link">Overseer</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="reach.html" class="mob-nav__link link">Reach</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="rapid.html" class="mob-nav__link link">Rapid</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="sandbox.html" class="mob-nav__link link">Sandbox</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="endeavour.html" class="mob-nav__link link">Endeavour</a>
+						</li>
+					</ul>
+					<ul id="menu2" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu2">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="resources/calendar.html" class="mob-nav__link link">Calendar</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="resources/forms.html" class="mob-nav__link link">Forms</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main-wrap">
+				<header class="site-header animated fadeIn" id="SiteHeader" role="banner">
+					<a class="brand" href="../../index.html">
+						<img src="../images/Logos/logo.png">
+					</a>
+					<nav class="site-nav" role="navigation">
+						<ul class="site-nav__list">
+							<li class="site-nav__item">
+								<a href="../sponsor.html" class="site-nav__link site-nav__link--link">Sponsor Us</a>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Projects</p>
+								<ul class="site-nav__dropdown">
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="overseer.html">Overseer</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="reach.html">Reach</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="rapid.html">Rapid</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="sandbox.html">Sandbox</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="endeavour.html">Endeavour</a>
+									</li>
+								</ul>
+							</li>
+							<li class="site-nav__item">
+								<a href="../our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Resources</p>
+								<ul class="site-nav__dropdown" >
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="../resources/calendar.html">Calendar</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="../resources/forms.html">Forms</a>
+									</li>
+								</ul>
+							</li>
+							<li class="site-nav__item">
+								<a href="../join.html" class="site-nav__link site-nav__link--link">Join</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="mob-nav__burger" id="MobMenuToggle" onclick="toggleMobileNav()">
+						<img id="burger" src="../images/Icons/burger.png">
+					</button>
+				</header>
+				<main>
+					<div id="reach-wrapper" class="parallax-wrapper">
+						<div class="project-header">
+							<div class="parallax-image-header parallax-image"></div>
+							<div class="project-header__title">
+								<h1>Reach</h1>
+							</div>
+						</div>
+						<div class="project-intro dark">
+							<h1>Rocket Payloads</h1>
+							<p>Developing amateur rocket payloads in standard cubesat form factor.</p>
+						</div>
+						<div class="project-description light">
+							<h1 class="title">The Team</h1>
+							<div class="project-description__content">
+								<img src="../images/Rapid Team Photo.jpg">
+								<div class="image-container"></div>
+								<p class="paragraph-container">
+									[project description]
+								</p>
+							</div>
+						</div>
+						<div class="mission-wrapper" id="BlueDawn">
+							<div class="title">
+								<h1>[mission title]</h1>
+								<p>[mission sub title]</p>
+							</div>
+							<div class="mission-description">
+								<p class="paragraph-container">
+									[Mission description].
+								</p>
+							</div>
+							<div class="parallax-image-1 parallax-image"></div>
+							<div class="scrollable-content">
+								<div class="scrollable-content__images">
+									<img data-item="1">
+									<img data-item="2">
+									<img data-item="3">
+								</div>
+								<div class="scrollable-content__textboxes">
+									<div class="scrollable-content__textbox" data-item="1">
+										<h2></h2>
+										<p></p>
+									</div>
+									<div class="scrollable-content__textbox" data-item="2">
+										<h2></h2>
+										<p></p>
+									</div>
+									<div class="scrollable-content__textbox" data-item="3">
+										<h2></h2>
+										<p></p>
+									</div>
+								</div>
+							</div>
+						<div class="parallax-image-2 parallax-image"></div>
+					</div>
+				</main>
+				<script type="text/javascript">
+					document.getElementById("PageLoader").classList.add("loaded");
+				</script>
+				<footer class="animatedSlow fadeInUp">
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://bruinspace.us14.list-manage.com/subscribe/post?u=a0f4954a051d300244e35603a&amp;id=fafda91946" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<h2>Don't get lost in orbit!</h2>
+							<div id="mc_embed_signup_scroll">
+								<h3>Sign up for our newsletter: </h3>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a0f4954a051d300244e35603a_fafda91946" tabindex="-1" value=""></div>
+							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+					<div class="social-media-links">
+						<a href="https://www.facebook.com/uclaBruinSpace/" target="_blank"><img src="../images/Icons/facebook_circle.svg"></a>
+						<a href="https://www.instagram.com/uclabruinspace/" target="_blank"><img src="../images/Icons/instagram_circle.svg"></a>
+						<a href="https://twitter.com/uclabruinspace" target="_blank"><img src="../images/Icons/twitter_circle.svg"></a>
+						<a href="https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/" target="_blank"><img src="../images/Icons/linkedin_circle.svg"></a>
+					</div>
+				</footer>
+			</div>
   </body>
 </html>

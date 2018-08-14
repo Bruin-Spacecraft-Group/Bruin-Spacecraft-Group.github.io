@@ -11,7 +11,7 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="../public/css/animate.css">
-	  <link rel="stylesheet" type="text/css" href="../public/css/design.css">
+	  <link rel="stylesheet" type="text/css" href="../public/css/design.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto" rel="stylesheet">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
@@ -48,6 +48,14 @@
 							<a href="our_team.html" class="mob-nav__link link">Our Team</a>
 						</li>
 						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu2" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
 							<a href="join.html" class="mob-nav__link link">Join</a>
 						</li>
 					</ul>
@@ -74,6 +82,22 @@
 						</li>
 						<li class="mob-nav__item">
 							<a href="projects/endeavour.html" class="mob-nav__link link">Endeavour</a>
+						</li>
+					</ul>
+					<ul id="menu2" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu2">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="resources/calendar.html" class="mob-nav__link link">Calendar</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="resources/forms.html" class="mob-nav__link link">Forms</a>
 						</li>
 					</ul>
 				</nav>
@@ -104,12 +128,23 @@
 										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="projects/sandbox.html">Sandbox</a>
 									</li>
 									<li class="site-nav__dropdown-item">
-										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="projects/sendeavour.html">Endeavour</a>
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="projects/endeavour.html">Endeavour</a>
 									</li>
 								</ul>
 							</li>
 							<li class="site-nav__item">
 								<a href="our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Resources</p>
+								<ul class="site-nav__dropdown" >
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="views/resources/calendar.html">Calendar</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="views/resources/forms.html">Forms</a>
+									</li>
+								</ul>
 							</li>
 							<li class="site-nav__item">
 								<a href="join.html" class="site-nav__link site-nav__link--link">Join</a>

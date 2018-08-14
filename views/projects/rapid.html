@@ -11,7 +11,7 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="../../public/css/animate.css">
-	  <link rel="stylesheet" type="text/css" href="../../public/css/design.css">
+	  <link rel="stylesheet" type="text/css" href="../../public/css/design.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto" rel="stylesheet">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
@@ -49,6 +49,14 @@
 							<a href="../our_team.html" class="mob-nav__link link">Our Team</a>
 						</li>
 						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu2" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
 							<a href="../join.html" class="mob-nav__link link">Join</a>
 						</li>
 					</ul>
@@ -75,6 +83,22 @@
 						</li>
 						<li class="mob-nav__item">
 							<a href="endeavour.html" class="mob-nav__link link">Endeavour</a>
+						</li>
+					</ul>
+					<ul id="menu2" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu2">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="resources/calendar.html" class="mob-nav__link link">Calendar</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="resources/forms.html" class="mob-nav__link link">Forms</a>
 						</li>
 					</ul>
 				</nav>
@@ -112,6 +136,17 @@
 							<li class="site-nav__item">
 								<a href="../our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
 							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Resources</p>
+								<ul class="site-nav__dropdown" >
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="../resources/calendar.html">Calendar</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="../resources/forms.html">Forms</a>
+									</li>
+								</ul>
+							</li>
 							<li class="site-nav__item">
 								<a href="../join.html" class="site-nav__link site-nav__link--link">Join</a>
 							</li>
@@ -134,10 +169,11 @@
 							<p>Developing the technology to facilitate space research.</p>
 						</div>
 						<div class="project-description light">
-							<h1 class="title">The team</h1>
+							<h1 class="title">The Team</h1>
 							<div class="project-description__content">
-								<img src="../images/Rapid Team Photo.jpg">
-								<div class="image-container"></div>
+								<div class="image-container">
+									<img src="../images/Rapid Team Photo.jpg">
+								</div>
 								<p class="paragraph-container">Under Project Rapid, students with the highest levels of engineering/management skills and project experience will seek mission and flight opportunities that will incorporate UCLA researchers and/or industry partnerships to develop CubeSats for launch. Rapid missions are intended to encompass any and all space opportunities, including scientific investigations and technology demonstrations. They will be geared towards quick and efficient mission development so that students involved will have the opportunity to experience a CubeSat program end-to-end during their college career.
 								</p>
 							</div>
@@ -152,26 +188,30 @@
 									The payload was selected by the Ken Souza Memorial Student Spaceflight Competition to study the behavior of a Magnetohydrodynamic (MHD) pump in a microgravity environment. This type of pump, which in contrast to traditional pumps has no mechanical moving parts, may prove to have the potential to increase the reliability of life support systems in space. Data from this mission will be analyzed with the help of UCLA researchers and will be made available to the public at the completion of the mission.
 								</p>
 							</div>
-							<div class="parallax-image-1 parallax-image"></div>
 							<div class="scrollable-content">
-								<div class="scrollable-content__images">
-									<img data-item="1">
-									<img data-item="2">
-									<img data-item="3">
-								</div>
 								<div class="scrollable-content__textboxes">
-									<div class="scrollable-content__textbox" data-item="1">
-										<h2></h2>
-										<p></p>
+									<div id="mission1" class="scrollable-content__textbox" data-image="1">
+										<h2>Overview</h2>
+										<p>dolor sit amet, consectetur adipiscing elit. Integer malesuada, libero eget ullamcorper auctor, est libero malesuada orci, vel facilisis lorem diam eu ante. Nam hendrerit porttitor arcu a cursus. Donec nec porta tellus. Fusce id dolor rutrum, venenatis elit a, feugiat lorem. Aliquam nec feugiat urna. Aliquam facilisis nibh ut ante ultrices facilisis. Quisque molestie blandit ultricies. Nulla et nisi tincidunt ipsum tristique efficitur. Fusce leo tortor, maximus eget posuere at, semper eget nulla. Sed finibus arcu vel efficitur venenatis. Etiam porttitor leo vel volutpat facilisis. Donec ut felis elit. Donec iaculis, augue sed pharetra lobortis, massa magna blandit ligula, a tincidunt sem lectus sit amet urna. In bibendum orci diam, vel congue est aliquam feugiat. Nam dolor quam, ullamcorper maximus lectus quis, condimentum fringilla elit. Donec pretium fringilla felis, ac convallis leo auctor non.</p>
 									</div>
-									<div class="scrollable-content__textbox" data-item="2">
-										<h2></h2>
-										<p></p>
+									<div id="mission2" class="scrollable-content__textbox" data-image="2">
+										<h2>Flight Computer</h2>
+										<p>vestibulum venenatis. Praesent aliquam maximus venenatis. Sed sed arcu nec elit tempus rhoncus. Cras dignissim lobortis mattis. Suspendisse lobortis ante sit amet ex vestibulum fringilla. Vestibulum eros felis, pellentesque ut nibh a, tincidunt fermentum diam. Nullam est nisl, varius nec lacus nec, eleifend rutrum felis. Morbi accumsan vel felis ut egestas. Ut quis eros quis massa efficitur auctor ut at velit. Ut ultrices efficitur convallis. Nulla aliquam aliquet ligula, sed volutpat magna tempus non. Praesent et tempor ante, a imperdiet libero.</p>
 									</div>
-									<div class="scrollable-content__textbox" data-item="3">
-										<h2></h2>
-										<p></p>
+									<div id="mission3" class="scrollable-content__textbox" data-image="3">
+										<h2>Avionics</h2>
+										<p>sagittis euismod. Praesent at condimentum nunc. Praesent ac volutpat purus, vitae ultrices ex. Curabitur nulla mi, pharetra ac tristique ac, vestibulum id risus. In nisi orci, molestie vel porttitor sit amet, laoreet eu sem. Mauris eget placerat orci. Integer vitae metus consequat, maximus enim nec, consequat ante. Suspendisse tristique metus in nibh dapibus vulputate. Etiam facilisis odio mollis, congue diam eget, eleifend tellus. Nulla facilisi. Mauris ornare erat in magna finibus, sit amet laoreet felis venenatis. Maecenas et neque tortor. Donec quis eleifend lorem, vitae imperdiet lacus.</p>
 									</div>
+									<div id="mission4" class="scrollable-content__textbox" data-image="3">
+										<h2>The Payload</h2>
+										<p>sagittis euismod. Praesent at condimentum nunc. Praesent ac volutpat purus, vitae ultrices ex. Curabitur nulla mi, pharetra ac tristique ac, vestibulum id risus. In nisi orci, molestie vel porttitor sit amet, laoreet eu sem. Mauris eget placerat orci. Integer vitae metus consequat, maximus enim nec, consequat ante. Suspendisse tristique metus in nibh dapibus vulputate. Etiam facilisis odio mollis, congue diam eget, eleifend tellus. Nulla facilisi. Mauris ornare erat in magna finibus, sit amet laoreet felis venenatis. Maecenas et neque tortor. Donec quis eleifend lorem, vitae imperdiet lacus.</p>
+									</div>
+								</div>
+								<div class="scrollable-content__images">
+									<img id="mission1_image" data-image="1" src="../images/Rapid/BlueDawnBase.jpg">
+									<img id="mission2_image" data-image="2" src="../images/Rapid/BlueDawnFC.jpg">
+									<img id="mission3_image" data-image="3" src="../images/Rapid/BlueDawnAvionics.jpg">
+									<img id="mission4_image" data-image="4" src="../images/Rapid/BlueDawnPayload.jpg">
 								</div>
 							</div>
 						<div class="parallax-image-2 parallax-image"></div>
@@ -180,11 +220,34 @@
 				<script type="text/javascript">
 					document.getElementById("PageLoader").classList.add("loaded");
 				</script>
-				<footer>
-					<a href="https://www.facebook.com/uclaBruinSpace/" target="_blank"><img src="../images/Icons/facebook_circle.svg"></a>
-					<a href="https://www.instagram.com/uclabruinspace/" target="_blank"><img src="../images/Icons/instagram_circle.svg"></a>
-					<a href="https://twitter.com/uclabruinspace" target="_blank"><img src="../images/Icons/twitter_circle.svg"></a>
-					<a href="https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/" target="_blank"><img src="../images/Icons/linkedin_circle.svg"></a>
+				<footer class="animatedSlow fadeInUp">
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://bruinspace.us14.list-manage.com/subscribe/post?u=a0f4954a051d300244e35603a&amp;id=fafda91946" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<h2>Don't get lost in orbit!</h2>
+							<div id="mc_embed_signup_scroll">
+								<h3>Sign up for our newsletter: </h3>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a0f4954a051d300244e35603a_fafda91946" tabindex="-1" value=""></div>
+							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+					<div class="social-media-links">
+						<a href="https://www.facebook.com/uclaBruinSpace/" target="_blank"><img src="../images/Icons/facebook_circle.svg"></a>
+						<a href="https://www.instagram.com/uclabruinspace/" target="_blank"><img src="../images/Icons/instagram_circle.svg"></a>
+						<a href="https://twitter.com/uclabruinspace" target="_blank"><img src="../images/Icons/twitter_circle.svg"></a>
+						<a href="https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/" target="_blank"><img src="../images/Icons/linkedin_circle.svg"></a>
+					</div>
 				</footer>
 			</div>
   </body>
