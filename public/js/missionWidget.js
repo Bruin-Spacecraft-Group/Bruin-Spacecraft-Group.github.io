@@ -1,11 +1,10 @@
 //mission highlight function
 var buffer = 300
-$("#mission1_image").show()
-$("#mission2_image").hide()
-$("#mission3_image").hide()
-$("#mission4_image").hide()
-
 $(document).ready(function(){
+  $("#mission2_image").hide()
+  $("#mission3_image").hide()
+  $("#mission4_image").hide()
+
   $(window).scroll(function() {
     var top = $(document).scrollTop()
     if (top > ($("#mission1").position().top - buffer) && top < ($("#mission2").position().top - buffer)){

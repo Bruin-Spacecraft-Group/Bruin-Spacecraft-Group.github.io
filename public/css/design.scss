@@ -1,4 +1,3 @@
-$title-font: 'Montserrat', sans-serif;
 $white: #FFFFFF;
 $white-semi-transparent: rgba(255,255,255,0.6);
 $black: #000;
@@ -52,6 +51,9 @@ body, html {
 }
 p {
   font-size: medium;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
 }
 #page-wrapper {
   width: 100%;
@@ -565,23 +567,24 @@ div.site-nav__link:focus,div.site-nav__link:hover {
     padding: 5vw;
 }
 .title {
-  padding: 1vw 5vw;
+  padding: 2vw 5vw;
+  margin: 0;
 }
 @media (min-width: $tablet) {
     .paragraph-container {
         padding: 5vw 12vh;
     }
     .title {
-      padding: 1vw 5vw;
+      padding: 2vw 5vw;
     }
 }
 
 @media (min-width: $laptop) {
     .paragraph-container {
-        padding: 5vw 25vh;
+        padding: 4vw 25vh;
     }
     .title {
-      padding: 1vw 2vw;
+      padding: 2vw 2vw;
     }
 }
 
@@ -706,7 +709,11 @@ footer {
     width: 100%;
   }
   img {
+    display: block;
+    overflow: hidden;
     max-height: 50vh;
+    height: auto;
+    width: auto;
   }
 }
 @media (min-width: $tablet) {
@@ -721,9 +728,12 @@ footer {
       height: auto;
     }
     img {
-      width: 45%;
+      max-width: 45%;
       max-height: 40vh;
     }
+  }
+  .image-left {
+    flex-direction: row;
   }
 }
 
@@ -745,9 +755,7 @@ footer {
 .text-left > h1{
   text-align: right;
 }
-.image-left {
-  flex-direction: row;
-}
+
 /*
 #parallax-wrapper {
   position: relative;
@@ -803,14 +811,16 @@ footer {
 
 }
 .project-header__title {
-  width: auto;
+  width: 100%;
   display: inline-block;
   padding: 0 1vw;
   position: absolute;
   top: 5vh;
   left: 1vw;
   h1 {
-    width: 100%;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    border: solid 2px black;
     font-size: 10vh;
     font-weight: bolder;
     padding-right: 1.5vw;
@@ -884,6 +894,9 @@ footer {
 .parallax-image-header {
   height: 30vh;
 }
+.parallax-image-header__follow{
+  height: 5vh;
+}
 .parallax-image-1 {
   height: 30vh;
 }
@@ -892,7 +905,7 @@ footer {
 }
 
 #rapid-wrapper{
-  .parallax-image-header {
+  .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/PCBs.jpg');
   }
   .parallax-image-1 {
@@ -900,52 +913,40 @@ footer {
   }
 }
 #reach-wrapper{
-  .parallax-image-header {
+  .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/background.jpg');
   }
   .parallax-image-1 {
     background-image: url('../../views/images/satellite.jpg');
-  }
-  .project-description__content > .image-container {
-    background-image: url("../../views/images/StandardFamily.jpg");
   }
 }
 #overseer-wrapper{
-  .parallax-image-header {
+  .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/background.jpg');
   }
   .parallax-image-1 {
     background-image: url('../../views/images/satellite.jpg');
-  }
-  .project-description__content > .image-container {
-    background-image: url("../../views/images/StandardFamily.jpg");
   }
 }
 #sandbox-wrapper{
-  .parallax-image-header {
+  .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/background.jpg');
   }
   .parallax-image-1 {
     background-image: url('../../views/images/satellite.jpg');
-  }
-  .project-description__content > .image-container {
-    background-image: url("../../views/images/StandardFamily.jpg");
   }
 }
 #endeavour-wrapper{
-  .parallax-image-header {
+  .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/background.jpg');
   }
   .parallax-image-1 {
     background-image: url('../../views/images/satellite.jpg');
   }
-  .project-description__content > .image-container {
-    background-image: url("../../views/images/StandardFamily.jpg");
-  }
 }
 #team-wrapper{
-  .parallax-image-header {
-    background-image: url('../../views/images/PCBs.jpg');
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../../views/images/background.jpg');
   }
   .parallax-image-1 {
     background-image: url('../../views/images/Pump blue.png');
@@ -1003,8 +1004,6 @@ footer {
   .scrollable-content__images {
     top: 10%;
     flex: 60%;
-    display: flex;
-    flex-direction: column;
     img {
       max-width: 60vw;
       margin: auto;
