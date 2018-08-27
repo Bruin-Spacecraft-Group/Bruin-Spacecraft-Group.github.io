@@ -35,17 +35,6 @@
 				<nav class="mob-nav mob-nav--closed" id="MobMenu">
 					<ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
 						<li class="mob-nav__item">
-							<a href="views/sponsor.html" class="mob-nav__link link">Sponsor Us</a>
-						</li>
-						<li class="mob-nav__item">
-							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu('menu1')">
-								Projects
-								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
-									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
-								</svg>
-							</button>
-						</li>
-						<li class="mob-nav__item">
 							<a href="views/our_team.html" class="mob-nav__link link">Our Team</a>
 						</li>
 						<li class="mob-nav__item">
@@ -57,7 +46,18 @@
 							</button>
 						</li>
 						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
 							<a href="views/join.html" class="mob-nav__link link">Join</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="views/sponsor.html" class="mob-nav__link link">Sponsor Us</a>
 						</li>
 					</ul>
 					<ul id="menu1" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu1">
@@ -111,7 +111,18 @@
 					<nav class="site-nav" role="navigation">
 						<ul class="site-nav__list">
 							<li class="site-nav__item">
-								<a href="views/sponsor.html" class="site-nav__link site-nav__link--link">Sponsor Us</a>
+								<a href="views/our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Resources</p>
+								<ul class="site-nav__dropdown" >
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="views/resources/calendar.html">Calendar</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="views/resources/forms.html">Forms</a>
+									</li>
+								</ul>
 							</li>
 							<li class="site-nav__item site-nav__item--parent">
 								<p class="site-nav__item site-nav__link site-nav__link--link">Projects</p>
@@ -134,21 +145,10 @@
 								</ul>
 							</li>
 							<li class="site-nav__item">
-								<a href="views/our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
-							</li>
-							<li class="site-nav__item site-nav__item--parent">
-								<p class="site-nav__item site-nav__link site-nav__link--link">Resources</p>
-								<ul class="site-nav__dropdown" >
-									<li class="site-nav__dropdown-item">
-										<a class="site-nav__dropdown-link" href="views/resources/calendar.html">Calendar</a>
-									</li>
-									<li class="site-nav__dropdown-item">
-										<a class="site-nav__dropdown-link" href="views/resources/forms.html">Forms</a>
-									</li>
-								</ul>
+								<a href="views/join.html" class="site-nav__link site-nav__link--link">Join</a>
 							</li>
 							<li class="site-nav__item">
-								<a href="views/join.html" class="site-nav__link site-nav__link--link">Join</a>
+								<a href="views/sponsor.html" class="site-nav__link site-nav__link--link">Sponsor Us</a>
 							</li>
 						</ul>
 					</nav>
@@ -218,7 +218,7 @@
 						<div id="whatWeDo" class="dark">
 							<h1 class="title">What We Do</h1>
 							<div class="flex-container">
-								<div class="card" id="rapidCard">
+								<a class="card" id="rapidCard" href="views/projects/rapid.html">
 									<img src="views/images/Rapid.png">
 									<div class="card-container">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
@@ -228,8 +228,8 @@
 										<h3>Project Rapid</h3>
 										<p>CubeSat Development</p>
 									</div>
-								</div>
-								<div class="card" id="reachCard">
+								</a>
+								<a class="card" id="reachCard" href="views/projects/reach.html">
 									<img src="views/images/Reach.JPG">
 									<div class="card-container">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
@@ -239,8 +239,8 @@
 										<h3>Project Reach</h3>
 										<p>Rocket Payloads</p>
 									</div>
-								</div>
-								<div class="card" id="overseerCard">
+								</a>
+								<a class="card" id="overseerCard" href="views/projects/overseer.html">
 									<img src="views/images/OverseerPortrait.jpg">
 									<div class="card-container">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
@@ -250,8 +250,8 @@
 										<h3>Project Overseer</h3>
 										<p>High Altitude Balloons</p>
 									</div>
-								</div>
-								<div class="card" id="sandboxCard">
+								</a>
+								<a class="card" id="sandboxCard" href="views/projects/sandbox.html">
 									<img src="views/images/Sandbox.jpg">
 									<div class="card-container">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
@@ -261,8 +261,8 @@
 										<h3>Project Sandbox</h3>
 										<p>Technology Development</p>
 									</div>
-								</div>
-								<div class="card" id="endeavourCard">
+								</a>
+								<a class="card" id="endeavourCard" href="views/projects/endeavour.html">
 									<img src="views/images/Endeavour.jpg">
 									<div class="card-container">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
@@ -272,7 +272,7 @@
 										<h3>Project Endeavour</h3>
 										<p>Scientific Research</p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div id="join" class="paragraph-container light">

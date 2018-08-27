@@ -471,57 +471,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 .site-nav__dropdown-link:hover, .site-nav__dropdown-link:focus, .site-nav__dropdown-link:active{
   color: $accent-color
 }
-/*
-.site-nav__dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 250px;
-    margin-left: -125px;
-    margin-top: -2px;
-    border-top: 2px solid $accent-color;
-    background-color: #171717;
-    list-style: none;
-    padding: 0
-}
 
-.site-nav__item--parent:hover .site-nav__dropdown{
-    display: block;
-}
-
-.site-nav__dropdown-item {
-    margin: 0
-}
-
-.site-nav__dropdown-item+.site-nav__dropdown-item {
-    border-top: 1px solid #232323
-}
-
-.site-nav__dropdown-link {
-    color: $white;
-    font-size: 13px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    height: 60px;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    justify-content: center;
-    padding: 0 15px
-}
-
-.site-nav__dropdown-link--active,.site-nav__dropdown-link--section,.site-nav__dropdown-link:focus,.site-nav__dropdown-link:hover {
-    color: $accent-color
-}
-*/
 .imageCarousel {
     height: 50vh;
     margin: 0px auto;
@@ -664,14 +614,47 @@ div.site-nav__link:focus,div.site-nav__link:hover {
     color: $black;
 }
 */
+.button{
+  display:inline-block;
+  padding:0.5vw 1vw;
+  margin: 0.5vw auto;
+  border:2px solid #FFFFFF;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  color:$white;
+  background-color: $black;
+  text-align:center;
+  transition: all 0.2s;
+}
+.button:hover{
+  color:$accent-color;
+  border-color: $accent-color;
+}
 
 footer {
     width: 100vw;
-    max-height: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    #mc_embed_signup {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      #mc_embed_signup_scroll {
+        width: 100%;
+        .mc-field-group {
+          label {
+            font-size: 2.5vw;
+          }
+        }
+      }
+    }
+
     .social-media-links {
+      padding: 0.5vw;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -682,22 +665,19 @@ footer {
         padding: .5vw;
     }
     h2 {
+      margin: 0;
+      padding: 0.5vw;
       font-size: 2vw;
       width: 100%;
     }
     h3 {
       font-size: 1.5vw;
     }
+    .button {
+      padding: 0.5vw;
+    }
 }
-#mc_embed_signup {
-  padding: 1vw;
-}
-#mc_embed_signup_scroll {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 
 .text-image__container {
   padding: 0;
@@ -820,7 +800,7 @@ footer {
   h1 {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    border: solid 2px black;
+    /*border: solid 2px black;*/
     font-size: 10vh;
     font-weight: bolder;
     padding-right: 1.5vw;
