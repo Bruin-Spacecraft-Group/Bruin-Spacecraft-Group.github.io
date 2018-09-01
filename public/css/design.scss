@@ -34,6 +34,9 @@ $laptop: 1024px;
     color: $deep-space;
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
     background-color: $black;
     color: $white;
@@ -512,7 +515,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
     width: 100%;
 }
 
-.paragraph-container {
+.aph-container {
     width: 100%;
     padding: 5vw;
 }
