@@ -1,7 +1,7 @@
 $white: #FFFFFF;
 $white-semi-transparent: rgba(255,255,255,0.6);
 $black: #000;
-$accent-color: #fff711;
+$bright-yellow: #fff711;
 $deep-space: #16293E;
 $moon: #D5DDE1;
 $stone: #7CA2B5;
@@ -12,6 +12,8 @@ $navy: #203C5B;
 $phone: 480px;
 $tablet: 768px;
 $laptop: 1024px;
+
+$accent-color: $bright-yellow;
 
 .light {
     background-color: $white;
@@ -53,7 +55,16 @@ body, html {
   box-sizing: inherit;
 }
 p {
-  font-size: medium;
+  font-size: 2vw;
+}
+h1 {
+  font-size: 5vw;
+}
+h2 {
+  font-size: 4vw;
+}
+h3 {
+  font-size: 3vw;
 }
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -322,13 +333,6 @@ h1, h2, h3 {
     transition: fill .3s
 }
 
-.mob-nav__link--sm,.mob-nav__trigger--sm {
-    font-size: 11px;
-    border-bottom: 0;
-    padding-top: 13px;
-    padding-bottom: 13px
-}
-
 .mob-nav__trigger--back {
     font-weight: 400;
     color: $accent-color;
@@ -515,7 +519,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
     width: 100%;
 }
 
-.aph-container {
+.paragraph-container {
     width: 100%;
     padding: 5vw;
 }
@@ -620,13 +624,14 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 */
 .button{
   display:inline-block;
+  font-size: 2vw;
   padding:0.5vw 1vw;
   margin: 0.5vw auto;
-  border:2px solid #FFFFFF;
+  border:2px solid $white;
   border-radius:0.12em;
   box-sizing: border-box;
   color:$white;
-  background-color: $black;
+  background-color: $navy;
   text-align:center;
   transition: all 0.2s;
 }
@@ -671,11 +676,7 @@ footer {
     h2 {
       margin: 0;
       padding: 0.5vw;
-      font-size: 2vw;
       width: 100%;
-    }
-    h3 {
-      font-size: 1.5vw;
     }
     .button {
       padding: 0.5vw;
@@ -808,7 +809,7 @@ footer {
     font-size: 10vh;
     font-weight: bolder;
     padding-right: 1.5vw;
-    color: $black;
+    color: $white;
   }
 }
 .project-intro {
@@ -892,48 +893,45 @@ footer {
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/PCBs.jpg');
   }
-  .parallax-image-1 {
-    background-image: url('../../views/images/Pump blue.png');
-  }
 }
 #reach-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
-  }
-  .parallax-image-1 {
-    background-image: url('../../views/images/satellite.jpg');
+    background-image: url('../../views/images/Logos/Reach Photo 2.png');
   }
 }
 #overseer-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
-  }
-  .parallax-image-1 {
-    background-image: url('../../views/images/satellite.jpg');
+    background-image: url('../../views/images/Logos/Overseer Photo 2.png');
   }
 }
 #sandbox-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
-  }
-  .parallax-image-1 {
-    background-image: url('../../views/images/satellite.jpg');
+    background-image: url('../../views/images/Logos/Sandbox Photo 2.png');
   }
 }
 #endeavour-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
-  }
-  .parallax-image-1 {
-    background-image: url('../../views/images/satellite.jpg');
+    background-image: url('../../views/images/Logos/Endeavour Photo.png');
   }
 }
 #team-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../../views/images/background.jpg');
   }
-  .parallax-image-1 {
-    background-image: url('../../views/images/Pump blue.png');
+}
+#sponsor-wrapper{
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../../views/images/background.jpg');
+  }
+}
+#calendar-wrapper{
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../../views/images/background.jpg');
+  }
+}
+#forms-wrapper{
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../../views/images/background.jpg');
   }
 }
 
