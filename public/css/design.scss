@@ -55,16 +55,16 @@ body, html {
   box-sizing: inherit;
 }
 p {
-  font-size: 2vw;
+  font-size: 1.6rem;
 }
 h1 {
-  font-size: 5vw;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 4vw;
+  font-size: 3.2rem;
 }
 h3 {
-  font-size: 3vw;
+  font-size: 2.4rem;
 }
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
@@ -288,7 +288,7 @@ h1, h2, h3 {
 }
 
 .mob-nav__link,.mob-nav__trigger {
-    font-size: 3vw;
+    font-size: 1.4rem;
     color: $accent-color;
     font-weight: 300;
     text-transform: uppercase;
@@ -309,7 +309,7 @@ h1, h2, h3 {
 }
 @media screen and (min-width: $tablet) {
   .mob-nav__link,.mob-nav__trigger {
-    font-size: 1.5vw
+    font-size: 1.4rem
   }
 }
 
@@ -409,7 +409,7 @@ h1, h2, h3 {
 
 .site-nav__link {
     color: $white;
-    font-size: 1.5vh;
+    font-size: 1.4rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     display: block;
@@ -462,7 +462,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 
 .site-nav__dropdown-item {
   color: $white;
-  font-size: 1.5vh;
+  font-size: 1.4rem;
   text-align: left;
   letter-spacing: 4px;
   padding: 1vh 0;
@@ -502,15 +502,15 @@ div.site-nav__link:focus,div.site-nav__link:hover {
     font-weight: bold;
 
     h1 {
-        font-size: 5vw;
+        font-size: 5rem;
         font-weight: bold;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 4rem;
         font-weight: bold;
     }
     h3 {
-        font-size: 3vw;
+        font-size: 3rem;
         font-weight: bold;
     }
 }
@@ -624,7 +624,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 */
 .button{
   display:inline-block;
-  font-size: 2vw;
+  font-size: 1.6rem;
   padding:0.5vw 1vw;
   margin: 0.5vw auto;
   border:2px solid $white;
@@ -656,7 +656,7 @@ footer {
         width: 100%;
         .mc-field-group {
           label {
-            font-size: 2.5vw;
+            font-size: 1.4rem;
           }
         }
       }
@@ -806,7 +806,7 @@ footer {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     /*border: solid 2px black;*/
-    font-size: 10vh;
+    font-size: 6rem;
     font-weight: bolder;
     padding-right: 1.5vw;
     color: $white;
