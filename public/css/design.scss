@@ -569,6 +569,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
         text-align: center;
         position: absolute;
         color: white;
+        text-shadow: 0 0 20px black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -822,7 +823,7 @@ footer {
   }
 }
 
-.project-description__content {
+.project-description__content, .team-description__content, .past-projects__content, .project-timeline {
   display: flex;
   flex-direction: column;
   .paragraph-container {
@@ -845,7 +846,7 @@ footer {
 }
 
 @media (min-width: $tablet) {
-  .project-description__content {
+  .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
     flex-direction: row-reverse;
     .paragraph-container {
       width: 55%;
@@ -864,7 +865,7 @@ footer {
 }
 
 @media (min-width: $laptop) {
-  .project-description__content {
+  .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
     .paragraph-container {
         padding: 0.5vw 2vw;
         width: 60%;
@@ -1057,5 +1058,12 @@ articles
       width: auto;
       height: auto;
     }
+  }
+}
+.gCalWrapper {
+  iframe{
+    width: 90vw;
+    height: 90vh;
+    margin: 2.5vh 5vw;
   }
 }
