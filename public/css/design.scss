@@ -119,7 +119,7 @@ h1, h2, h3 {
 .site-header {
     background-color: $black;
     height: 6vh;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -480,18 +480,23 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 }
 
 .imageCarousel {
-    height: 50vh;
+    height: 60vh;
     margin: 0px auto;
     width: 100%;
     border-bottom: double #07167a;
 }
 
-.carousel-item > img {
-    height: 60vw;
-    max-height: 80vh;
-    display: block;
-    margin: auto;
-    object-fit: cover;
+.carousel-item {
+    height: 60vh;
+    img {
+      height: 100%;
+      display: block;
+      margin: auto;
+      object-fit: cover;
+    }
+    iframe {
+      height: 100
+    }
 }
 
 .carousel-caption {
