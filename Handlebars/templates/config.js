@@ -9,4 +9,6 @@ var links = {
   'sandbox':'/projects/sandbox',
   'calendar':'/resources/calendar',
   'forms':'/resources/forms',
+  'logo':'images/Logos/logo.png',
+  'burger':'images/Icons/burger.png'
 }
