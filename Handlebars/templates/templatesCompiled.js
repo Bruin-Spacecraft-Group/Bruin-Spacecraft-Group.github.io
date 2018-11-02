@@ -1,5 +1,18 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['footer'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return "    "
+    + ((stack1 = ((helper = (helper = helpers.element || (depth0 != null ? depth0.element : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"element","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "\r\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class=\"social-media-links\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.socialMedia : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n<!-- Begin MailChimp Signup Form -->\r\n<div id=\"mc_embed_signup\">\r\n  <form action=\"https://bruinspace.us14.list-manage.com/subscribe/post?u=a0f4954a051d300244e35603a&amp;id=fafda91946\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\r\n    <h3>Don't get lost in orbit! Sign up for our newsletter: </h3>\r\n    <div id=\"mc_embed_signup_scroll\">\r\n      <!---\r\n      <div class=\"mc-field-group\">\r\n        <label for=\"mce-EMAIL\">Email Address </label>\r\n        <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\r\n      </div>\r\n      <div id=\"mce-responses\" class=\"clear\">\r\n        <div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\r\n        <div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\r\n      </div>\r\n    -->\r\n      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n      <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_a0f4954a051d300244e35603a_fafda91946\" tabindex=\"-1\" value=\"\"></div>\r\n      <div class=\"clear\"><input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></div>\r\n    </div>\r\n    <div class=\"contact\">\r\n      <h3>Questions?</h3>\r\n      <p>Contact us on facebook, at uclaBruinSpace@gmail.com, or come visit our lab in Boelter 8761</p>\r\n    </div>\r\n  </form>\r\n</div>\r\n<!--End mc_embed_signup-->\r\n";
+},"useData":true});
 templates['head'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
 

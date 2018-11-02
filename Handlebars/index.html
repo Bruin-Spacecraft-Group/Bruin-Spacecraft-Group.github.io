@@ -17,10 +17,151 @@
 			</div>
 			<script type="text/javascript" src="templates/navMenu.js"></script>
 			<div class="main-wrap">
-				<header class="site-header animated fadeIn" id="SiteHeader" role="banner"></header>
+				<header class="site-header" id="SiteHeader" role="banner"></header>
 				<script type="text/javascript" src="templates/navBar.js"></script>
 
+				<div class="video">
+					<div style="position:relative;height:100%;z-index:-1">
+						<!--<iframe width="100%" src="https://www.youtube.com/embed/QGWQyhOfZBY?autoplay=1;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+						--><iframe width="100%" src="https://www.youtube.com/embed/OGKqUmk_g-0?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;mute=1&amp;loop=1&playlist=OGKqUmk_g-0" frameborder="0" allow="autoplay; encrypted-media" style="width:100%;" allowfullscreen></iframe>
+
+					</div>
+					<div class="caption__container">
+						<div class="caption">
+							<h1>Welcome</h1>
+							<h3>to Bruin Spacecraft Group</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-content-wrapper">
+					<div id="mission" class="paragraph-container light">
+						<h1>Our Mission</h1>
+						<p>Bruin Spacecraft Group was founded with the intent of providing a creative and supportive environment for space mission design and development at UCLA.
+						Here, students of all backgrounds can come together, united by a passion for space, to do something amazing.
+						Here, we aim to give students the opportunity to acquire the skills necessary to become leaders in the space industry.</p>
+					</div>
+
+					<div class="carousel-wrapper">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ul class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ul>
+							<!-- Slides -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/mars.jpg" alt="mars">
+									<div class="carousel-caption">
+										<h2>Exciting thing</h2>
+										<a href="views/articles/sampleArticle.html"><h3>link to article about exciting thing</h3></a>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<img src="images/jupiter.jpg" alt="jupiter">
+									<div class="carousel-caption">
+										<h2>Calm down</h2>
+										<h3>It's a placeholder okay</h3>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="images/saturn.jpg" alt="saturn">
+									<div class="carousel-caption">
+										<h2>Calm down</h2>
+										<h3>It's a placeholder okay</h3>
+									</div>
+								</div>
+							</div>
+							<!-- Left and right controls -->
+							<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+					<div id="whatWeDo" class="dark">
+						<h1 class="title">What We Do</h1>
+						<div class="flex-container">
+							<a class="card" id="rapidCard" href="views/projects/rapid.html">
+								<img src="images/Rapid.png">
+								<div class="card-container">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
+										<path fill="none" stroke="#FFF" d="M9.8 68.5V26.7l40.1 26v45.8z"></path>
+										<path fill="none" stroke="#FFF" d="M49.9 52.7l40-26v41.8L50 99M9.6 26.2L50.1 1l40 25.2"></path>
+									</svg>
+									<h3>Project Rapid</h3>
+									<p>CubeSat Development</p>
+								</div>
+							</a>
+							<a class="card" id="reachCard" href="views/projects/reach.html">
+								<img src="images/Reach.JPG">
+								<div class="card-container">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
+										<path fill="none" stroke="#FFF" d="M9.8 68.5V26.7l40.1 26v45.8z"></path>
+										<path fill="none" stroke="#FFF" d="M49.9 52.7l40-26v41.8L50 99M9.6 26.2L50.1 1l40 25.2"></path>
+									</svg>
+									<h3>Project Reach</h3>
+									<p>Rocket Payloads</p>
+								</div>
+							</a>
+							<a class="card" id="overseerCard" href="views/projects/overseer.html">
+								<img src="images/OverseerPortrait.jpg">
+								<div class="card-container">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
+										<path fill="none" stroke="#FFF" d="M9.8 68.5V26.7l40.1 26v45.8z"></path>
+										<path fill="none" stroke="#FFF" d="M49.9 52.7l40-26v41.8L50 99M9.6 26.2L50.1 1l40 25.2"></path>
+									</svg>
+									<h3>Project Overseer</h3>
+									<p>High Altitude Balloons</p>
+								</div>
+							</a>
+							<a class="card" id="sandboxCard" href="views/projects/sandbox.html">
+								<img src="images/Sandbox.jpg">
+								<div class="card-container">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
+										<path fill="none" stroke="#FFF" d="M9.8 68.5V26.7l40.1 26v45.8z"></path>
+										<path fill="none" stroke="#FFF" d="M49.9 52.7l40-26v41.8L50 99M9.6 26.2L50.1 1l40 25.2"></path>
+									</svg>
+									<h3>Project Sandbox</h3>
+									<p>Technology Development</p>
+								</div>
+							</a>
+							<a class="card" id="endeavourCard" href="views/projects/endeavour.html">
+								<img src="images/Endeavour.jpg">
+								<div class="card-container">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" width="88.5" height="80.6" class="svg-dedicated-logo">
+										<path fill="none" stroke="#FFF" d="M9.8 68.5V26.7l40.1 26v45.8z"></path>
+										<path fill="none" stroke="#FFF" d="M49.9 52.7l40-26v41.8L50 99M9.6 26.2L50.1 1l40 25.2"></path>
+									</svg>
+									<h3>Project Endeavour</h3>
+									<p>Scientific Research</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="join" class="paragraph-container light">
+						<h1>How to Join</h1>
+						<p>
+							Bruin Spacecraft Group is open to any and all majors and minors. All we ask is you come with a passion for space!
+						</p>
+						<p>
+							You don't need to be an engineer to be on a project, and you don't need to study economics to join the finance team.
+						</p>
+						<p>
+							If you want to join us here at Bruin Space, check out the <a href="join.html">Join</a> page for more information.
+						</p>
+					</div>
+				</div>
+
 			</div>
+			<footer class=""></footer>
+			<script type="text/javascript" src="templates/footer.js"></script>
+
 		</div>
 	</body>
 </html>

@@ -1,8 +1,8 @@
 var context = {
-  'scripts': [
-    {'link': 'js/main.js'},
-    {'link': 'js/config.js'},
-  ],
+  //'scripts': [
+    //{'link': 'js/main.js'},
+    //{'link': 'js/config.js'}
+  //],
   'theme_color': '#000'
 }
 

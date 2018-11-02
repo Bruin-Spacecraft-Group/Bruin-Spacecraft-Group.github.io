@@ -51,7 +51,7 @@ var context = {
         <a href="${links.sponsor}" class="site-nav__link site-nav__link--link">Sponsor Us</a>
       </li>`
     }],
-    "burger": links.burger
+    "burger": `${links.Icons}/burger.png`
 }
 
 var templateScript = Handlebars.templates.navBar(context);

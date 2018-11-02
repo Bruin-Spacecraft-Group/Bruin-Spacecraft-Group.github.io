@@ -1,14 +1,16 @@
+var localPath = "C:/Users/andre/OneDrive/Documents/BruinSpace/Bruin-Spacecraft-Group.github.io/Handlebars"
+
 var links = {
-  'our_team': '/our_team',
-  'join': '/join',
-  'sponsor':'/sponsor',
-  'rapid':'/projects/rapid',
-  'reach':'/projects/reach',
-  'overseer':'/projects/overseer',
-  'endeavour':'/projects/endeavour',
-  'sandbox':'/projects/sandbox',
-  'calendar':'/resources/calendar',
-  'forms':'/resources/forms',
-  'logo':'images/Logos/logo.png',
-  'burger':'images/Icons/burger.png'
+  "our_team": `${localPath}/our_team.html`,
+  "join": `${localPath}/join.html`,
+  "sponsor":`${localPath}/sponsor.html`,
+  "rapid":`${localPath}/projects/rapid.html`,
+  "reach":`${localPath}/projects/reach.html`,
+  "overseer":`${localPath}/projects/overseer.html`,
+  "endeavour":`${localPath}/projects/endeavour.html`,
+  "sandbox":`${localPath}/projects/sandbox.html`,
+  "calendar":`${localPath}/resources/calendar.html`,
+  "forms":`${localPath}/resources/forms.html`,
+  "logo":`${localPath}/images/Logos/logo.png`,
+  "Icons":`${localPath}/images/Icons`
 }
