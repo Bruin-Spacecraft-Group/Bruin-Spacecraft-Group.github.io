@@ -1,5 +1,6 @@
 var context = {
-  "logo":links.logo,
+  "home":links.index,
+  "logo":`${links.logos}/logo.png`,
   'links': [
     {'element':
       `<li class="site-nav__item">
@@ -51,7 +52,7 @@ var context = {
         <a href="${links.sponsor}" class="site-nav__link site-nav__link--link">Sponsor Us</a>
       </li>`
     }],
-    "burger": `${links.Icons}/burger.png`
+    "burger": `${links.icons}/burger.png`
 }
 
 var templateScript = Handlebars.templates.navBar(context);

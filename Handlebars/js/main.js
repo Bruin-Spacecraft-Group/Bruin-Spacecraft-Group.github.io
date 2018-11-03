@@ -25,18 +25,15 @@ window.onclick = function(event) {
       //console.log("closing")
     }
     else{
-      console.log("do nothing")
+      //console.log("do nothing")
     }
   }
 }
 
 
 function toggleMenu(childMenu) {
-  console.log("got here")
   parentMenu = document.getElementById(childMenu).dataset.parent
-  console.log(parentMenu)
   document.getElementById(parentMenu).classList.toggle('mob-nav__menu--closed')
   document.getElementById(parentMenu).classList.toggle('mob-nav__menu--open')
   $("#"+childMenu).toggleClass('mob-nav__menu--closed').toggleClass('mob-nav__menu--open')
-  console.log("got here")
 }

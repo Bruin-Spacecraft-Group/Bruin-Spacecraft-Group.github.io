@@ -1,8 +1,7 @@
 var context = {
-  //'scripts': [
-    //{'link': 'js/main.js'},
-    //{'link': 'js/config.js'}
-  //],
+  "animate": `${links.css}/animate.css`,
+  "main": `${links.css}/design.min.css`,
+  "favicon":links.favicon,
   'theme_color': '#000'
 }
 
