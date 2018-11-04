@@ -946,12 +946,45 @@ footer {
   }
 }
 
+.officer-card {
+  display: flex;
+  flex-direction: column;
+  .card-cover {
+    width: 100%;
+  }
+  .card-detail {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .officer-card {
+    flex-direction: row;
+    .card-cover {
+      width: 45%;
+    }
+    .card-detail {
+      width: 55%;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .officer-card {
+    .card-cover {
+      width: 40%;
+    }
+    .card-detail {
+      width: 60%;
+    }
+  }
+}
+
 .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
   display: flex;
   flex-direction: column;
   .paragraph-container {
     width: 100%;
-    padding: 0vw 0vw;
   }
   .image-container{
     width: 100%;
@@ -971,7 +1004,7 @@ footer {
 
 @media (min-width: $tablet) {
   .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
-    flex-direction: row-reverse;
+    flex-direction: row;
     .paragraph-container {
       width: 55%;
       padding: 1vw 2vw;
