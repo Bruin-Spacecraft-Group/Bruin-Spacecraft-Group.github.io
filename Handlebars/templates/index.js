@@ -1,4 +1,5 @@
 var context = {
+  'video-link': `${links.videos}/background.mp4`,
   "slides": [
     {
       "active": "active",
