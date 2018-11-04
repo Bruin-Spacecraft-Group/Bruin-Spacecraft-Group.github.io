@@ -1,6 +1,6 @@
 $white: #FFFFFF;
 $white-semi-transparent: rgba(255,255,255,0.6);
-$black: #000;
+$black: #1A1A1A;
 $bright-yellow: #fff711;
 $deep-space: #16293E;
 $moon: #D5DDE1;
@@ -8,6 +8,7 @@ $stone: #7CA2B5;
 $ozone: #00EBFA;
 $bloom: #2CE993;
 $bright-blue: #00BBFF;
+$alt-bright-blue: #2994D1;
 $navy: #203C5B;
 $phone: 480px;
 $tablet: 768px;
@@ -503,21 +504,99 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 
       h1 {
         z-index: 1;
-        font-size: 10rem;
+        font-size: 6rem;
         font-weight: bold;
       }
       h2 {
         z-index: 1;
-        font-size: 8rem;
+        font-size: 4rem;
         font-weight: bold;
       }
       h3 {
         z-index: 1;
-        font-size: 6rem;
+        font-size: 2rem;
         font-weight: bold;
       }
     }
   }
+}
+
+.scrollDown {
+  position: absolute;
+  top: 75vh;
+  width: 100vw;
+  text-align: center;
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  .video {
+    .caption__container {
+      .caption{
+        h1 {
+          font-size: 10rem;
+        }
+        h2 {
+          font-size: 8rem;
+        }
+        h3 {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+  .scrollDown {
+    h3 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+  margin-top: 10px;
+}
+
+.arrows path {
+	stroke: $accent-color;
+	fill: transparent;
+	stroke-width: 2px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
 .imageCarousel {
@@ -847,6 +926,7 @@ footer {
   top: 5vh;
   left: 1vw;
   h1 {
+    text-shadow: 0 0 20px black;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     /*border: solid 2px black;*/
@@ -936,47 +1016,47 @@ footer {
 
 #rapid-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/PCBs.jpg');
+    background-image: url('../images/PCBs.jpg');
   }
 }
 #reach-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/Logos/Reach Photo 2.png');
+    background-image: url('../images/pictures/breadboard.jpg');
   }
 }
 #overseer-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/Logos/Overseer Photo 2.png');
+    background-image: url('../images/pictures/Overseer.JPG');
   }
 }
 #sandbox-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/Logos/Sandbox Photo 2.png');
+    background-image: url('../images/pictures/NBL.jpg');
   }
 }
 #endeavour-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/Logos/Endeavour Photo.png');
+    background-image: url('../images/pictures/Endeavour Landscape.jpg');
   }
 }
 #team-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
+    background-image: url('../images/background.jpg');
   }
 }
 #sponsor-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
+    background-image: url('../images/background.jpg');
   }
 }
 #calendar-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
+    background-image: url('../images/background.jpg');
   }
 }
 #forms-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../../views/images/background.jpg');
+    background-image: url('../images/background.jpg');
   }
 }
 
@@ -1109,5 +1189,63 @@ articles
     width: 90vw;
     height: 90vh;
     margin: 2.5vh 5vw;
+  }
+}
+
+
+.officer-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.officer-card {
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  margin: 2.5vw;
+  width: 45vw;
+  height: 50vw;
+  .card-cover {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .caption {
+      margin-top: -50%;
+      z-index: 3;
+      text-shadow: 0 0 20px black;
+    }
+  }
+  .card-detail {
+    z-index: 1;
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .officer-card {
+    width: 35vw;
+    height: 40vw;
+    margin: 2vw;
+  }
+  .caption{
+    margin-top: -30%;
+  }
+}
+
+@media (min-width: $laptop) {
+  .officer-card {
+    width: 30vw;
+    height: 35vw;
+    margin: 1vw;
+  }
+  .caption{
+    margin-top: -30%;
   }
 }

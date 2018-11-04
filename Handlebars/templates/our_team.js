@@ -7,27 +7,27 @@ var context = {
       "about": `<p>Yeah, I basically do everything, so that's fun</p>`
     },
     {
-      "name":":(",
+      "name": "Andrew Evans",
       "position":"Internal Vice President",
-      "picture":"",
+      "picture":`${links.pictures}/andrew.jpg`,
       "about":""
     },
     {
-      "name":":(",
+      "name": "Andrew Evans",
       "position":"External Vice President",
-      "picture":"",
+      "picture":`${links.pictures}/andrew.jpg`,
       "about":""
     },
     {
-      "name":":(",
+      "name": "Andrew Evans",
       "position":"Vice President of Marketing",
-      "picture":"",
+      "picture":`${links.pictures}/andrew.jpg`,
       "about":""
     },
     {
       "name":"Daniel Hu",
       "position":"Vice President of Finance",
-      "picture":"",
+      "picture":`${links.pictures}/stick_figure.jpeg`,
       "about":"<p>My only friend</p>"
     }
   ],

@@ -17,21 +17,25 @@
         Bruin Space is run by a board of five officers: President, Interal Vice President, External Vice President, Vice President of Marketing, and Vice President of Finance.
       </p>
     </div>
-    {{#each officers}}
-      <div class="officer-card">
-        <div class="card-cover">
-          <img src="{{picture}}"></img>
-          <h3>{{name}}</h3>
-          <p>{{position}}</p>
-        </div>
-        <div class="card-detail hidden">
-          <h2>About Me</h2>
-          <div class="officer-about">
-            {{{about}}}
+    <div class="officer-cards__container">
+      {{#each officers}}
+        <div class="officer-card dark">
+          <div class="card-cover">
+            <img src="{{picture}}"></img>
+            <div class="caption">
+              <h3>{{name}}</h3>
+              <p>{{position}}</p>
+            </div>
+          </div>
+          <div class="card-detail hidden">
+            <h2>About Me</h2>
+            <div class="officer-about">
+              {{{about}}}
+            </div>
           </div>
         </div>
-      </div>
-    {{/each}}
+      {{/each}}
+    </div>
   </div>
   <div class="team-wrapper">
     <div class="title">

@@ -4,7 +4,8 @@ let localPaths = {
   'prod':   '',
 };
 
-let localPath = localPaths.andy;
+//let localPath = localPaths.andy;
+let localPath = localPaths.andrew;
 
 var links = {
   'index':    `${localPath}/index.html`,
