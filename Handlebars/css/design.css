@@ -800,6 +800,10 @@ footer h2 {
 footer .button {
   padding: 0.5vw;
 }
+footer .contact a:link, footer .contact a:hover, footer .contact a:visited, footer .contact a:active {
+  color: #FFFFFF;
+  font-weight: bold;
+}
 
 .text-image__container {
   padding: 0;

@@ -806,6 +806,12 @@ footer {
     .button {
       padding: 0.5vw;
     }
+    .contact {
+      a:link, a:hover, a:visited, a:active {
+        color: #FFFFFF;
+        font-weight: bold;
+      }
+    }
 }
 
 
