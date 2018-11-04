@@ -1,11 +1,12 @@
 let localPaths = {
   'andrew': 'C:/Users/andre/OneDrive/Documents/BruinSpace/Bruin-Spacecraft-Group.github.io/Handlebars',
   'andy':   '/Users/Andy/Andy/Undergrad/Year_1/bspace/Bruin-Spacecraft-Group.github.io/Handlebars',
-  'prod':   '',
+  'prod':   '/Handlebars',
 };
 
 //let localPath = localPaths.andy;
-let localPath = localPaths.andrew;
+//let localPath = localPaths.andrew;
+let localPath = localPaths.prod;
 
 var links = {
   'index':    `${localPath}/index.html`,
