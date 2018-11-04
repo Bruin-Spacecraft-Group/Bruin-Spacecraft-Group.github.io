@@ -179,11 +179,11 @@ templates['our_team'] = template({"1":function(container,depth0,helpers,partials
 
   return "      <div class=\"officer-card\">\n        <div class=\"card-cover\">\n          <img src=\""
     + alias4(((helper = (helper = helpers.picture || (depth0 != null ? depth0.picture : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"picture","hash":{},"data":data}) : helper)))
-    + "\"></img>\n          <h3>"
+    + "\"></img>\n        </div>\n        <div class=\"card-detail\">\n          <h2>"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</h3>\n          <p>"
+    + "</h2>\n          <p>"
     + alias4(((helper = (helper = helpers.position || (depth0 != null ? depth0.position : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"position","hash":{},"data":data}) : helper)))
-    + "</p>\n        </div>\n        <div class=\"card-detail hidden\">\n          <h2>About Me</h2>\n          <div class=\"officer-about\">\n            "
+    + "</p>\n          <div class=\"officer-about\">\n            "
     + ((stack1 = ((helper = (helper = helpers.about || (depth0 != null ? depth0.about : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"about","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "\n          </div>\n        </div>\n      </div>\n";
 },"3":function(container,depth0,helpers,partials,data) {

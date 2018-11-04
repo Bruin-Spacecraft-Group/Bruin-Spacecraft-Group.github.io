@@ -850,6 +850,36 @@ footer .button {
   text-align: left;
 }
 
+.officer-card {
+  display: flex;
+  flex-direction: column;
+}
+.officer-card .card-cover {
+  width: 100%;
+}
+.officer-card .card-detail {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .officer-card {
+    flex-direction: row;
+  }
+  .officer-card .card-cover {
+    width: 45%;
+  }
+  .officer-card .card-detail {
+    width: 55%;
+  }
+}
+@media (min-width: 1024px) {
+  .officer-card .card-cover {
+    width: 40%;
+  }
+  .officer-card .card-detail {
+    width: 60%;
+  }
+}
 .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
   display: flex;
   flex-direction: column;
