@@ -9,8 +9,8 @@ var context = {
   "marketing":`<a href="${links.admin}#marketing">Marketing</a>`,
   "calendar": `<a href="${links.calendar}">calendar</a>`,
 
-  "yourPlace":`${links.pictures}/yourPlace.png`,
-  "slack":`${links.pictures}/slack.png`
+  "yourPlace":`${links.pictures}/standardFamily.jpg`,
+  "slack":`${links.pictures}/slack_rgb.png`
 }
 
 var templateScript = Handlebars.templates.join(context);

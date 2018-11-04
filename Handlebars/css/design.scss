@@ -312,14 +312,16 @@ h1, h2, h3 {
   }
 }
 
-.mob-nav__link--active,.mob-nav__link.section,.mob-nav__link:focus,.mob-nav__link:hover,.mob-nav__trigger--active,.mob-nav__trigger.section,.mob-nav__trigger:focus,.mob-nav__trigger:hover{
+.mob-nav__link--active, .mob-nav__link.section, .mob-nav__link:focus, .mob-nav__link:hover, .mob-nav__trigger--active,
+.mob-nav__trigger.section, .mob-nav__trigger:focus, .mob-nav__trigger:hover {
     color: $accent-color;
     outline: none;
     border-color: $accent-color;
     box-shadow: 0 0 10px $accent-color;
 }
 
-.mob-nav__link--active svg,.mob-nav__link.section svg,.mob-nav__link:focus svg,.mob-nav__link:hover svg,.mob-nav__trigger--active svg,.mob-nav__trigger.section svg,.mob-nav__trigger:focus svg,.mob-nav__trigger:hover svg {
+.mob-nav__link--active svg, .mob-nav__link.section svg, .mob-nav__link:focus svg, .mob-nav__link:hover svg,
+.mob-nav__trigger--active svg, .mob-nav__trigger.section svg, .mob-nav__trigger:focus svg, .mob-nav__trigger:hover svg {
     fill: $accent-color
 }
 
