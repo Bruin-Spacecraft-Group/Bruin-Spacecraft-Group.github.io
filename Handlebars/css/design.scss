@@ -871,7 +871,6 @@ footer {
   flex-direction: column;
   .paragraph-container {
     width: 100%;
-    padding: 0vw 0vw;
   }
   .image-container{
     width: 100%;
@@ -891,7 +890,7 @@ footer {
 
 @media (min-width: $tablet) {
   .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
-    flex-direction: row-reverse;
+    flex-direction: row;
     .paragraph-container {
       width: 55%;
       padding: 1vw 2vw;
