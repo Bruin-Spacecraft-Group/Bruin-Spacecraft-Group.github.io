@@ -1197,6 +1197,9 @@ articles
     height: auto;
   }
 }
+.gCalWrapper {
+  background-color: #FFFFFF;
+}
 .gCalWrapper iframe {
   width: 90vw;
   height: 90vh;
