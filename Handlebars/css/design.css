@@ -517,6 +517,7 @@ div.site-nav__link:focus, div.site-nav__link:hover {
   top: 80vh;
   width: 100vw;
   text-align: center;
+  cursor: pointer;
 }
 .scrollDown h3 {
   font-size: 2rem;
@@ -818,7 +819,7 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
 }
 .text-image img {
   display: block;
-  overflow: hidden;
+  object-fit: contain;
   max-height: 50vh;
   height: auto;
   width: auto;
@@ -1055,7 +1056,7 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
 }
 
 #endeavour-wrapper .parallax-image-header, #endeavour-wrapper .parallax-image-header__follow {
-  background-image: url("../images/pictures/Endeavour Landscape.jpg");
+  background-image: url("../images/pictures/aurora.jpg");
 }
 
 #team-wrapper .parallax-image-header, #team-wrapper .parallax-image-header__follow {

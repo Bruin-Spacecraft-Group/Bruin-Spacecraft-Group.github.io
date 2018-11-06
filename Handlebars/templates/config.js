@@ -5,8 +5,8 @@ let localPaths = {
 };
 
 //let localPath = localPaths.andy;
-//let localPath = localPaths.andrew;
-let localPath = localPaths.prod;
+let localPath = localPaths.andrew;
+//let localPath = localPaths.prod;
 
 var links = {
   'index':    `${localPath}/index.html`,

@@ -531,6 +531,7 @@ div.site-nav__link:focus,div.site-nav__link:hover {
   h3 {
     font-size: 2rem;
   }
+  cursor: pointer;
 }
 
 @media (min-width: $tablet) {
@@ -826,7 +827,7 @@ footer {
   }
   img {
     display: block;
-    overflow: hidden;
+    object-fit: contain;
     max-height: 50vh;
     height: auto;
     width: auto;
@@ -1077,7 +1078,7 @@ footer {
 }
 #endeavour-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/Endeavour Landscape.jpg');
+    background-image: url('../images/pictures/aurora.jpg');
   }
 }
 #team-wrapper{
