@@ -783,10 +783,27 @@ footer #mc_embed_signup #mc_embed_signup_scroll .mc-field-group label {
   font-size: 1.4rem;
 }
 footer .social-media-links {
+  margin-top: 10px;
   padding: 0.5vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+footer .social-media-links img {
+  width: 35px;
+  height: 35px;
+}
+@media (min-width: 768px) {
+  footer .social-media-links img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .social-media-links img {
+    width: 45px;
+    height: 45px;
+  }
 }
 footer img {
   height: 4vw;

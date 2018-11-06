@@ -767,52 +767,69 @@ div.site-nav__link:focus,div.site-nav__link:hover {
 }
 
 footer {
-    width: 100vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #mc_embed_signup {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
 
-    #mc_embed_signup {
+    #mc_embed_signup_scroll {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-      #mc_embed_signup_scroll {
-        width: 100%;
-        .mc-field-group {
-          label {
-            font-size: 1.4rem;
-          }
+      .mc-field-group {
+        label {
+          font-size: 1.4rem;
         }
       }
     }
+  }
 
-    .social-media-links {
-      padding: 0.5vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+  .social-media-links {
+    margin-top: 10px;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     img {
-        height: 4vw;
-        width: 4vw;
-        padding: .5vw;
+      width: 35px;
+      height: 35px;
     }
-    h2 {
-      margin: 0;
-      padding: 0.5vw;
-      width: 100%;
-    }
-    .button {
-      padding: 0.5vw;
-    }
-    .contact {
-      a:link, a:hover, a:visited, a:active {
-        color: #FFFFFF;
-        font-weight: bold;
+    @media (min-width: $tablet) {
+      img {
+        width: 40px;
+        height: 40px;
       }
     }
+    @media (min-width: $laptop) {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  img {
+      height: 4vw;
+      width: 4vw;
+      padding: .5vw;
+  }
+  h2 {
+    margin: 0;
+    padding: 0.5vw;
+    width: 100%;
+  }
+  .button {
+    padding: 0.5vw;
+  }
+  .contact {
+    a:link, a:hover, a:visited, a:active {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+  }
 }
 
 
