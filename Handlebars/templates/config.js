@@ -4,8 +4,8 @@ let localPaths = {
   'prod':   '/Handlebars',
 };
 
-//let localPath = localPaths.andy;
-let localPath = localPaths.andrew;
+let localPath = localPaths.andy;
+//let localPath = localPaths.andrew;
 //let localPath = localPaths.prod;
 
 var links = {
@@ -22,6 +22,7 @@ var links = {
   'forms':    `${localPath}/resources/forms.html`,
   'articles': `${localPath}/articles`,
   'videos':   `${localPath}/images/videos`,
+  'people':   `${localPath}/images/people`,
   'pictures': `${localPath}/images/pictures`,
   'logos':    `${localPath}/images/Logos`,
   'icons':    `${localPath}/images/Icons`,

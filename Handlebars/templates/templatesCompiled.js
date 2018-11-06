@@ -212,9 +212,9 @@ templates['our_team'] = template({"1":function(container,depth0,helpers,partials
     + container.escapeExpression(((helper = (helper = helpers.officersPhoto || (depth0 != null ? depth0.officersPhoto : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"officersPhoto","hash":{},"data":data}) : helper)))
     + "\">-->\n      <p class=\"paragraph-container\">\n        Bruin Space is run by a board of five officers: President, Interal Vice President, External Vice President, Vice President of Marketing, and Vice President of Finance.\n      </p>\n    </div>\n    <div class=\"officer-cards__container\">\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.officers : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </div>\n  </div>\n  <div class=\"team-wrapper\">\n    <div class=\"title\">\n      <h1>The Projects</h1>\n      <p>A quick look at the teams</p>\n    </div>\n"
+    + "    </div>\n  </div>\n  <!--\n  <div class=\"team-wrapper\">\n    <div class=\"title\">\n      <h1>The Projects</h1>\n      <p>A quick look at the teams</p>\n    </div>\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.teams : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "  </div>\n  <div class=\"parallax-image-2 parallax-image\"></div>\n</div>\n";
+    + "  </div>\n  <div class=\"parallax-image-2 parallax-image\"></div>\n  -->\n</div>\n";
 },"useData":true});
 templates['sponsor'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;

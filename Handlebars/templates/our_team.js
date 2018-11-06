@@ -1,37 +1,37 @@
 var context = {
-  "officers":[
+  'officers':[
     {
-      "name": "Andrew Evans",
-      "position": "President",
-      "picture": `${links.pictures}/andrew.jpg`,
-      "about": `<p>Yeah, I basically do everything, so that's fun</p>`
+      'name':     'Andrew Evans',
+      'position': 'President',
+      'picture':  `${links.people}/andrew.jpg`,
+      'about':    `<p>Yeah, I basically do everything, so that's fun</p>`
     },
     {
-      "name": "Andrew Evans",
-      "position":"Internal Vice President",
-      "picture":`${links.pictures}/andrew.jpg`,
-      "about":""
+      'name':     'Nadine Tabucol',
+      'position': 'Internal Vice President',
+      'picture':  `${links.people}/nadine.jpg`,
+      'about':    ''
     },
     {
-      "name": "Andrew Evans",
-      "position":"External Vice President",
-      "picture":`${links.pictures}/andrew.jpg`,
-      "about":""
+      'name':     'Eva Abramson',
+      'position': 'External Vice President',
+      'picture':  `${links.people}/eva.jpg`,
+      'about':    ''
     },
     {
-      "name": "Andrew Evans",
-      "position":"Vice President of Marketing",
-      "picture":`${links.pictures}/andrew.jpg`,
-      "about":""
+      'name':     'Hanphenie Zhou',
+      'position': 'Vice President of Marketing',
+      'picture':  `${links.people}/hanphenie.jpg`,
+      'about':    ''
     },
     {
-      "name":"Daniel Hu",
-      "position":"Vice President of Finance",
-      "picture":`${links.pictures}/stick_figure.jpeg`,
-      "about":"<p>My only friend</p>"
+      'name':     'Daniel Hu',
+      'position': 'Vice President of Finance',
+      'picture':  `${links.people}/stick_figure.jpeg`,
+      'about':    '<p>My only friend</p>'
     }
   ],
-  "teams": [
+  'teams': [
     {
 
     }
