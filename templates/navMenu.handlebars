@@ -1,0 +1,14 @@
+<nav class="mob-nav mob-nav--closed" id="MobMenu">
+  <ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
+    {{#each links}}
+      {{{element}}}
+    {{/each}}
+  </ul>
+  {{#each subMenus}}
+    <ul id="{{id}}" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="{{id}}">
+      {{#each subMenuLinks}}
+        {{{element}}}
+      {{/each}}
+    </ul>
+  {{/each}}
+</nav>
