@@ -6,19 +6,19 @@ var context = {
       "image": `${links.pictures}/earth.jpg`,
       "title": "Articles!",
       "subtitle": "Link to cool article",
-      "link": `${links.articles}/sampleArticle.html`
+      "link": `${links.articles}/articlesHome.html`
     },
     {
       "image": `${links.pictures}/jupiter.jpg`,
       "title": "Calm down",
       "subtitle": "it's a placeholder okay",
-      "link": ""
+      "link": `${links.articles}/articlesHome.html`
     },
     {
       "image": `${links.pictures}/saturn.jpg`,
       "title": "Calm down",
       "subtitle": "it's a placeholder okay",
-      "link": ""
+      "link": `${links.articles}/articlesHome.html`
     }
   ],
   "cards": [

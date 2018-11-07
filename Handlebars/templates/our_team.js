@@ -19,15 +19,15 @@ var context = {
       'about':    ''
     },
     {
-      'name':     'Hanphenie Zhou',
+      'name':     'Owen Weitzel',
       'position': 'Vice President of Marketing',
-      'picture':  `${links.people}/hanphenie.jpg`,
+      'picture':  `${links.people}/owen.jpg`,
       'about':    ''
     },
     {
       'name':     'Daniel Hu',
       'position': 'Vice President of Finance',
-      'picture':  `${links.people}/stick_figure.jpeg`,
+      'picture':  `${links.people}/daniel.jpg`,
       'about':    '<p>My only friend</p>'
     }
   ],

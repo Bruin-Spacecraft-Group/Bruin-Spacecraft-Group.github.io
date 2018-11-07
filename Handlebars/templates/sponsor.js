@@ -1,5 +1,5 @@
 var context = {
-  "why":`${links.pictures}/earth.jpg`
+  "video-link": `${links.videos}/launch.mp4`
 }
 
 var templateScript = Handlebars.templates.sponsor(context);

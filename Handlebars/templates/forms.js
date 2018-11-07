@@ -12,7 +12,7 @@ var context = {
                 + '?c=0&w=1',
     }, {
       'image': `${links.pictures}/W6YRA.png`,
-      'title': 'W6YRA Purchase Request',
+      'title': 'Lab Purchase Request',
       'link': 'https://docs.google.com/forms/d/e/1FAIpQLSeFM9pYp6UMF26-2qEJn81u1ZQ3LvgY3P8LKXgkMEFZkI-jrQ/viewform'
                 + '?c=0&w=1',
     }, {
