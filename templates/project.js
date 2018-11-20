@@ -41,7 +41,8 @@ var context = {
         }
       ]
     }
-  ]
+  ],
+  'missionWidgetJS': links.missionWidget
 }
 
 var templateScript = Handlebars.templates.project(context);

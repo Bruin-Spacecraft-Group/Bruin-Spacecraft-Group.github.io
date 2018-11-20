@@ -31,4 +31,5 @@ var links = {
   'sandbox_photos': `${localPath}/images/Sandbox`,
   'rapid_photos':   `${localPath}/images/Rapid`,
   'reach_photos':   `${localPath}/images/Reach`
+  'missionWidget': `${localPath}/js/missionWidget.js`
 };
