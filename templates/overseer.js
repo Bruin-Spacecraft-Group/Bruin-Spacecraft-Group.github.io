@@ -14,7 +14,7 @@ var context = {
     <li><span class="larger">Tracking</span> - responsible for designing and implementing radio technologies to track the balloon during its flight, ensuring reliable recovery</li>
   </ul>`,
 
-  "team_photo":`${links.overseer_photos}/Team Photo.jpg`,
+  "team_photo":`${links.overseer_photos}/Team Photo.JPG`,
   "pm": {
     "name":"Dacheng Li",
     "major":"Physics",
