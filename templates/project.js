@@ -1,9 +1,8 @@
 var context = {
-  "wrapper": "",
   "project": "",
   "project_title": "",
-  "project_subtitle":
-  "logo":
+  "project_subtitle":"",
+  "logo":`${links.logos}/`,
   "project_description":
   "team_description":
   "team_photo":
@@ -41,9 +40,18 @@ var context = {
         }
       ]
     }
-  ]
+  ],
+  'missionWidgetJS': links.missionWidget
 }
+
+Handlebars.registerHelper('if_even', function(conditional, options) {
+  if((conditional % 2) == 0) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
 
 var templateScript = Handlebars.templates.project(context);
 
-$(document.main).append(templateScript);
+$('main').append(templateScript);

@@ -240,19 +240,23 @@ templates['our_team'] = template({"1":function(container,depth0,helpers,partials
     + "  </div>\r\n  <div class=\"parallax-image-2 parallax-image\"></div>\r\n  -->\r\n</div>\r\n";
 },"useData":true});
 templates['project'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "	<div class=\"mission-wrapper\" id=\"BlueDawn\">\r\n		<div class=\"title\">\r\n			<h1>"
-    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+  return "	<div class=\"mission-wrapper\" id=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.title : stack1), depth0))
+    + "\">\r\n		<div class=\"title\">\r\n			<h1>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.title : stack1), depth0))
     + "</h1>\r\n			<p>"
-    + alias4(((helper = (helper = helpers.subtitle || (depth0 != null ? depth0.subtitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"subtitle","hash":{},"data":data}) : helper)))
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.subtitle : stack1), depth0))
     + "</p>\r\n		</div>\r\n		<div class=\"mission-description\">\r\n			<p class=\"paragraph-container\">\r\n				"
-    + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.description : stack1), depth0)) != null ? stack1 : "")
     + "\r\n			</p>\r\n		</div>\r\n		<div class=\"scrollable-content\">\r\n			<div class=\"scrollable-content__textboxes\">\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.scrollables : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.scrollables : stack1),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\r\n			<div class=\"scrollable-content__images\">\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.scrollables : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "			</div>\r\n			<script type=\"text/javascript\" src=\"../../public/js/missionWidget.js\"></script>\r\n		</div>\r\n	</div>\r\n";
+    + ((stack1 = helpers.each.call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.scrollables : stack1),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "			</div>\r\n			<script type=\"text/javascript\" src=\""
+    + alias2(((helper = (helper = helpers.missionWidgetJS || (depth0 != null ? depth0.missionWidgetJS : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias3,{"name":"missionWidgetJS","hash":{},"data":data}) : helper)))
+    + "\"></script>\r\n		</div>\r\n	</div>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
