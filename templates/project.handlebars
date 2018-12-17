@@ -36,19 +36,19 @@
 		</div>
 	</div>
 	{{#if mission}}
-	<div class="mission-wrapper" id="BlueDawn">
+	<div class="mission-wrapper" id="{{mission.title}}">
 		<div class="title">
-			<h1>{{title}}</h1>
-			<p>{{subtitle}}</p>
+			<h1>{{mission.title}}</h1>
+			<p>{{mission.subtitle}}</p>
 		</div>
 		<div class="mission-description">
 			<p class="paragraph-container">
-				{{description}}
+				{{{mission.description}}}
 			</p>
 		</div>
 		<div class="scrollable-content">
 			<div class="scrollable-content__textboxes">
-				{{#each scrollables}}
+				{{#each mission.scrollables}}
 					<div id="mission{{@index}}" class="scrollable-content__textbox" data-image="{{@index}}">
 						<h2>{{title}}</h2>
 						<p>
@@ -58,7 +58,7 @@
 				{{/each}}
 			</div>
 			<div class="scrollable-content__images">
-				{{#each scrollables}}
+				{{#each mission.scrollables}}
 					<img id="mission{{@index}}_image" data-image="{{@index}}" src="{{picture}}">
 				{{/each}}
 			</div>
