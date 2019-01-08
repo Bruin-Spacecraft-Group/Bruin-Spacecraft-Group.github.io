@@ -223,9 +223,13 @@ templates['our_team'] = template({"1":function(container,depth0,helpers,partials
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + "</h3>\r\n              <p>"
     + alias4(((helper = (helper = helpers.position || (depth0 != null ? depth0.position : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"position","hash":{},"data":data}) : helper)))
-    + "</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"card-detail hidden\">\r\n            <h2>About Me</h2>\r\n            <div class=\"officer-about\">\r\n              "
+    + "</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"card-detail\">\r\n            <h2>About Me</h2>\r\n            <div class=\"officer-about\">\r\n              "
     + ((stack1 = ((helper = (helper = helpers.about || (depth0 != null ? depth0.about : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"about","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\r\n            </div>\r\n          </div>\r\n        </div>\r\n";
+    + "\r\n            </div>\r\n            <a href="
+    + alias4(((helper = (helper = helpers.link || (depth0 != null ? depth0.link : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"link","hash":{},"data":data}) : helper)))
+    + " target=\"_blank\">\r\n              <img src="
+    + alias4(((helper = (helper = helpers.icon || (depth0 != null ? depth0.icon : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"icon","hash":{},"data":data}) : helper)))
+    + ">\r\n            </a>\r\n          </div>\r\n        </div>\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
     return "      <h1>PROJECT</h1>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {

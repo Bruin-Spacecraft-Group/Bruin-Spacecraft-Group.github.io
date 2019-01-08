@@ -40,7 +40,7 @@ var context = {
       "title":"Project Overseer",
       "subtitle":"High Altitude Balloons",
       "link":links.overseer,
-      "image":`${links.pictures}/OverseerPortrait.JPG`,
+      "image":`${links.pictures}/OverseerPortrait.jpg`,
       "logo":`${links.logos}/Overseer Outline.png`
     },
     {

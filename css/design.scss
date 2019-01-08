@@ -73,6 +73,9 @@ h1, h2, h3 {
 #page-wrapper {
   width: 100%;
 }
+.visible {
+  display: block;
+}
 /*Page Loader*/
 .page-loader {
     position: fixed;
@@ -973,39 +976,39 @@ footer {
   }
 }
 
-.officer-card {
-  display: flex;
-  flex-direction: column;
-  .card-cover {
-    width: 100%;
-  }
-  .card-detail {
-    width: 100%;
-  }
-}
-
-@media (min-width: $tablet) {
-  .officer-card {
-    flex-direction: row;
-    .card-cover {
-      width: 45%;
-    }
-    .card-detail {
-      width: 55%;
-    }
-  }
-}
-
-@media (min-width: $laptop) {
-  .officer-card {
-    .card-cover {
-      width: 40%;
-    }
-    .card-detail {
-      width: 60%;
-    }
-  }
-}
+// .officer-card {
+//   display: flex;
+//   flex-direction: column;
+//   .card-cover {
+//     width: 100%;
+//   }
+//   .card-detail {
+//     width: 100%;
+//   }
+// }
+//
+// @media (min-width: $tablet) {
+//   .officer-card {
+//     flex-direction: row;
+//     .card-cover {
+//       width: 45%;
+//     }
+//     .card-detail {
+//       width: 55%;
+//     }
+//   }
+// }
+//
+// @media (min-width: $laptop) {
+//   .officer-card {
+//     .card-cover {
+//       width: 40%;
+//     }
+//     .card-detail {
+//       width: 60%;
+//     }
+//   }
+// }
 
 .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
   display: flex;
@@ -1273,6 +1276,8 @@ articles
   margin: 2.5vw;
   width: 45vw;
   height: 50vw;
+  position: relative;
+  transition: all 0.5s;
   .card-cover {
     width: 100%;
     height: 100%;
@@ -1291,6 +1296,52 @@ articles
   }
   .card-detail {
     z-index: 1;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    color: $white;
+    padding: 5vw;
+    h2 {
+      border-bottom: 2px solid $white;
+    }
+    img {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 35px;
+      height: 35px;
+    }
+    @media (min-width: $tablet) {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    @media (min-width: $laptop) {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  &:hover, &:active, &:focus {
+    width: 90vw;
+    height: 100vw;
+    .card-cover {
+      z-index: 1;
+      .card-caption {
+        display: none;
+      }
+    }
+    .card-detail{
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -1300,9 +1351,14 @@ articles
     width: 35vw;
     height: 40vw;
     margin: 2vw;
-  }
-  .card-caption{
-    margin-top: -30%;
+
+    .card-caption{
+      margin-top: -30%;
+    }
+    &:hover, &:active, &:focus {
+      width: 70vw;
+      height: 40vw;
+    }
   }
 }
 
@@ -1311,9 +1367,14 @@ articles
     width: 30vw;
     height: 35vw;
     margin: 1vw;
-  }
-  .card-caption{
-    margin-top: -30%;
+
+    .card-caption{
+      margin-top: -30%;
+    }
+    &:hover, &:active, &:focus {
+      width: 60vw;
+      height: 35vw;
+    }
   }
 }
 

@@ -9,7 +9,7 @@ var context = {
   "marketing":`<a href="${links.admin}#marketing">Marketing</a>`,
   "calendar": `<a href="${links.calendar}">calendar</a>`,
 
-  "yourPlace":`${links.pictures}/meeting2.jpg`,
+  "yourPlace":`${links.pictures}/meeting2.JPG`,
   "slack":`${links.pictures}/slack_rgb.png`
 }
 
