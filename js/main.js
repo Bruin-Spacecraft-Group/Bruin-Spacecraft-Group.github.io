@@ -8,23 +8,19 @@ window.onclick = function(event) {
       $('#MobMenu').removeClass('mob-nav--open')
       $('#MobMenu').addClass('mob-nav--closed')
       //console.log("closing")
-    }
-    else{
+    } else {
       $('#MobMenu').addClass('mob-nav--open')
       $('#MobMenu').removeClass('mob-nav--closed')
       //console.log("opening")
     }
-  }
-  else {
+  } else {
     if ($(event.target).closest("#MobMenu").length > 0){
       console.log("leaving open")
-    }
-    else if ($('#MobMenu').hasClass('mob-nav--open')){
+    } else if ($('#MobMenu').hasClass('mob-nav--open')){
       $('#MobMenu').removeClass('mob-nav--open')
       $('#MobMenu').addClass('mob-nav--closed')
       //console.log("closing")
-    }
-    else{
+    } else {
       //console.log("do nothing")
     }
   }

@@ -1,12 +1,12 @@
 let localPaths = {
   'andrew': 'C:/Users/andre/OneDrive/Documents/BruinSpace/Bruin-Spacecraft-Group.github.io/',
-  'andy':   '/Users/Andy/Andy/Undergrad/Year_1/bspace/Bruin-Spacecraft-Group.github.io/Handlebars',
+  'andy':   '/Users/Andy/Andy/Undergrad/Year_1/bspace/Bruin-Spacecraft-Group.github.io/',
   'prod':   '',
 };
 
-//let localPath = localPaths.andy;
+let localPath = localPaths.andy;
 //let localPath = localPaths.andrew;
-let localPath = localPaths.prod;
+//let localPath = localPaths.prod;
 
 var links = {
   'index':    `${localPath}/index.html`,
@@ -28,10 +28,10 @@ var links = {
   'icons':    `${localPath}/images/Icons`,
   'favicon':  `${localPath}/images/favicon`,
   'css':      `${localPath}/css`,
-  'sandbox_photos': `${localPath}/images/Sandbox`,
-  'rapid_photos':   `${localPath}/images/Rapid`,
-  'reach_photos':   `${localPath}/images/Reach`,
-  'overseer_photos':   `${localPath}/images/Overseer`,
-  'endeavour_photos':   `${localPath}/images/Endeavour`,
-  'missionWidget': `${localPath}/js/missionWidget.js`
+  'sandbox_photos':   `${localPath}/images/Sandbox`,
+  'rapid_photos':     `${localPath}/images/Rapid`,
+  'reach_photos':     `${localPath}/images/Reach`,
+  'overseer_photos':  `${localPath}/images/Overseer`,
+  'endeavour_photos': `${localPath}/images/Endeavour`,
+  'missionWidget':    `${localPath}/js/missionWidget.js`
 };
