@@ -19,7 +19,7 @@ var context = {
     "name":"Dacheng Li",
     "major":"Physics",
     "year":"2nd Year",
-    "email":""
+    "email":"dacheng.li3@gmail.com"
   },
   "ce": {
     "name":"Taylor Lonner",
