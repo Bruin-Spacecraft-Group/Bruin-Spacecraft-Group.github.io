@@ -1127,6 +1127,11 @@ footer {
     background-image: url('../images/pictures/w6yraSunset2.jpg');
   }
 }
+#admin-wrapper{
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../images/pictures/bruinSpacefinal.jpg');
+  }
+}
 
 .scrollable-content {
   display: flex;
@@ -1583,3 +1588,37 @@ https://codepen.io/jasondavis/pen/fDGdK
     padding: 20px 120px;
   }
 }
+
+.notif-banner {
+  position: fixed;
+  padding: 10px;
+  top: 50px;
+  right: 25px;
+  width: 320px;
+  height: 60px;
+  border-radius: 25px;
+  background-color: green;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.notif-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notif-text {
+  width: 300px;
+  text-align: center;
+}
+
+#close-banner {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  right: 10px;
+  font-size: 25px;
+}
+

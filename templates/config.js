@@ -1,6 +1,6 @@
 let localPaths = {
   'andrew': 'C:/Users/andre/OneDrive/Documents/BruinSpace/Bruin-Spacecraft-Group.github.io/',
-  'andy':   '/Users/Andy/Andy/Undergrad/Year_1/bspace/Bruin-Spacecraft-Group.github.io/Handlebars',
+  'andy':   '/Users/Andy/Andy/Undergrad/Year_1/bspace/Bruin-Spacecraft-Group.github.io/',
   'prod':   '',
 };
 
@@ -21,6 +21,7 @@ var links = {
   'calendar': `${localPath}/resources/calendar.html`,
   'forms':    `${localPath}/resources/forms.html`,
   'articles': `${localPath}/articles`,
+  'admin': `${localPath}/admin.html`,
   'videos':   `${localPath}/images/videos`,
   'people':   `${localPath}/images/people`,
   'pictures': `${localPath}/images/pictures`,
@@ -28,10 +29,10 @@ var links = {
   'icons':    `${localPath}/images/Icons`,
   'favicon':  `${localPath}/images/favicon`,
   'css':      `${localPath}/css`,
-  'sandbox_photos': `${localPath}/images/Sandbox`,
-  'rapid_photos':   `${localPath}/images/Rapid`,
-  'reach_photos':   `${localPath}/images/Reach`,
-  'overseer_photos':   `${localPath}/images/Overseer`,
-  'endeavour_photos':   `${localPath}/images/Endeavour`,
-  'missionWidget': `${localPath}/js/missionWidget.js`
+  'sandbox_photos':   `${localPath}/images/Sandbox`,
+  'rapid_photos':     `${localPath}/images/Rapid`,
+  'reach_photos':     `${localPath}/images/Reach`,
+  'overseer_photos':  `${localPath}/images/Overseer`,
+  'endeavour_photos': `${localPath}/images/Endeavour`,
+  'missionWidget':    `${localPath}/js/missionWidget.js`
 };

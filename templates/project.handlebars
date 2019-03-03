@@ -32,6 +32,12 @@
 				<p>{{pm.name}}</p>
 				<p>{{pm.major}}, {{pm.year}}</p>
 				<a href="mailto:{{pm.email}}">{{pm.email}}</a>
+				{{#if ce}}
+				<h2>Chief Engineer</h2>
+				<p>{{ce.name}}</p>
+				<p>{{ce.major}}, {{ce.year}}</p>
+				<a href="mailto:{{ce.email}}">{{ce.email}}</a>
+				{{/if}}
 			</div>
 		</div>
 	</div>
