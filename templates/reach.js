@@ -12,6 +12,12 @@ var context = {
     "major":"Computer Science",
     "year":"2nd Year",
     "email":"hirday@ucla.edu",
+  },
+  "ce": {
+    "name":"Justin Neal",
+    "major":"Aerospace Engineering",
+    "year":"2nd Year",
+    "email":"",
   }/*,
   "mission": {
     "title":"",

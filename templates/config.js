@@ -21,6 +21,7 @@ var links = {
   'calendar': `${localPath}/resources/calendar.html`,
   'forms':    `${localPath}/resources/forms.html`,
   'articles': `${localPath}/articles`,
+  'admin': `${localPath}/admin.html`,
   'videos':   `${localPath}/images/videos`,
   'people':   `${localPath}/images/people`,
   'pictures': `${localPath}/images/pictures`,

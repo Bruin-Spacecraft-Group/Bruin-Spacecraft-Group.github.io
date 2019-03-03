@@ -21,6 +21,12 @@ var context = {
     "year":"2nd Year",
     "email":""
   },
+  "ce": {
+    "name":"Taylor Lonner",
+    "major":"Physics",
+    "year":"3rd Year",
+    "email":""
+  },
   "mission": {
     "title": "Horizon",
     "subtitle": "Overseer 2.0",
@@ -29,17 +35,22 @@ var context = {
       {
         "title": "Overview",
         "description":"Building on the lessons learned last year with Aperture, we have embarked on a redesign of our system. The focus is now on modular design, as we aim to build a versatile platform capable of supporting multiple missions.",
-        "picture":`${links.overseer_photos}/proposed_overview.png`
+        "picture":`${links.overseer_photos}/full.jpg`
+      },
+      {
+        "title": "Mechanical Structure",
+        "description": "To ensure the safety of our components and facilitate assembly of the system, we have designed a 3D printed support structure. The racks are modular, allowing for multi-mission compatibility.",
+        "picture":`${links.overseer_photos}/Mech.jpg`
       },
       {
         "title": "Electrical System",
         "description": "Our system would not function without our electrical backbone, visualized here by the Raspberry Pi 3B and the location of some AA battery holders. This configuration is designed to give Overseer a wealth of computational power and an acceptable level of battery power. However, given the modular design, it is simple to insert more battery packs for longer duration or higher power missions.",
-        "picture":`${links.overseer_photos}/proposed_electrical.png`
+        "picture":`${links.overseer_photos}/Elec.jpg`
       },
       {
-        "title": "Multi-project Modularity",
-        "description": "While our project does not feature much internal storage space, its multi-mission module (currently configured to support a GoPro-like camera) can be quickly swapped in for another module should the need arise, allowing for easy swapping and fast turnaround between missions.",
-        "picture":`${links.overseer_photos}/proposed_payload.png`
+        "title": "Telemetry and Tracking",
+        "description": "To keep track of our system after it has risen out of view, we have two tracking modules: the Pi in the Sky system, and the Tracksoar v2.0. These systems trasnmit GPS data for us to follow, facilitating sucessful recovery of the payload.",
+        "picture":`${links.overseer_photos}/Comm.jpg`
       }
     ]
   }/*,
