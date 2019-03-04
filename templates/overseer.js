@@ -25,7 +25,7 @@ var context = {
     "name":"Taylor Lonner",
     "major":"Physics",
     "year":"3rd Year",
-    "email":""
+    "email":"Tlonner@g.ucla.edu"
   },
   "mission": {
     "title": "Horizon",

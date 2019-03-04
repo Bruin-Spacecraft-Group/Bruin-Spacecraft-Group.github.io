@@ -769,6 +769,41 @@ div.site-nav__link:focus,div.site-nav__link:hover {
   border-color: $accent-color;
 }
 
+#counters {
+  display: flex;
+  justify-content: space-around;
+  .countBox {
+    color: $white;
+    .counter {
+      font-size: 10vw;
+      text-align: center;
+      border-bottom: 1px solid $accent-color;
+    }
+    #memberCounter::after {
+      content: "+";
+    }
+    h2 {
+      font-size: 4vw;
+      text-align: center;
+    }
+    @media (min-width: $tablet) {
+      .counter {
+        font-size: 6vw;
+      }
+      h2 {
+        font-size: 3vw;
+      }
+    }
+    @media (min-width: $laptop) {
+      .counter {
+        font-size: 4vw;
+      }
+      h2 {
+        font-size: 2vw;
+      }
+    }
+  }
+}
 footer {
   width: 100vw;
   display: flex;
@@ -1071,12 +1106,23 @@ footer {
   height: 5vh;
 }
 .parallax-image-1 {
-  height: 30vh;
+  height: 20vh;
+}
+.parallax-image-1__follow {
+  height: 10vh;
 }
 .parallax-image-2 {
   height: 30vh;
 }
 
+#index-wrapper{
+  .parallax-image-1, .parallax-image-1__follow {
+    background-image: url('../images/pictures/aurora.jpg');
+  }
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../images/pictures/PCBs.jpg');
+  }
+}
 #rapid-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../images/pictures/PCBs.jpg');
@@ -1621,4 +1667,3 @@ https://codepen.io/jasondavis/pen/fDGdK
   right: 10px;
   font-size: 25px;
 }
-
