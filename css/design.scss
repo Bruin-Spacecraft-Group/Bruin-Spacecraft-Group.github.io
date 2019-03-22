@@ -114,9 +114,14 @@ h1, h2, h3 {
     }
 }
 .loaded {
-    visibility: hidden;
-    -webkit-transition: all 0.1s ease-out;
-            transition: all 0.1s ease-out;
+    opacity: 0;
+    -webkit-transition: all 2s ease-out;
+            transition: all 2s ease-out;
+    div {
+      opacity: 0;
+      -webkit-transition: all 0.5s ease-out;
+              transition: all 0.5s ease-out;
+    }
 }
 
 /*Header Bar*/
