@@ -76,6 +76,26 @@ h1, h2, h3 {
 .visible {
   display: block;
 }
+// body {
+//     -ms-overflow-style: none;  // IE 10+
+//     overflow: -moz-scrollbars-none;  // Firefox
+// }
+// body::-webkit-scrollbar {
+//     display: none;  // Safari and Chrome
+// }
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
+  outline: 1px solid slategrey;
+}
+
 /*Page Loader*/
 .page-loader {
     position: fixed;
@@ -1076,7 +1096,7 @@ footer {
   .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
     flex-direction: row;
     .paragraph-container {
-      width: 55%;
+      width: 95%;
       padding: 1vw 2vw;
       height: auto;
     }
@@ -1404,16 +1424,16 @@ articles
 
 @media (min-width: $tablet) {
   .officer-card {
-    width: 35vw;
-    height: 40vw;
+    width: 40vw;
+    height: 50vw;
     margin: 2vw;
 
     .card-caption{
       margin-top: -30%;
     }
     &:hover, &:active, &:focus {
-      width: 70vw;
-      height: 40vw;
+      width: 40vw;
+      height: 50vw;
     }
   }
 }
@@ -1428,7 +1448,7 @@ articles
       margin-top: -30%;
     }
     &:hover, &:active, &:focus {
-      width: 60vw;
+      width: 30vw;
       height: 35vw;
     }
   }
@@ -1671,4 +1691,14 @@ https://codepen.io/jasondavis/pen/fDGdK
   top: 0px;
   right: 10px;
   font-size: 25px;
+}
+
+#_404-wrapper {
+  width: 100vw;
+  height: 60vh;
+  padding: 0vw 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
