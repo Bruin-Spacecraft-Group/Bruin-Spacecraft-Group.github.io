@@ -1096,7 +1096,7 @@ footer {
   .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
     flex-direction: row;
     .paragraph-container {
-      width: 55%;
+      width: 95%;
       padding: 1vw 2vw;
       height: auto;
     }
@@ -1424,16 +1424,16 @@ articles
 
 @media (min-width: $tablet) {
   .officer-card {
-    width: 35vw;
-    height: 40vw;
+    width: 40vw;
+    height: 50vw;
     margin: 2vw;
 
     .card-caption{
       margin-top: -30%;
     }
     &:hover, &:active, &:focus {
-      width: 70vw;
-      height: 40vw;
+      width: 40vw;
+      height: 50vw;
     }
   }
 }
@@ -1448,7 +1448,7 @@ articles
       margin-top: -30%;
     }
     &:hover, &:active, &:focus {
-      width: 60vw;
+      width: 30vw;
       height: 35vw;
     }
   }
