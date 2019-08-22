@@ -5,13 +5,14 @@ let localPaths = {
 };
 
 //let localPath = localPaths.andy;
-//let localPath = localPaths.andrew;
-let localPath = localPaths.prod;
+let localPath = localPaths.andrew;
+//let localPath = localPaths.prod;
 
 var links = {
   'index':    `${localPath}/index.html`,
   'our_team': `${localPath}/our_team.html`,
   'join':     `${localPath}/join.html`,
+  'openings': `${localPath}/openings.html`,
   'sponsor':  `${localPath}/sponsor.html`,
   'rapid':    `${localPath}/projects/rapid.html`,
   'reach':    `${localPath}/projects/reach.html`,
@@ -21,7 +22,7 @@ var links = {
   'calendar': `${localPath}/resources/calendar.html`,
   'forms':    `${localPath}/resources/forms.html`,
   'articles': `${localPath}/articles`,
-  'admin': `${localPath}/admin.html`,
+  'admin':    `${localPath}/admin.html`,
   'videos':   `${localPath}/images/videos`,
   'people':   `${localPath}/images/people`,
   'pictures': `${localPath}/images/pictures`,

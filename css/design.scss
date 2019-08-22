@@ -1182,6 +1182,13 @@ footer {
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../images/pictures/meeting.jpg');
   }
+  .openings-link {
+    width: 100%;
+    padding: 0.5vw;
+    margin: 1vw;
+    text-align: center;
+    background-color: $accent-color;
+  }
 }
 #sponsor-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
@@ -1201,6 +1208,11 @@ footer {
 #admin-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../images/pictures/bruinSpacefinal.jpg');
+  }
+}
+#openings-wrapper{
+  .parallax-image-header, .parallax-image-header__follow {
+    background-image: url('../images/pictures/boelterTeamPhoto.JPG');
   }
 }
 
@@ -1339,7 +1351,7 @@ articles
 }
 
 
-.officer-cards__container {
+.officer-cards__container, .project-leads-cards__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1421,7 +1433,64 @@ articles
   }
 }
 
+.project-leads-card {
+  padding: 2.5vw;
+  width: 100%;
+  height: 40vw;
+  position: relative;
+  transition: all 0.5s;
 
+  .title {
+    height: 5vw;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  // hr {
+  //   height: 3px;
+  //   margin: 3px 16vw 3px 16vw;
+  //   background-color: $accent-color;
+  //   box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
+  // }
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 30vw;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
+    .person {
+      transition: 0.3s;
+      height: 100%;
+      width: 100%; /*default occupy full width, will shrink with content*/
+      padding: 1vw;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      h3 {
+        margin: 0;
+      }
+    }
+    .person::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    .person::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    .person::-webkit-scrollbar-thumb {
+      background-color: $accent-color;
+      outline: 1px solid slategrey;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}
 @media (min-width: $tablet) {
   .officer-card {
     width: 40vw;
@@ -1517,6 +1586,64 @@ articles
   }
 }
 
+.job-search-container {
+  width: 90vw;
+  margin: auto;
+  .job-search-header {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    border-bottom: 3px black solid;
+  }
+  .job-card-container {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3vw;
+    .job-card {
+      width: 27vw;
+      margin: 0.5vw;
+      margin-bottom: 1vw;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      .job-card-header {
+        border-bottom: 2px solid $accent-color;
+        padding: 1vw;
+        padding-bottom: 3px;
+        margin-bottom: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        h2 {
+          font-size: 3rem;
+        }
+        .tags {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-left: 10px;
+          div {
+            border: 0px;
+            width: 5vw;
+            text-align: center;
+            color: $white;
+            padding: 1px;
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .job-card-content {
+        padding: 1vw;
+        a {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
 
 /* Timeline
 https://codepen.io/jasondavis/pen/fDGdK

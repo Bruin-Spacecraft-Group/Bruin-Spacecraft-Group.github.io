@@ -41,18 +41,44 @@
       {{/each}}
     </div>
   </div>
-  <!--
-  <div class="team-wrapper">
-    <div class="title">
-      <h1>The Projects</h1>
-      <p>A quick look at the teams</p>
+
+  <div class="project-description dark">
+    <h1 class="title">Project Leadership</h1>
+    <div class="project-description__content">
+      <!--<img src="{{officersPhoto}}">-->
+      <p class="paragraph-container">
+        Each of our projects are guided by a Project Manager, often in conjunction with a Chief Engineer.
+      </p>
     </div>
-    {{#each teams}}
-      <h1>PROJECT</h1>
-    {{/each}}
+    <div class="project-leads-cards__container light">
+      {{#each projects}}
+        <div class="project-leads-card light">
+          <div class="title">
+            <h1>{{title}}</h1>
+          </div>
+          <div class="card-content">
+            <div class="person dark">
+              <h3>Project Manager</h3>
+              <h2>{{PM}}</h2>
+              <p>{{PM_description}}</p>
+            </div>
+            <img src="{{image}}">
+            {{#if image2}}
+            <img src="{{image2}}">
+            {{/if}}
+            {{#if CE_description}}
+            <div class="person dark">
+              <h3>Chief Engineer</h3>
+              <h2>{{CE}}</h2>
+              <p>{{CE_description}}</p>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
   </div>
-  <div class="parallax-image-2 parallax-image"></div>
-  -->
+
   <div class="faculty_support-wrapper">
     <h1 class="title">Faculty Support</h1>
     <div class="project-description__content">

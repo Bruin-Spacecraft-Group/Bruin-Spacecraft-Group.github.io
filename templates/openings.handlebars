@@ -1,0 +1,38 @@
+<div id="openings-wrapper" class="parallax-wrapper">
+  <div class="project-header">
+    <div class="parallax-image-header parallax-image"></div>
+    <div class="project-header__title">
+      <h1>Open Positions</h1>
+    </div>
+  </div>
+  <div class="project-intro dark">
+    <h1>These are the positions we are looking to fill</h1>
+    <p>If interested, please reach out to the listed point of contact or follow the link to apply.</p>
+  </div>
+  <div class="parallax-image-header__follow parallax-image"></div>
+  <div class="project-description light">
+    <div class="job-search-container">
+      <div class="job-search-header">
+        <h2>Filter and stuff</h2>
+      </div>
+      <div class="job-card-container">
+        {{#each jobs}}
+          <div class="job-card">
+            <div class="job-card-header">
+              <h2>{{title}}</h2>
+              <div class="tags">
+                {{#each tags}}
+                  <div style="background-color:{{color}}"><p>{{text}}</p></div>
+                {{/each}}
+              </div>
+            </div>
+            <div class="job-card-content">
+              <p>{{description}}</p>
+              <a href="{{link}}">{{linkText}}</a>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
