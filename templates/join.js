@@ -6,6 +6,7 @@ var context = {
   "endeavour": `<a href="${links.endeavour}">Endeavour</a>`,
   "externalAffairs": `<a href="${links.admin}#externalAffairs">External Affairs</a>`,
   "finance": `<a href="${links.admin}#finance">Finance</a>`,
+  "openingsLink": links.openings,
   "marketing":`<a href="${links.admin}#marketing">Marketing</a>`,
   "calendar": `<a href="${links.calendar}">calendar</a>`,
 
