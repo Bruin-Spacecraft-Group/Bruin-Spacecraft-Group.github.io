@@ -13,7 +13,19 @@
   <div class="project-description light">
     <div class="job-search-container">
       <div class="job-search-header">
-        <h2>Filter and stuff</h2>
+        <h2>Positions</h2>
+        <!-- <div class="filter-container"> -->
+          <div class="select-div" style="width:200px;">
+            <select name="Project">
+              <option value="all">All</option>
+              <option value="reach">Reach</option>
+              <option value="rapid">Rapid</option>
+              <option value="overseer">Overseer</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <!-- <div class="clear-filter" id="clear">&times;</div> -->
+        <!-- </div> -->
       </div>
       <div class="job-card-container">
         {{#each jobs}}
