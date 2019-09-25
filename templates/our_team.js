@@ -20,7 +20,7 @@ var context = {
       'name':     'Hirday Gupta',
       'position': 'External Vice President',
       'picture':  `${links.people}/hirday.jpg`,
-      'about':    '<p>Third Year, Computer Science</p><p>I enjoy working with space technology, collegiate debate, and cycling.</p>',
+      'about':    '<p>Third Year, Computer Science</p>',
       'link': 'http://www.linkedin.com/in/kylerobertjohnson',
       'icon': `${links.icons}/linkedin.png`
     },
@@ -28,7 +28,7 @@ var context = {
       'name':     'Maria Vincent',
       'position': 'Vice President of Marketing',
       'picture':  `${links.people}/maria.jpg`,
-      'about':    '<p>Fourth Year, Geophysics?</p>',
+      'about':    '<p>Fourth Year, Geophysics/Astrophysics</p>',
       'link': 'https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/',
       'icon': `${links.icons}/linkedin.png`
     },

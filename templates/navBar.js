@@ -34,9 +34,6 @@ var context = {
             <a class="site-nav__dropdown-link" href="${links.rapid}">Rapid</a>
           </li>
           <li class="site-nav__dropdown-item">
-            <a class="site-nav__dropdown-link" href="${links.sandbox}">Sandbox</a>
-          </li>
-          <li class="site-nav__dropdown-item">
             <a class="site-nav__dropdown-link" href="${links.endeavour}">Endeavour</a>
           </li>
         </ul>

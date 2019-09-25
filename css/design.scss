@@ -1962,10 +1962,9 @@ https://codepen.io/jasondavis/pen/fDGdK
   top: 50px;
   right: 25px;
   width: 320px;
-  height: 60px;
   border-radius: 25px;
-  background-color: green;
-  opacity: 0.8;
+  background-color: $stone;
+  opacity: 1.0;
   z-index: 5;
 }
 
@@ -1979,6 +1978,7 @@ https://codepen.io/jasondavis/pen/fDGdK
 .notif-text {
   width: 300px;
   text-align: center;
+  text-shadow: 1px 1px 1px $black;
 }
 
 #close-banner {

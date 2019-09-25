@@ -63,11 +63,11 @@ var context = {
         <a href='${links.rapid}' class='mob-nav__link link'>Rapid</a>
       </li>`
       },
-      {'element':
-      `<li class='mob-nav__item'>
-        <a href='${links.sandbox}' class='mob-nav__link link'>Sandbox</a>
-      </li>`
-      },
+      // {'element':
+      // `<li class='mob-nav__item'>
+      //   <a href='${links.sandbox}' class='mob-nav__link link'>Sandbox</a>
+      // </li>`
+      // },
       {'element':
       `<li class='mob-nav__item'>
         <a href='${links.endeavour}' class='mob-nav__link link'>Endeavour</a>
