@@ -1137,7 +1137,10 @@ footer {
   height: 10vh;
 }
 .parallax-image-2 {
-  height: 30vh;
+  height: 15vh;
+}
+.parallax-image-2__follow {
+  height: 15vh;
 }
 
 #index-wrapper{
@@ -1151,6 +1154,9 @@ footer {
 #rapid-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../images/pictures/PCBs.jpg');
+  }
+  .parallax-image-2, .parallax-image-2__follow {
+    background-image: url('../images/pictures/plasma.png');
   }
 }
 #reach-wrapper{

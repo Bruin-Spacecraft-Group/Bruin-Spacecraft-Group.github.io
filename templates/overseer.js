@@ -18,13 +18,13 @@ var context = {
   "pm": {
     "name":"Dacheng Li",
     "major":"Physics",
-    "year":"2nd Year",
+    "year":"3rd Year",
     "email":"dacheng.li3@gmail.com"
   },
   "ce": {
     "name":"Taylor Lonner",
     "major":"Physics",
-    "year":"3rd Year",
+    "year":"4th Year",
     "email":"Tlonner@g.ucla.edu"
   },
   "mission": {

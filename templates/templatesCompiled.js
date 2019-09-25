@@ -264,7 +264,7 @@ templates['openings'] = template({"1":function(container,depth0,helpers,partials
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div id=\"openings-wrapper\" class=\"parallax-wrapper\">\r\n  <div class=\"project-header\">\r\n    <div class=\"parallax-image-header parallax-image\"></div>\r\n    <div class=\"project-header__title\">\r\n      <h1>Open Positions</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"project-intro dark\">\r\n    <h1>These are the positions we are looking to fill</h1>\r\n    <p>If interested, please reach out to the listed point of contact or follow the link to apply.</p>\r\n  </div>\r\n  <div class=\"parallax-image-header__follow parallax-image\"></div>\r\n  <div class=\"project-description light\">\r\n    <div class=\"job-search-container\">\r\n      <div class=\"job-search-header\">\r\n        <h2>Positions</h2>\r\n        <!-- <div class=\"filter-container\"> -->\r\n          <div class=\"select-div\" style=\"width:200px;\">\r\n            <select name=\"Project\">\r\n              <option value=\"all\">All</option>\r\n              <option value=\"reach\">Reach</option>\r\n              <option value=\"rapid\">Rapid</option>\r\n              <option value=\"overseer\">Overseer</option>\r\n              <option value=\"admin\">Admin</option>\r\n            </select>\r\n          </div>\r\n          <!-- <div class=\"clear-filter\" id=\"clear\">&times;</div> -->\r\n        <!-- </div> -->\r\n      </div>\r\n      <div class=\"job-card-container\">\r\n"
+  return "<div id=\"openings-wrapper\" class=\"parallax-wrapper\">\r\n  <div class=\"project-header\">\r\n    <div class=\"parallax-image-header parallax-image\"></div>\r\n    <div class=\"project-header__title\">\r\n      <h1>Open Positions</h1>\r\n    </div>\r\n  </div>\r\n  <div class=\"project-intro dark\">\r\n    <h1>These are the roles we are looking to fill</h1>\r\n    <p>If interested, please reach out to the listed point of contact or follow the link to apply.</p>\r\n  </div>\r\n  <div class=\"parallax-image-header__follow parallax-image\"></div>\r\n  <div class=\"project-description light\">\r\n    <div class=\"job-search-container\">\r\n      <div class=\"job-search-header\">\r\n        <h2>Positions</h2>\r\n        <!-- <div class=\"filter-container\"> -->\r\n          <div class=\"select-div\" style=\"width:200px;\">\r\n            <select name=\"Project\">\r\n              <option value=\"all\">All</option>\r\n              <option value=\"reach\">Reach</option>\r\n              <option value=\"rapid\">Rapid</option>\r\n              <option value=\"overseer\">Overseer</option>\r\n              <option value=\"admin\">Admin</option>\r\n            </select>\r\n          </div>\r\n          <!-- <div class=\"clear-filter\" id=\"clear\">&times;</div> -->\r\n        <!-- </div> -->\r\n      </div>\r\n      <div class=\"job-card-container\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.jobs : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
@@ -363,16 +363,28 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.title : stack1), depth0))
     + "</h1>\r\n			<p>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.subtitle : stack1), depth0))
-    + "</p>\r\n		</div>\r\n		<div class=\"mission-description\">\r\n			<p class=\"paragraph-container\">\r\n				"
-    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.description : stack1), depth0)) != null ? stack1 : "")
-    + "\r\n			</p>\r\n		</div>\r\n		<div class=\"scrollable-content\">\r\n			<div class=\"scrollable-content__textboxes\">\r\n"
-    + ((stack1 = helpers.each.call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.scrollables : stack1),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</p>\r\n		</div>\r\n		<div class=\"mission-description\">\r\n"
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.description_raw : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.program(6, data, 0),"data":data})) != null ? stack1 : "")
+    + "		</div>\r\n		<div class=\"scrollable-content\">\r\n			<div class=\"scrollable-content__textboxes\">\r\n"
+    + ((stack1 = helpers.each.call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.scrollables : stack1),{"name":"each","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\r\n			<div class=\"scrollable-content__images\">\r\n"
-    + ((stack1 = helpers.each.call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.scrollables : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias3,((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.scrollables : stack1),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\r\n			<script type=\"text/javascript\" src=\""
     + alias2(((helper = (helper = helpers.missionWidgetJS || (depth0 != null ? depth0.missionWidgetJS : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias3,{"name":"missionWidgetJS","hash":{},"data":data}) : helper)))
     + "\"></script>\r\n		</div>\r\n	</div>\r\n";
 },"4":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "				"
+    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.description_raw : stack1), depth0)) != null ? stack1 : "")
+    + "\r\n";
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "				<p class=\"paragraph-container\">\r\n					"
+    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? depth0.mission : depth0)) != null ? stack1.description : stack1), depth0)) != null ? stack1 : "")
+    + "\r\n				</p>\r\n";
+},"8":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "					<div id=\"mission"
@@ -384,7 +396,7 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + "</h2>\r\n						<p>\r\n							"
     + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
     + "\r\n						</p>\r\n					</div>\r\n";
-},"6":function(container,depth0,helpers,partials,data) {
+},"10":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "					<img id=\"mission"
@@ -394,60 +406,60 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + "\" src=\""
     + alias4(((helper = (helper = helpers.picture || (depth0 != null ? depth0.picture : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"picture","hash":{},"data":data}) : helper)))
     + "\">\r\n";
-},"8":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "		<div class=\"past-projects dark\">\r\n			<h1 class=\"title\">Past Work</h1>\r\n			<div class=\"past-projects__content\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.past_work : depth0),{"name":"each","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "			</div>\r\n		</div>\r\n";
-},"9":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "					<div class=\"text-image__container light "
-    + ((stack1 = (helpers.if_even || (depth0 && depth0.if_even) || alias2).call(alias1,(data && data.index),{"name":"if_even","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(12, data, 0),"data":data})) != null ? stack1 : "")
-    + "\">\r\n				    <h1 class=\"title\">"
-    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</h1>\r\n				    <div class=\"text-image "
-    + ((stack1 = (helpers.if_even || (depth0 && depth0.if_even) || alias2).call(alias1,(data && data.index),{"name":"if_even","hash":{},"fn":container.program(14, data, 0),"inverse":container.program(16, data, 0),"data":data})) != null ? stack1 : "")
-    + "\">\r\n				      <img src=\""
-    + alias4(((helper = (helper = helpers.picture || (depth0 != null ? depth0.picture : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"picture","hash":{},"data":data}) : helper)))
-    + "\">\r\n				      <div class=\"paragraph-container\">\r\n				        "
-    + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
-    + "\r\n				      </div>\r\n				    </div>\r\n				  </div>\r\n";
-},"10":function(container,depth0,helpers,partials,data) {
-    return "text-left";
 },"12":function(container,depth0,helpers,partials,data) {
-    return "text-right";
-},"14":function(container,depth0,helpers,partials,data) {
-    return "image-left";
-},"16":function(container,depth0,helpers,partials,data) {
-    return "image-right";
-},"18":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "		<h1>Project Timeline</h1>\r\n		<ul class=\"timeline light\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.project_timeline : depth0),{"name":"each","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.project_timeline : depth0),{"name":"each","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		</ul>\r\n";
-},"19":function(container,depth0,helpers,partials,data) {
+},"13":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
 
   return "				<li "
-    + ((stack1 = (helpers.if_even || (depth0 && depth0.if_even) || alias2).call(alias1,(data && data.index),{"name":"if_even","hash":{},"fn":container.program(20, data, 0),"inverse":container.program(22, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.if_even || (depth0 && depth0.if_even) || alias2).call(alias1,(data && data.index),{"name":"if_even","hash":{},"fn":container.program(14, data, 0),"inverse":container.program(16, data, 0),"data":data})) != null ? stack1 : "")
     + ">\r\n					<div class=\"timeline-badge\"><i class=\"glyphicon\"></i></div>\r\n					<div class=\"timeline-panel\">\r\n						<div class=\"timeline-heading\">\r\n              <h4 class=\"timeline-title\">"
     + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "</h4>\r\n						</div>\r\n						<ul class=\"timeline-body\">\r\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "						</ul>\r\n					</div>\r\n				</li>\r\n";
-},"20":function(container,depth0,helpers,partials,data) {
+},"14":function(container,depth0,helpers,partials,data) {
     return "";
-},"22":function(container,depth0,helpers,partials,data) {
+},"16":function(container,depth0,helpers,partials,data) {
     return "class=\"timeline-inverted\"";
-},"24":function(container,depth0,helpers,partials,data) {
+},"18":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "								<li>"
     + container.escapeExpression(((helper = (helper = helpers.item || (depth0 != null ? depth0.item : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"item","hash":{},"data":data}) : helper)))
     + "</li>\r\n";
+},"20":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "		<div class=\"past-projects dark\">\r\n			<h1 class=\"title\">Past Work</h1>\r\n			<div class=\"past-projects__content\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.past_work : depth0),{"name":"each","hash":{},"fn":container.program(21, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "			</div>\r\n		</div>\r\n";
+},"21":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "					<div class=\"text-image__container light "
+    + ((stack1 = (helpers.if_even || (depth0 && depth0.if_even) || alias2).call(alias1,(data && data.index),{"name":"if_even","hash":{},"fn":container.program(22, data, 0),"inverse":container.program(24, data, 0),"data":data})) != null ? stack1 : "")
+    + "\">\r\n				    <h1 class=\"title\">"
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</h1>\r\n				    <div class=\"text-image "
+    + ((stack1 = (helpers.if_even || (depth0 && depth0.if_even) || alias2).call(alias1,(data && data.index),{"name":"if_even","hash":{},"fn":container.program(26, data, 0),"inverse":container.program(28, data, 0),"data":data})) != null ? stack1 : "")
+    + "\">\r\n				      <img src=\""
+    + alias4(((helper = (helper = helpers.picture || (depth0 != null ? depth0.picture : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"picture","hash":{},"data":data}) : helper)))
+    + "\">\r\n				      <div class=\"paragraph-container\">\r\n				        "
+    + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
+    + "\r\n				      </div>\r\n				    </div>\r\n				  </div>\r\n";
+},"22":function(container,depth0,helpers,partials,data) {
+    return "text-left";
+},"24":function(container,depth0,helpers,partials,data) {
+    return "text-right";
+},"26":function(container,depth0,helpers,partials,data) {
+    return "image-left";
+},"28":function(container,depth0,helpers,partials,data) {
+    return "image-right";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda;
 
@@ -479,9 +491,11 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.ce : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\r\n		</div>\r\n	</div>\r\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.mission : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.past_work : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.project_timeline : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<div class=\"parallax-image-2 parallax-image\"></div>\r\n</div>\r\n";
+    + "	<div class=\"parallax-image-2 parallax-image\"></div>\r\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.project_timeline : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "	<div class=\"parallax-image-2__follow parallax-image\"></div>\r\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.past_work : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\r\n";
 },"useData":true});
 templates['sponsor'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;

@@ -10,13 +10,13 @@ var context = {
   "pm": {
     "name":"Hirday Gupta",
     "major":"Computer Science",
-    "year":"2nd Year",
+    "year":"3rd Year",
     "email":"hirday@ucla.edu",
   },
   "ce": {
-    "name":"Justin Neal",
-    "major":"Aerospace Engineering",
-    "year":"2nd Year",
+    "name":"Zefyr Scott",
+    "major":"Electrical Engineering",
+    "year":"4th Year",
     "email":"",
   }/*,
   "mission": {

@@ -7,40 +7,20 @@ var context = {
   "team_description":"",
   "team_photo":`${links.endeavour_photos}/endeavour_team.jpg`,
   "pm": {
-    "name":"Dan Callos",
+    "name":"Rebecca Lewis",
     "major":"Physics",
-    "year":"3rd Year",
-    "email":"d.callos@outlook.com"
+    "year":"4th Year",
+    "email":""
   },
   "mission": {
-    "title":"Fredholm",
-    "subtitle":"",
-    "description":`<div class="text-image__container light text-left">
+    "title":"Muon Detector",
+    "subtitle":"Hands on experience building a scientific payload",
+    "description_raw":`<div class="text-image__container light text-left">
       <div class="text-image image-left">
-        <img src="../images/Endeavour/Fredholm.jpeg">
+        <img src="../images/Endeavour/hyperPhysicsMuon.gif">
         <div class="paragraph-container">
           <p>
-            Throughout the upcoming quarters we will work on such projects as the analysis and visualization of space weather data to answer a research question, the use of software to numerically solve and visualize problems of celestial mechanics, and the study of magnetohydrodynamics (MHD) and its applications to space missions engineering; in particular, we will be using ANSYS to simulate MHD pump behaviour.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="text-image__container dark">
-      <div class="text-image">
-        <img src="../images/Endeavour/python.png">
-        <div class="paragraph-container">
-          <p>
-            Our team prides itself on offering expertise in the fields of physics, applied mathematics, and mechanical/aerospace engineering. Those interested in joining should come with an understanding of elementary linear algebra and differential equations, and possess coding experience in Python, MATLAB, Mathematica, or similar.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="text-image__container light">
-      <div class="text-image">
-        <img src="../images/Endeavour/solarWind.png">
-        <div class="paragraph-container">
-          <p>
-            Project Fredholm will focus on the interactions between solar wind and the Earth’s magnetic field. We will use live data available from the National Oceanic and Atmospheric Administration (NOAA), along with literature on space physics to formulate and investigate a research question
+            In collaboration with <a href="${links.overseer}">Project Overseer</a>, Endeavour is building a muon detector to collect samples at high altitudes and compare with ground measurements. Through this, the team will be recreating past experiments testing the principles of relativity.
           </p>
         </div>
       </div>
