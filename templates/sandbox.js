@@ -25,7 +25,7 @@ var context = {
       "description": "Under a challenge by LENS Research & Development, we submitted a winning proposal for the novel application of a sunsenor. As the name suggests, a sunsensor is a finely tuned light sensor for orienting a spacecraft with respect to the sun. Our concept for use in spacecraft proximity operations is currently under development."
     }
   ],
-  "project_timeline" : [
+/*  "project_timeline" : [
     {
       "title": "Fall quarter",
       "items": [
@@ -45,7 +45,7 @@ var context = {
         }
       ]
     }
-  ]
+  ]*/
 }
 
 Handlebars.registerHelper('if_even', function(conditional, options) {

@@ -19,7 +19,7 @@ var context = {
     {
       'name':     'Hirday Gupta',
       'position': 'External Vice President',
-      'picture':  `${links.people}/kyle.jpg`,
+      'picture':  `${links.people}/hirday.jpg`,
       'about':    '<p>Third Year, Computer Science</p><p>I enjoy working with space technology, collegiate debate, and cycling.</p>',
       'link': 'http://www.linkedin.com/in/kylerobertjohnson',
       'icon': `${links.icons}/linkedin.png`
@@ -27,7 +27,7 @@ var context = {
     {
       'name':     'Maria Vincent',
       'position': 'Vice President of Marketing',
-      'picture':  `${links.people}/owen.jpg`,
+      'picture':  `${links.people}/maria.jpg`,
       'about':    '<p>Fourth Year, Geophysics?</p>',
       'link': 'https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/',
       'icon': `${links.icons}/linkedin.png`
@@ -37,7 +37,7 @@ var context = {
       'position': 'Vice President of Finance',
       'picture':  `${links.people}/daniel.jpg`,
       'about':    '<p>Second Year, Economics</p><p>I am interested in accounting and finance.</p>',
-      'link': 'https://www.linkedin.com/in/danielwilsonhu/',
+      'link': 'https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/',
       'icon': `${links.icons}/linkedin.png`
     }
   ],
@@ -45,26 +45,26 @@ var context = {
     {
       'title': "Overseer",
       'PM': 'Dacheng Li',
-      'PM_description': '3rd year Physics, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'PM_description': '3rd year Physics',
       'CE': 'Taylor Lonner',
-      'CE_description': '4th year planetary physics, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      'image':  "https://previews.123rf.com/images/imtmphoto/imtmphoto1304/imtmphoto130400011/19334761-asian-businessman-and-businesswoman-standing-back-to-back-making-a-fist.jpg"
+      'CE_description': '4th year Planetary Physics',
+      'image': `${links.people}/dacheng.jpg`
       //'image': `${links.projectManagement}/overseerLeads.png`
     },
     {
       'title': "Endeavour",
       'PM': 'Rebecca Lewis',
       'PM_description': '4th year Physics',
-      'image':  "https://media.gettyimages.com/photos/colleagues-problem-solving-at-computer-together-picture-id1028772240?s=2048x2048"
+      'image': `${links.people}/rebecca.jpg`
       //'image': `${links.projectManagement}/endeavourLeads.png`
     },
     {
       'title': "Reach",
-      'PM': 'idk',
-      'PM_description': 'something',
+      'PM': 'Hirday Gupta',
+      'PM_description': '3rd year Computer Science',
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
-      'image':  "http://www.best-norman-rockwell-art.com/images/1920-10-09-Saturday-Evening-Post-Norman-Rockwell-cover-Man-and-Woman-Seated-Back-to-Back-no-logo-400-Digimarc.jpg"
+      'image': `${links.people}/hirday.jpg`
       //'image': `${links.projectManagement}/reachLeads.png`
     },
     {
@@ -73,7 +73,7 @@ var context = {
       'PM_description': '4th year Mechanical Engineering',
       'CE': 'Andrew Evans',
       'CE_description': '4th year Aerospace Engineering',
-      'image':  "https://media.gettyimages.com/photos/studio-shot-of-couple-standing-back-to-back-picture-id73782602?s=612x612"
+      'image': `${links.people}/andrew.jpg`
       //'image': `${links.projectManagement}/rapidLeads.png`
     }
   ],
