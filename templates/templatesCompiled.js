@@ -237,7 +237,11 @@ templates['navMenu'] = template({"1":function(container,depth0,helpers,partials,
     + "</nav>\r\n";
 },"useData":true});
 templates['notif'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"notif-banner\">\r\n  <span id=\"close-banner\" onclick=\"close_notif()\">&times;</span>\r\n  <script>\r\n    function close_notif() {\r\n      document.getElementsByClassName('notif-banner')[0].style.display = \"none\";\r\n    }\r\n  </script>\r\n  <div class=\"notif-container\">\r\n    <p class=\"notif-text\">\r\n      Reminder: Don't miss our first General Meeting Wedensday, October 2nd!\r\n    </p>\r\n  </div>\r\n</div>\r\n";
+    var helper;
+
+  return "<div class=\"notif-banner\">\r\n  <span id=\"close-banner\" onclick=\"close_notif()\">&times;</span>\r\n  <script>\r\n    function close_notif() {\r\n      document.getElementsByClassName('notif-banner')[0].style.display = \"none\";\r\n    }\r\n  </script>\r\n  <div class=\"notif-container\">\r\n    <p class=\"notif-text\">\r\n      Reminder: Don't miss our first General Meeting <a href=\""
+    + container.escapeExpression(((helper = (helper = helpers["notif-link"] || (depth0 != null ? depth0["notif-link"] : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"notif-link","hash":{},"data":data}) : helper)))
+    + "\">Wedensday, October 2nd</a>!\r\n    </p>\r\n  </div>\r\n</div>\r\n";
 },"useData":true});
 templates['openings'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
