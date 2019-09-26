@@ -19,7 +19,7 @@ var context = {
     {
       'name':     'Hirday Gupta',
       'position': 'External Vice President',
-      'picture':  `${links.people}/hirday.jpg`,
+      'picture':  `${links.people}/hirday.JPG`,
       'about':    '<p>Third Year, Computer Science</p>',
       'link': 'http://www.linkedin.com/in/kylerobertjohnson',
       'icon': `${links.icons}/linkedin.png`
@@ -27,7 +27,7 @@ var context = {
     {
       'name':     'Maria Vincent',
       'position': 'Vice President of Marketing',
-      'picture':  `${links.people}/maria.jpg`,
+      'picture':  `${links.people}/maria.JPG`,
       'about':    '<p>Fourth Year, Geophysics/Astrophysics</p>',
       'link': 'https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/',
       'icon': `${links.icons}/linkedin.png`
@@ -48,14 +48,14 @@ var context = {
       'PM_description': '3rd year Physics',
       'CE': 'Taylor Lonner',
       'CE_description': '4th year Planetary Physics',
-      'image': `${links.people}/dacheng.jpg`
+      'image': `${links.people}/dacheng.JPG`
       //'image': `${links.projectManagement}/overseerLeads.png`
     },
     {
       'title': "Endeavour",
       'PM': 'Rebecca Lewis',
       'PM_description': '4th year Physics',
-      'image': `${links.people}/rebecca.jpg`
+      'image': `${links.people}/rebecca.JPG`
       //'image': `${links.projectManagement}/endeavourLeads.png`
     },
     {
@@ -64,7 +64,7 @@ var context = {
       'PM_description': '3rd year Computer Science',
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
-      'image': `${links.people}/hirday.jpg`
+      'image': `${links.people}/hirday.JPG`
       //'image': `${links.projectManagement}/reachLeads.png`
     },
     {

@@ -1383,7 +1383,9 @@ articles
       object-fit: cover;
     }
     .card-caption {
-      margin-top: -50%;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
       z-index: 3;
       text-shadow: 0 0 20px black;
     }
@@ -1403,18 +1405,6 @@ articles
       right: 10px;
       width: 35px;
       height: 35px;
-    }
-    @media (min-width: $tablet) {
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-    @media (min-width: $laptop) {
-      img {
-        width: 45px;
-        height: 45px;
-      }
     }
   }
   &:hover, &:active, &:focus {
@@ -1438,46 +1428,95 @@ articles
     }
   }
 }
+@media (min-width: $tablet) {
+  .officer-card {
+    width: 40vw;
+    height: 50vw;
+    margin: 2vw;
+
+    .card-cover {
+      .card-caption {
+        position: relative;
+        margin-top: -50%;
+      }
+    }
+    .card-detail > img {
+      width: 40px;
+      height: 40px;
+    }
+    &:hover, &:active, &:focus {
+      width: 40vw;
+      height: 50vw;
+    }
+  }
+}
+@media (min-width: $laptop) {
+  .officer-card{
+    width: 30vw;
+    height: 35vw;
+    margin: 1vw;
+
+    .card-detail > img {
+      width: 45px;
+      height: 45px;
+    }
+    .card-caption{
+      margin-top: -50%;
+    }
+    &:hover, &:active, &:focus {
+      width: 30vw;
+      height: 35vw;
+    }
+  }
+
+}
 
 .project-leads-card {
-  padding: 2.5vw;
+  padding: 2.5vw 0;
   width: 100%;
-  height: 40vw;
+  height: 50vw;
   position: relative;
   transition: all 0.5s;
 
   .title {
-    height: 5vw;
     width: 100%;
+    height: 20%;
     padding: 0;
     text-align: center;
+    h1 {
+      font-size: 3rem;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
   }
-  // hr {
-  //   height: 3px;
-  //   margin: 3px 16vw 3px 16vw;
-  //   background-color: $accent-color;
-  //   box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
-  // }
+
   .card-content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 100%;
-    height: 30vw;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
+    height: 80%;
     .person {
       transition: 0.3s;
       height: 100%;
       width: 100%; /*default occupy full width, will shrink with content*/
-      padding: 1vw;
+      padding: 1vw 2.5vw;
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
       overflow-x: hidden;
-
+      h2 {
+        font-size: 1.7rem;
+        margin: 10px 0px 5px 0px;
+      }
       h3 {
         margin: 0;
+        font-size: 1.4rem;
+        border-bottom: 1px solid $accent-color;
+      }
+      p {
+        font-size: 1.4rem;
       }
     }
     .person::-webkit-scrollbar {
@@ -1498,36 +1537,38 @@ articles
   }
 }
 @media (min-width: $tablet) {
-  .officer-card {
-    width: 40vw;
-    height: 50vw;
-    margin: 2vw;
+  .project-leads-card {
+    height: 40vw;
+    padding: 2.5vw;
 
-    .card-caption{
-      margin-top: -30%;
+    .title > h1 {
+      font-size: 3.5rem;
     }
-    &:hover, &:active, &:focus {
-      width: 40vw;
-      height: 50vw;
+    .card-content {
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
+      .person {
+        h2 {
+          font-size: 3.2rem;
+        }
+        h3 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
     }
   }
 }
 
 @media (min-width: $laptop) {
-  .officer-card {
-    width: 30vw;
-    height: 35vw;
-    margin: 1vw;
-
-    .card-caption{
-      margin-top: -30%;
-    }
-    &:hover, &:active, &:focus {
-      width: 30vw;
-      height: 35vw;
+  .project-leads-card {
+    .title > h1 {
+      font-size: 4rem;
     }
   }
 }
+
 
 // TODO: replace this with proper SASS inheritance
 .form-cards__container {

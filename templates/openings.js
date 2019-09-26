@@ -13,7 +13,7 @@ var context = {
           'color': colorRapid
         }
       ],
-      'description': 'Develop the critical electronics for a student-built, plasma-propelled CubeSat! The Digital Control Interface Unit (DCIU) is the “brains” of the propulsion system, translating commands from the craft Command and Data Handling (CDH) system into power supply commands for the ion thruster and managing the operation, startup, and shutdown of the thruster system.',
+      'description': 'Develop the critical electronics for a student-built, plasma-propelled CubeSat! The Digital Control Interface Unit (DCIU) is the "brains" of the propulsion system, translating commands from the craft Command and Data Handling (CDH) system into power supply commands for the ion thruster and managing the operation, startup, and shutdown of the thruster system.',
       //'link': links.reach,
       //'linkText': 'Learn More'
     },
@@ -114,6 +114,18 @@ var context = {
       //'linkText': 'Learn More'
     },
     {
+      'title': 'Thermal Engineer',
+      'tags': [
+        {
+          'text': 'Rapid',
+          'color': colorRapid
+        }
+      ],
+      'description': 'Assist in design of spacecraft thermal control system, perform calculations, and run simulations with industry software Thermal Desktop.',
+      //'link': links.reach,
+      //'linkText': 'Learn More'
+    },
+    {
       'title': 'Mechanical Engineer',
       'tags': [
         {
@@ -182,6 +194,30 @@ var context = {
         }
       ],
       'description': 'Manage social media accounts, design graphics, promote the Bruin Space brand.',
+      //'link': links.reach,
+      //'linkText': 'Learn More'
+    },
+    {
+      'title': 'Webmaster',
+      'tags': [
+        {
+          'text': 'Admin',
+          'color': colorAdmin
+        }
+      ],
+      'description': 'Manage website content, develop new website features, working with Handlebars templating framework, SASS, and javascript.',
+      //'link': links.reach,
+      //'linkText': 'Learn More'
+    },
+    {
+      'title': 'Lab Manager',
+      'tags': [
+        {
+          'text': 'Admin',
+          'color': colorAdmin
+        }
+      ],
+      'description': 'Handle lab related purchases and optimize organization of tools, equipment, and hardware.',
       //'link': links.reach,
       //'linkText': 'Learn More'
     }
