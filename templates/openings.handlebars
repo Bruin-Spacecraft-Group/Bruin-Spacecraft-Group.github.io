@@ -29,7 +29,7 @@
       </div>
       <div class="job-card-container">
         {{#each jobs}}
-          <div class="job-card">
+          <div id="job-{{@index}}" class="job-card">
             <div class="job-card-header">
               <h2>{{title}}</h2>
               <div class="tags">
@@ -40,7 +40,44 @@
             </div>
             <div class="job-card-content">
               <p>{{description}}</p>
-              <a href="{{link}}">{{linkText}}</a>
+            </div>
+          </div>
+          <div id="job-{{@index}}-modal" class="job-card-modal">
+            <div class="job-card-header">
+              <h2>{{title}}</h2>
+              <div class="tags">
+                {{#each tags}}
+                  <div style="background-color:{{color}}"><p>{{text}}</p></div>
+                {{/each}}
+              </div>
+            </div>
+            <div class="job-card-content">
+              <p>{{description}}</p>
+              {{#if required-skills}}
+                <div class="job-card-required-skills">
+                  <h3>Required Skills</h3>
+                  <ul>
+                    {{#each required-skills}}
+                      <li>{{skill}}</li>
+                    {{/each}}
+                  </ul>
+                </div>
+              {{/if}}
+              {{#if required-skills}}
+                <div class="job-card-reccomended-skills">
+                  <h3>Recommended Skills (or skills you will learn)</h3>
+                  <ul>
+                    {{#each recommended-skills}}
+                      <li>{{skill}}</li>
+                    {{/each}}
+                  </ul>
+                </div>
+              {{/if}}
+              {{#if link}}
+                <div class="job-card-link">
+                  <a href="{{link}}">{{linkText}}</a>
+                </div>
+              {{/if}}
             </div>
           </div>
         {{/each}}
