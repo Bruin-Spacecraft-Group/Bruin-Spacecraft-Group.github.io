@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+	<head>
+		<title>Bruin Spacecraft Group</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../../public/js/main.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../public/css/animate.css">
+	  <link rel="stylesheet" type="text/css" href="../../public/css/design.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<meta name="theme-color" content="#000"/>
+	</head>
+
+  <body cz-shortcut-listen="true">
+		<div class="page-loader" id="PageLoader">
+			<img class="page-loader__spinner" src="../images/Icons/pageSpinner2.png" alt="Page spinner">
+		</div>
+		<div id="page-wrapper">
+			<div class="mob-nav__container">
+				<nav class="mob-nav mob-nav--closed" id="MobMenu">
+					<ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
+						<li class="mob-nav__item">
+							<a href="../our_team.html" class="mob-nav__link link">Our Team</a>
+						</li>
+						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu2" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+									<path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../join.html" class="mob-nav__link link">Join</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../sponsor.html" class="mob-nav__link link">Sponsor Us</a>
+						</li>
+					</ul>
+					<ul id="menu1" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu1">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu1')">
+								Projects
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="overseer.html" class="mob-nav__link link">Overseer</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="reach.html" class="mob-nav__link link">Reach</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="rapid.html" class="mob-nav__link link">Rapid</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="sandbox.html" class="mob-nav__link link">Sandbox</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="endeavour.html" class="mob-nav__link link">Endeavour</a>
+						</li>
+					</ul>
+					<ul id="menu2" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu2">
+						<li class="mob-nav__back">
+							<button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu('menu2')">
+								Resources
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+									<path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+								</svg>
+							</button>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../resources/calendar.html" class="mob-nav__link link">Calendar</a>
+						</li>
+						<li class="mob-nav__item">
+							<a href="../resources/forms.html" class="mob-nav__link link">Forms</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main-wrap">
+				<header class="site-header animated fadeIn" id="SiteHeader" role="banner">
+					<a class="brand" href="../../index.html">
+						<img src="../images/Logos/logo.png">
+					</a>
+					<nav class="site-nav" role="navigation">
+						<ul class="site-nav__list">
+							<li class="site-nav__item">
+								<a href="../our_team.html" class="site-nav__link site-nav__link--link">Our Team</a>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Resources</p>
+								<ul class="site-nav__dropdown" >
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="../resources/calendar.html">Calendar</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link" href="../resources/forms.html">Forms</a>
+									</li>
+								</ul>
+							</li>
+							<li class="site-nav__item site-nav__item--parent">
+								<p class="site-nav__item site-nav__link site-nav__link--link">Projects</p>
+								<ul class="site-nav__dropdown">
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="overseer.html">Overseer</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="reach.html">Reach</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="rapid.html">Rapid</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="sandbox.html">Sandbox</a>
+									</li>
+									<li class="site-nav__dropdown-item">
+										<a class="site-nav__dropdown-link site-nav__dropdown-link--link" href="endeavour.html">Endeavour</a>
+									</li>
+								</ul>
+							</li>
+							<li class="site-nav__item">
+								<a href="../join.html" class="site-nav__link site-nav__link--link">Join</a>
+							</li>
+							<li class="site-nav__item">
+								<a href="../sponsor.html" class="site-nav__link site-nav__link--link">Sponsor Us</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="mob-nav__burger" id="MobMenuToggle" onclick="toggleMobileNav()">
+						<img id="burger" src="../images/Icons/burger.png">
+					</button>
+				</header>
+				<main>
+					<div id="rapid-wrapper" class="parallax-wrapper">
+						<div class="project-header">
+							<div class="parallax-image-header parallax-image"></div>
+							<div class="project-header__title">
+								<h1>RAPID</h1>
+							</div>
+						</div>
+						<div class="project-intro dark">
+							<h1>Cubesat Development</h1>
+							<p>Developing the technology to facilitate space research.</p>
+						</div>
+						<div class="parallax-image-header__follow parallax-image"></div>
+						<div class="project-description dark">
+							<h1 class="title">The Project</h1>
+							<div class="project-description__content">
+								<div class="image-container">
+									<img src="../images/Logos/Rapid Photo.png">
+								</div>
+								<p class="paragraph-container">Under Project Rapid, students with the highest levels of engineering/management skills and project experience will seek mission and flight opportunities that will incorporate UCLA researchers and/or industry partnerships to develop CubeSats for launch. Rapid missions are intended to encompass any and all space opportunities, including scientific investigations and technology demonstrations. They will be geared towards quick and efficient mission development so that students involved will have the opportunity to experience a CubeSat program end-to-end during their college career.
+								</p>
+							</div>
+						</div>
+						<div class="team-description light">
+							<h1 class="title">The Team</h1>
+							<div class="team-description__content">
+								<div class="image-container">
+									<img src="../images/Rapid Team Photo.jpg">
+								</div>
+								<p class="paragraph-container">
+									Project Rapid is dedicated to planning, structuring, and executing future CubeSat programs at UCLA.
+									Rapid missions are intended to encompass any and all space opportunities, including technology demonstrations.
+									Under Project Rapid, students with the highest levels of engineering/management skills and project experience will seek mission and flight opportunities that will incorporate UCLA researchers and/or industry partnerships to develop CubeSats for launch.
+									Rapid missions will be geared towards quick and efficient mission development so that students involved will have the opportunity to experience a CubeSat program end-to-end during their college career.
+								</p>
+							</div>
+						</div>
+						<div class="mission-wrapper" id="BlueDawn">
+							<div class="title">
+								<h1>Blue Dawn</h1>
+								<p>A study in magnetohydrodynamics</p>
+							</div>
+							<div class="mission-description">
+								<p class="paragraph-container">
+									In Fall 2017 Project Rapid kicked off it’s first mission, Blue Dawn. In collaboration with space plasma physics researchers in UCLA’s Department of Earth, Planetary, and Space Sciences, this mission will explore the effectiveness of a Magnetohydrodynamic (MHD) pump in microgravity. The experiment was selected by the <a href="https://www.asgsr.org/index.php/about/awards/2084-ken-souza-spaceflight-competition-award">Ken Souza Memorial Student Spaceflight Competition</a> to fly on a Blue Origin test flight of the New Shepard rocket. Compartmentalized into a 2U CubeSat form-factor, this mission will provide critical insight into the efficacy of a technology that may have applications in space life support systems.
+								</p>
+							</div>
+							<div class="scrollable-content">
+								<div class="scrollable-content__textboxes">
+									<div id="mission1" class="scrollable-content__textbox" data-image="1">
+										<h2>Overview</h2>
+										<p>
+											Pumps play a vital role in transporting fluids for waste management, thermal control systems, and life support systems. However, spacecraft currently rely on mechanical pumps, which contain physically degradable components and thus pose a threat to the longevity of life support systems.
+											That's where our solution comes in: MHD pumps have the potential to be a great alternative since they have no moving parts; they may be more long-lasting and safer to use. If our experiment can demonstrate the operational ability of an MHD pump, it can be used for a number of space applications and will revolutionize fluid transport in space.
+										</p>
+									</div>
+									<div id="mission2" class="scrollable-content__textbox" data-image="2">
+										<h2>Flight Computer</h2>
+										<p>As part of the Rapid philosophy, we have choosen to build Blue Dawn with as many COTS parts as possible, such as the Arduino Uno. This both accelerates our development cycle and lets the team focus on bigger challenges.</p>
+									</div>
+									<div id="mission3" class="scrollable-content__textbox" data-image="3">
+										<h2>Avionics</h2>
+										<p>During our ten minute flight, Blue Dawn will collect telemetry such as the acceleration and rotations experiences. This will help our researchers to characterize the fluid's motion and the effectiveness of our pump.</p>
+									</div>
+									<div id="mission4" class="scrollable-content__textbox" data-image="3">
+										<h2>The Payload</h2>
+										<p>
+											An MHD pump operates according to the fundamental physical principles that act to transport charged particles in the presence of an electric and magnetic field. In electromagnetism the force acting on a charged particle is proportional to the surrounding electric and magnetic fields, and this force influences a particle to travel with a certain velocity perpendicular to both fields. Blue Dawn applies this principle to a conductive fluid by constructing a pump with strong magnets adjacent to a pair of electrodes between which fluid can flow.
+										</p>
+									</div>
+								</div>
+								<div class="scrollable-content__images">
+									<img id="mission1_image" data-image="1" src="../images/Rapid/BlueDawnBase.JPG">
+									<img id="mission2_image" data-image="2" src="../images/Rapid/BlueDawnFC.JPG">
+									<img id="mission3_image" data-image="3" src="../images/Rapid/BlueDawnAvionics.JPG">
+									<img id="mission4_image" data-image="4" src="../images/Rapid/BlueDawnPayload.JPG">
+								</div>
+								<script type="text/javascript" src="../../public/js/missionWidget.js"></script>
+							</div>
+						</div>
+					</div>
+				</main>
+				<script type="text/javascript">
+					document.getElementById("PageLoader").classList.add("loaded");
+				</script>
+				<footer class="animatedSlow fadeInUp">
+					<div class="social-media-links">
+						<a href="https://www.facebook.com/uclaBruinSpace/" target="_blank"><img src="../images/Icons/facebook.png"></a>
+						<a href="https://www.instagram.com/uclabruinspace/" target="_blank"><img src="../images/Icons/instagram.png"></a>
+						<a href="https://twitter.com/uclabruinspace" target="_blank"><img src="../images/Icons/twitter.png"></a>
+						<a href="https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/" target="_blank"><img src="../images/Icons/linkedin.png"></a>
+					</div>
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://bruinspace.us14.list-manage.com/subscribe/post?u=a0f4954a051d300244e35603a&amp;id=fafda91946" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<h2>Don't get lost in orbit! Sign up for our newsletter: </h2>
+							<div id="mc_embed_signup_scroll">
+								<!---
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address </label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+							-->
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a0f4954a051d300244e35603a_fafda91946" tabindex="-1" value=""></div>
+						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+				</footer>
+			</div>
+  </body>
+</html>
