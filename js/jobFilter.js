@@ -79,7 +79,7 @@ function filterJobs(project) {
     $(".job-card").show()
     return
   }
-  $(".tags").each(function() {
+  $(".job-card > .job-card-header > .tags").each(function() {
     let tags = [];
     $(this).find("p").each( function() {
       tags.push(this.innerHTML)

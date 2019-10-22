@@ -1150,6 +1150,9 @@ footer {
   .parallax-image-header, .parallax-image-header__follow {
     background-image: url('../images/pictures/PCBs.jpg');
   }
+  .parallax-image-2, .parallax-image-2__follow {
+    background-image: url('../images/pictures/Welcome Day.jpg');
+  }
 }
 #rapid-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
@@ -1222,6 +1225,37 @@ footer {
   }
 }
 
+.sponsor-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  div {
+    width: 40vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+.sponsor-logos {
+    div {
+    width: 35vw;
+    height: 26.25vw;
+    }
+  }
+}
+@media (min-width: $laptop) {
+.sponsor-logos {
+  div {
+    width: 28vw;
+    height: 20vw;
+    }
+  }
+}
 .scrollable-content {
   display: flex;
 }

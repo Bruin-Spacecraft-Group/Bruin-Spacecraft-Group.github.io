@@ -117,5 +117,22 @@
         If you want to join us here at Bruin Space, check out the <a href="{{join}}">Join</a> page for more information.
       </p>
     </div>
+    <div class="parallax-image-2 parallax-image"></div>
+    <div id="sponsors" class="paragraph-container light">
+      <h1>Our Sponsors</h1>
+      <p>
+        The work we do at Bruin Space is made possible in part due to our generous sponsors
+      </p>
+      <div class="sponsor-logos">
+        {{#each sponsors}}
+          <div>
+            <a href="{{url}}" target="_blank">
+              <img src="{{logo}}">
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="parallax-image-2__follow parallax-image"></div>
   </div>
 </div>

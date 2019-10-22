@@ -30,6 +30,7 @@ var links = {
   'icons':    `${localPath}/images/Icons`,
   'favicon':  `${localPath}/images/favicon`,
   'css':      `${localPath}/css`,
+  'sponsor_logos':    `${localPath}/images/SponsorLogos`,
   'sandbox_photos':   `${localPath}/images/Sandbox`,
   'rapid_photos':     `${localPath}/images/Rapid`,
   'reach_photos':     `${localPath}/images/Reach`,

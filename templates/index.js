@@ -44,9 +44,9 @@ var context = {
       "logo":`${links.logos}/Overseer Outline.png`
     },
     {
-      "title":"Project Sandbox",
-      "subtitle":"Technology Development",
-      "link":links.sandbox,
+      "title":"Forge",
+      "subtitle":"Educational Program",
+      "link":links.forge,
       "image":`${links.pictures}/Sandbox.jpg`,
       "logo":`${links.logos}/Sandbox Outline.png`
     },
@@ -58,7 +58,19 @@ var context = {
       "logo":`${links.logos}/Endeavour Outline.png`
     }
   ],
-  "join":links.join
+  "join":links.join,
+  "sponsors": [
+    {
+      "company": "Millennium Space Systems",
+      "url": "https://www.millennium-space.com/",
+      "logo": `${links.sponsor_logos}/millennium-space-systems-logo-blue.png`
+    },
+    {
+      "company": "Tyvak Nano-Satellite Systems",
+      "url": "https://www.tyvak.com",
+      "logo": `${links.sponsor_logos}/Tyvak_Logo_Color.png`
+    }
+  ]
 }
 
 var templateScript = Handlebars.templates.index(context);
