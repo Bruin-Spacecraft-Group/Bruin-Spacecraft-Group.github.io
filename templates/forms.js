@@ -13,7 +13,7 @@ var context = {
     }, {
       'image': `${links.pictures}/W6YRA.png`,
       'title': 'Lab Purchase Request',
-      'link': 'https://docs.google.com/forms/d/e/1FAIpQLSeFM9pYp6UMF26-2qEJn81u1ZQ3LvgY3P8LKXgkMEFZkI-jrQ/viewform'
+      'link': 'https://docs.google.com/forms/d/e/1FAIpQLScmGfF-NDgD0c8tDICau7K4DoJd4ysfrFE78XHxf7s8wBUJvw/viewform'
                 + '?c=0&w=1',
     }, {
       'image': `${links.pictures}/grant.png`,
