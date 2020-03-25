@@ -21,7 +21,7 @@ var context = {
       'position': 'External Vice President',
       'picture':  `${links.people}/hirday.JPG`,
       'about':    '<p>Third Year, Computer Science</p>',
-      'link': 'http://www.linkedin.com/in/kylerobertjohnson',
+      'link': 'http://www.linkedin.com/in/hirday-gupta',
       'icon': `${links.icons}/linkedin.png`
     },
     {
