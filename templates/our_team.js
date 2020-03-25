@@ -21,7 +21,7 @@ var context = {
       'position': 'External Vice President',
       'picture':  `${links.people}/hirday.JPG`,
       'about':    '<p>Third Year, Computer Science</p>',
-      'link': 'http://www.linkedin.com/in/kylerobertjohnson',
+      'link': 'http://www.linkedin.com/in/hirday-gupta',
       'icon': `${links.icons}/linkedin.png`
     },
     {
@@ -29,7 +29,7 @@ var context = {
       'position': 'Vice President of Marketing',
       'picture':  `${links.people}/maria.JPG`,
       'about':    '<p>Fourth Year, Geophysics/Astrophysics</p>',
-      'link': 'https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/',
+      'link': 'https://www.linkedin.com/in/maria-vincent',
       'icon': `${links.icons}/linkedin.png`
     },
     {
@@ -37,7 +37,7 @@ var context = {
       'position': 'Vice President of Finance',
       'picture':  `${links.people}/daniel.jpg`,
       'about':    '<p>Second Year, Economics</p><p>I am interested in accounting and finance.</p>',
-      'link': 'https://www.linkedin.com/company/bruin-spacecraft-group-at-ucla/',
+      'link': 'https://www.linkedin.com/in/oscarpham08',
       'icon': `${links.icons}/linkedin.png`
     }
   ],
