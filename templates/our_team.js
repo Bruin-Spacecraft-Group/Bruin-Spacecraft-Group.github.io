@@ -3,7 +3,7 @@ var context = {
     {
       'name':     'Karthik Pullela',
       'position': 'President',
-      'picture':  `${links.people}/karthik.jpg`,
+      'picture':  `${links.people}/newkarthik.HEIC`,
       'about':    '<p>Third Year, Computer Science and Engineering</p><p>I have a passion for space opera, can read 9 different languages, and I love The Expanse, calligraphy and food.</p>',
       'link': 'https://www.linkedin.com/in/karthikpullela/',
       'icon': `${links.icons}/linkedin.png`
@@ -11,7 +11,7 @@ var context = {
     {
       'name':     'Kyle Johnson',
       'position': 'Internal Vice President',
-      'picture':  `${links.people}/kyle.jpg`,
+      'picture':  `${links.people}/newkyle.HEIC`,
       'about':    '<p>Fourth Year, Aerospace Engineering</p><p>I enjoy working with space technology, collegiate debate, and cycling.</p>',
       'link': 'http://www.linkedin.com/in/kylerobertjohnson',
       'icon': `${links.icons}/linkedin.png`
@@ -27,7 +27,7 @@ var context = {
     {
       'name':     'Maria Vincent',
       'position': 'Vice President of Marketing',
-      'picture':  `${links.people}/maria.JPG`,
+      'picture':  `${links.people}/newmaria.HEIC`,
       'about':    '<p>Fourth Year, Geophysics/Astrophysics</p>',
       'link': 'https://www.linkedin.com/in/maria-vincent',
       'icon': `${links.icons}/linkedin.png`
@@ -35,7 +35,7 @@ var context = {
     {
       'name':     'Oscar Pham',
       'position': 'Vice President of Finance',
-      'picture':  `${links.people}/daniel.jpg`,
+      'picture':  `${links.people}/newoscar.HEIC`,
       'about':    '<p>Second Year, Economics</p><p>I am interested in accounting and finance.</p>',
       'link': 'https://www.linkedin.com/in/oscarpham08',
       'icon': `${links.icons}/linkedin.png`
@@ -45,34 +45,34 @@ var context = {
     {
       'title': "Overseer",
       'PM': 'Dacheng Li',
-      'PM_description': '3rd year Physics',
+      'PM_description': 'Third year Physics',
       'CE': 'Taylor Lonner',
-      'CE_description': '4th year Planetary Physics',
-      'image': `${links.people}/dacheng.JPG`
+      'CE_description': 'Fourth year Planetary Physics',
+      'image': `${links.people}/newdecheng.HEIC`
       //'image': `${links.projectManagement}/overseerLeads.png`
     },
     {
       'title': "Endeavour",
-      'PM': 'Rebecca Lewis',
-      'PM_description': '4th year Physics',
-      'image': `${links.people}/rebecca.JPG`
+      'PM': 'Raymond Ramlow',
+      'PM_description': 'Physics major',
+      'image': `${links.people}/newraymond.HEIC`
       //'image': `${links.projectManagement}/endeavourLeads.png`
     },
     {
       'title': "Reach",
       'PM': 'Hirday Gupta',
-      'PM_description': '3rd year Computer Science',
+      'PM_description': 'Third year Computer Science',
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
-      'image': `${links.people}/hirday.JPG`
+      'image': `${links.people}/newhirday.HEIC`
       //'image': `${links.projectManagement}/reachLeads.png`
     },
     {
       'title': "Rapid",
       'PM': 'Shubhra Singh',
-      'PM_description': '4th year Mechanical Engineering',
+      'PM_description': 'Fourth year Mechanical Engineering',
       'CE': 'Andrew Evans',
-      'CE_description': '4th year Aerospace Engineering',
+      'CE_description': 'Fourth year Aerospace Engineering',
       'image': `${links.people}/andrew.jpg`
       //'image': `${links.projectManagement}/rapidLeads.png`
     }
