@@ -50,7 +50,6 @@ var context = {
       //'image': `${links.projectManagement}/overseerLeads.png`
       'CE': 'Taylor Lonner',
       'CE_description': 'Fourth year Planetary Physics',
-      'image': `${links.people}/newtaylor.HEIC`
     },
     {
       'title': "Endeavour",
@@ -67,8 +66,6 @@ var context = {
       //'image': `${links.projectManagement}/endeavourLeads.png`
       'CE': 'Zefyr Scott',
       'CE_description': 'Fourth year Electrical Engineering',
-      'image': `${links.people}/newzefyr.HEIC`
-      //'image': `${links.projectManagement}/reachLeads.png`
     },
     {
       'title': "Rapid",
