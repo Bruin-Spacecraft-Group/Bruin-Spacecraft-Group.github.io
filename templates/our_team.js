@@ -62,10 +62,10 @@ var context = {
       'title': "Reach",
       'PM': 'Hirday Gupta',
       'PM_description': 'Third year Computer Science',
-    'image': `${links.people}/newhirday.HEIC`
-      //'image': `${links.projectManagement}/endeavourLeads.png`
       'CE': 'Zefyr Scott',
       'CE_description': 'Fourth year Electrical Engineering',
+      'image': `${links.people}/newhirday.HEIC`
+      //'image': `${links.projectManagement}/endeavourLeads.png`
     },
     {
       'title': "Rapid",
