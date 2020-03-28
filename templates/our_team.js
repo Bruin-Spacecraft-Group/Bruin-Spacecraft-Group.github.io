@@ -3,7 +3,7 @@ var context = {
     {
       'name':     'Karthik Pullela',
       'position': 'President',
-      'picture':  `${links.people}/newkarthik.HEIC`,
+      'picture':  `newkarthik.HEIC`,
       'about':    '<p>Third Year, Computer Science and Engineering</p><p>I have a passion for space opera, can read 9 different languages, and I love The Expanse, calligraphy and food.</p>',
       'link': 'https://www.linkedin.com/in/karthikpullela/',
       'icon': `${links.icons}/linkedin.png`
@@ -49,14 +49,14 @@ var context = {
       'CE': 'Taylor Lonner',
       'CE_description': 'Fourth year Planetary Physics',
       'image': `${links.people}/newdacheng.jpeg`
-      //'image': `${links.projectManagement}/overseerLeads.png`
+     
     },
     {
       'title': "Endeavour",
       'PM': 'Raymond Ramlow',
       'PM_description': 'Physics major',
       'image': `${links.people}/newraymond.HEIC`
-      //'image': `${links.projectManagement}/endeavourLeads.png`
+      
     },
     {
       'title': "Reach",
@@ -65,7 +65,7 @@ var context = {
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
       'image': `${links.people}/newhirday.HEIC`
-      //'image': `${links.projectManagement}/reachLeads.png`
+  
     },
     {
       'title': "Rapid",
