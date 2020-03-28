@@ -55,7 +55,7 @@ var context = {
     {
       'title': "Endeavour",
       'PM': 'Raymond Ramlow',
-      'PM_description': '4th year Physics',
+      'PM_description': 'Physics major',
       'image': `${links.people}/newraymond.HEIC`
       //'image': `${links.projectManagement}/endeavourLeads.png`
     },
