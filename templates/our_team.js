@@ -3,7 +3,7 @@ var context = {
     {
       'name':     'Karthik Pullela',
       'position': 'President',
-      'picture':  `newkarthik.HEIC`,
+      'picture':  `${links.people}/newkarthik.HEIC`,
       'about':    '<p>Third Year, Computer Science and Engineering</p><p>I have a passion for space opera, can read 9 different languages, and I love The Expanse, calligraphy and food.</p>',
       'link': 'https://www.linkedin.com/in/karthikpullela/',
       'icon': `${links.icons}/linkedin.png`
@@ -65,6 +65,7 @@ var context = {
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
       'image': `${links.people}/newhirday.HEIC`
+      'image2': `newzefyr.HEIC`
   
     },
     {
