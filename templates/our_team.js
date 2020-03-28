@@ -3,7 +3,7 @@ var context = {
     {
       'name':     'Karthik Pullela',
       'position': 'President',
-      'picture':  `${links.people}/newkarthik.HEIC`,
+      'picture':  `newkarthik.HEIC`,
       'about':    '<p>Third Year, Computer Science and Engineering</p><p>I have a passion for space opera, can read 9 different languages, and I love The Expanse, calligraphy and food.</p>',
       'link': 'https://www.linkedin.com/in/karthikpullela/',
       'icon': `${links.icons}/linkedin.png`
