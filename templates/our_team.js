@@ -20,7 +20,7 @@ var context = {
       'name':     'Hirday Gupta',
       'position': 'External Vice President',
       'picture':  `${links.people}/newhirday.HEIC`,
-      'about':    '<p>Third Year, Computer Science</p>',
+      'about':    '<p>3rd Year, Computer Science</p>',
       'link': 'http://www.linkedin.com/in/hirday-gupta',
       'icon': `${links.icons}/linkedin.png`
     },
