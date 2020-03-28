@@ -21,7 +21,7 @@ var context = {
       'position': 'External Vice President',
       'picture':  `${links.people}/newhirday.HEIC`,
       'about':    '<p>Third Year, Computer Science</p>',
-      'link': 'https://www.google.com',
+      'link': 'http://www.linkedin.com/in/hirday-gupta',
       'icon': `${links.icons}/linkedin.png`
     },
     {
