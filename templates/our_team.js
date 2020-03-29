@@ -65,7 +65,6 @@ var context = {
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
       'image': `${links.people}/newhirday.HEIC`
-      'image2': `newzefyr.HEIC`
   
     },
     {
