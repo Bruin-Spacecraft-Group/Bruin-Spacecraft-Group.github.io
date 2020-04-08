@@ -56,10 +56,10 @@ body, html {
   box-sizing: inherit;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -1005,9 +1005,6 @@ footer {
   background-size: cover;
 }
 
-.project-header{
-
-}
 .project-header__title {
   width: 100%;
   display: inline-block;
@@ -1145,41 +1142,41 @@ footer {
 
 #index-wrapper{
   .parallax-image-1, .parallax-image-1__follow {
-    background-image: url('../images/pictures/aurora.jpg');
+    background-image: url('../assets/images/pictures/aurora.jpg');
   }
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/PCBs.jpg');
+    background-image: url('../assets/images/pictures/PCBs.jpg');
   }
   .parallax-image-2, .parallax-image-2__follow {
-    background-image: url('../images/pictures/Welcome Day.jpg');
+    background-image: url('../assets/images/pictures/Welcome Day.jpg');
   }
 }
 #rapid-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/PCBs.jpg');
+    background-image: url('../assets/images/pictures/PCBs.jpg');
   }
   .parallax-image-2, .parallax-image-2__follow {
-    background-image: url('../images/pictures/plasma.png');
+    background-image: url('../assets/images/pictures/plasma.png');
   }
 }
 #reach-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/breadboard.jpg');
+    background-image: url('../assets/images/pictures/breadboard.jpg');
   }
 }
 #overseer-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/Overseer.JPG');
+    background-image: url('../assets/images/pictures/Overseer.JPG');
   }
 }
 #sandbox-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/NBL.jpg');
+    background-image: url('../assets/images/pictures/NBL.jpg');
   }
 }
 #endeavour-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/aurora.jpg');
+    background-image: url('../assets/images/pictures/aurora.jpg');
   }
 }
 #rapid-wrapper, #reach-wrapper, #overseer-wrapper, #sandbox-wrapper, #endeavour-wrapper{
@@ -1189,7 +1186,7 @@ footer {
 }
 #team-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/meeting.jpg');
+    background-image: url('../assets/images/pictures/meeting.jpg');
   }
   .openings-link {
     width: 100%;
@@ -1201,27 +1198,27 @@ footer {
 }
 #sponsor-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/BSSPLASH.png');
+    background-image: url('../assets/images/pictures/BSSPLASH.png');
   }
 }
 #calendar-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/w6yra.jpg');
+    background-image: url('../assets/images/pictures/w6yra.jpg');
   }
 }
 #forms-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/w6yraSunset2.jpg');
+    background-image: url('../assets/images/pictures/w6yraSunset2.jpg');
   }
 }
 #admin-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/bruinSpacefinal.jpg');
+    background-image: url('../assets/images/pictures/bruinSpacefinal.jpg');
   }
 }
 #openings-wrapper{
   .parallax-image-header, .parallax-image-header__follow {
-    background-image: url('../images/pictures/boelterTeamPhoto.JPG');
+    background-image: url('../assets/images/pictures/boelterTeamPhoto.JPG');
   }
 }
 
@@ -1332,9 +1329,6 @@ articles
   display: flex;
   flex-direction: column;
   width: 100vw;
-  h2 {
-
-  }
 }
 .article-preview__text {
   display: flex;
@@ -1360,15 +1354,9 @@ articles
     width: 80vw;
     margin: 10px;
     padding: 2vw;
-    h2 {
-
-    }
   }
   .article-preview__text {
     width: 70%;
-    p {
-
-    }
   }
   .article-preview__image {
     width: 30%;
@@ -2238,4 +2226,104 @@ https://codepen.io/jasondavis/pen/fDGdK
     }
   }
 
+}
+
+@font-face {
+  font-family: 'vertigo';
+  src: url('vertigup-webfont.woff2') format('woff2'),
+       url('vertigup-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.mission-wrapper {
+  .title {
+    h1 {
+      font-family: 'vertigo';
+      font-size: 6rem;
+      border-bottom: 2px solid $accent-color;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .mission-description {
+    .paragraph-container {
+      padding: 1vw 3vw;
+    }
+  }
+}
+.call-to-action {
+  p {
+    font-size: 1.8rem;
+  }
+  a {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: $tablet) {
+  .mission-wrapper {
+    .paragraph-container {
+        padding: 1vw 12vh;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .mission-wrapper{
+    .paragraph-container {
+        padding: 1vw 25vh;
+    }
+  }
+}
+//3D model viewer
+.model-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+
+  .model-viewer {
+    width: 80%;
+    height: 100%;
+  }
+
+  .button {
+    margin: auto;
+    padding: 10px;
+    p {
+      margin: 5px;
+      font-size: 2rem;
+    }
+    .warning {
+      font-size: 1.55rem;
+    }
+  }
+}
+.annotation-button{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    border: none;
+    box-sizing: border-box;
+    --min-hotspot-opacity: 0;
+    background-color: $bright-blue;
+}
+.annotation-button:not(.selected) > .annotation {
+  display: none;
+}
+
+.annotation{
+    background-color: #888888;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    z-index: 100;
+}
+
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+    display: none;
 }

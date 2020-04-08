@@ -44,11 +44,11 @@ var context = {
       "logo":`${links.logos}/Overseer Outline.png`
     },
     {
-      "title":"Forge",
+      "title":"Forge Initiative",
       "subtitle":"Educational Program",
       "link":links.forge,
-      "image":`${links.pictures}/Sandbox.jpg`,
-      "logo":`${links.logos}/Sandbox Outline.png`
+      "image":`${links.pictures}/Forge.jpg`,
+      "logo":`${links.logos}/Forge Outline.png`
     },
     {
       "title":"Project Endeavour",

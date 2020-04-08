@@ -45,7 +45,7 @@
 	<div class="mission-wrapper" id="{{mission.title}}">
 		<div class="title">
 			<h1>{{mission.title}}</h1>
-			<p>{{mission.subtitle}}</p>
+			<h2>{{mission.subtitle}}</h2>
 		</div>
 		<div class="mission-description">
 			{{#if mission.description_raw}}
@@ -56,6 +56,7 @@
 				</p>
 			{{/if}}
 		</div>
+		{{#if mission.scrollables}}
 		<div class="scrollable-content">
 			<div class="scrollable-content__textboxes">
 				{{#each mission.scrollables}}
@@ -74,29 +75,39 @@
 			</div>
 			<script type="text/javascript" src="{{missionWidgetJS}}"></script>
 		</div>
+		{{/if}}
+		{{#if mission.model}}
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+		<script type="text/javascript" src="{{mission.model.model_loader_js}}"></script>
+		<div class="model-container" style="height: 50vh;">
+			<button class="button" onclick="load_model({{json mission.model}})">
+				<p>Load Model</p>
+				<p class="warning">(warning, large file size)</p>
+				</button>
+		</div>
+		{{/if}}
+		<div class="mission-description">
+			{{#if mission.description_2_raw}}
+				{{{mission.description_2_raw}}}
+			{{else}}
+				<p class="paragraph-container">
+					{{{mission.description_2}}}
+				</p>
+			{{/if}}
+		</div>
 	</div>
 	{{/if}}
 	<div class="parallax-image-2 parallax-image"></div>
-	{{#if project_timeline}}
-		<h1>Project Timeline</h1>
-		<ul class="timeline light">
-			{{#each project_timeline}}
-				<li {{#if_even @index}}{{else}}class="timeline-inverted"{{/if_even}}>
-					<div class="timeline-badge"><i class="glyphicon"></i></div>
-					<div class="timeline-panel">
-						<div class="timeline-heading">
-              <h4 class="timeline-title">{{title}}</h4>
-						</div>
-						<ul class="timeline-body">
-							{{#each items}}
-								<li>{{item}}</li>
-							{{/each}}
-						</ul>
-					</div>
-				</li>
-			{{/each}}
-		</ul>
-	{{/if}}
+	<div class="call-to-action light">
+		{{#if mission.callToAction_raw}}
+			{{{mission.callToAction_raw}}}
+		{{else}}
+			<p class="paragraph-container">
+				{{{mission.callToAction}}}
+			</p>
+		{{/if}}
+	</div>
 	<div class="parallax-image-2__follow parallax-image"></div>
 	{{#if past_work}}
 		<div class="past-projects dark">
@@ -108,7 +119,7 @@
 				    <div class="text-image {{#if_even @index}}image-left{{else}}image-right{{/if_even}}">
 				      <img src="{{picture}}">
 				      <div class="paragraph-container">
-				        {{description}}
+				        {{{description}}}
 				      </div>
 				    </div>
 				  </div>
