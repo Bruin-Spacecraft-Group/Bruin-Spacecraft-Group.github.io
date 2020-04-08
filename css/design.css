@@ -309,7 +309,7 @@ h1, h2, h3 {
 }
 .mob-nav__link--active, .mob-nav__link.section, .mob-nav__link:focus, .mob-nav__link:hover, .mob-nav__trigger--active,
 .mob-nav__trigger.section, .mob-nav__trigger:focus, .mob-nav__trigger:hover {
-  color: #fff711;
+  color: #99ceff;
   outline: none;
   border-color: #99ceff;
   box-shadow: 0 0 10px #99ceff;
@@ -317,11 +317,11 @@ h1, h2, h3 {
 
 .mob-nav__link--active svg, .mob-nav__link.section svg, .mob-nav__link:focus svg, .mob-nav__link:hover svg,
 .mob-nav__trigger--active svg, .mob-nav__trigger.section svg, .mob-nav__trigger:focus svg, .mob-nav__trigger:hover svg {
-  fill: #fff711;
+  fill: #99ceff;
 }
 
 .mob-nav__link svg, .mob-nav__trigger svg {
-  fill: #fff711;
+  fill: #99ceff;
   position: absolute;
   top: 50%;
   right: 9pt;
@@ -331,7 +331,7 @@ h1, h2, h3 {
 
 .mob-nav__trigger--back {
   font-weight: 400;
-  color: #fff711;
+  color: #99ceff;
   text-align: center;
 }
 
@@ -414,7 +414,7 @@ h1, h2, h3 {
 .site-nav__link:after {
   content: "";
   height: 2px;
-  background-color: #fff711;
+  background-color: #99ceff;
   position: absolute;
   bottom: 0;
   width: 0;
@@ -424,7 +424,7 @@ h1, h2, h3 {
 }
 
 .site-nav__link--active, .site-nav__link--section, .site-nav__link:focus, .site-nav__link:hover {
-  color: #fff711;
+  color: #99ceff;
 }
 
 .site-nav__link--active:after, .site-nav__link--section:after, .site-nav__link:focus:after, .site-nav__link:hover:after {
@@ -438,13 +438,13 @@ div.site-nav__link {
 }
 
 div.site-nav__link:focus, div.site-nav__link:hover {
-  color: #fff711;
+  color: #99ceff;
 }
 
 .site-nav__dropdown {
   display: none;
   background-color: #1A1A1A;
-  box-shadow: 2px 1px 1px #fff711;
+  box-shadow: 2px 1px 1px #99ceff;
   list-style: none;
   padding: 1vw;
 }
@@ -471,7 +471,7 @@ div.site-nav__link:focus, div.site-nav__link:hover {
 }
 
 .site-nav__dropdown-link:hover, .site-nav__dropdown-link:focus, .site-nav__dropdown-link:active {
-  color: #fff711;
+  color: #99ceff;
 }
 
 .video {
@@ -549,7 +549,7 @@ div.site-nav__link:focus, div.site-nav__link:hover {
 }
 
 .arrows path {
-  stroke: #fff711;
+  stroke: #99ceff;
   fill: transparent;
   stroke-width: 2px;
   animation: arrow 2s infinite;
@@ -764,8 +764,8 @@ div.site-nav__link:focus, div.site-nav__link:hover {
 }
 
 .button:hover {
-  color: #fff711;
-  border-color: #fff711;
+  color: #99ceff;
+  border-color: #99ceff;
 }
 
 footer {
