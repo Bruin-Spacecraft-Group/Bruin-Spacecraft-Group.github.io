@@ -48,7 +48,7 @@ var context = {
       "subtitle":"Educational Program",
       "link":links.forge,
       "image":`${links.pictures}/Forge.jpg`,
-      "logo":`${links.logos}/Forge Outline.png`
+      "logo":`${links.logos}/Forge Outline.PNG`
     },
     {
       "title":"Project Endeavour",
