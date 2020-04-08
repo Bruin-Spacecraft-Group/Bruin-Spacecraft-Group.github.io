@@ -28,7 +28,7 @@ var context = {
       'name':     'Maria Vincent',
       'position': 'Vice President of Marketing',
       'picture':  `${links.people}/newmaria.jpeg`,
-      'about':    '<p>Fourth Year, Geophysics/Astrophysics</p>',
+      'about':    '<p>Fourth Year, Geophysics/Astrophysics</p><p>I am passionate about planetary science, and a bibliophile with a love for writing, instrumental music, education, and public outreach.</p>',
       'link': 'https://www.linkedin.com/in/maria-vincent',
       'icon': `${links.icons}/linkedin.png`
     },
@@ -60,11 +60,11 @@ var context = {
     },
     {
       'title': "Reach",
-      'PM': 'Hirday Gupta',
+      'PM': 'Harrison Cassar',
       'PM_description': 'Third year Computer Science',
       'CE': 'Zefyr Scott',
       'CE_description': '4th year Electrical Engineering',
-      'image': `${links.people}/newhirday.HEIC`
+      'image': `${links.people}/newharrison.HEIC`
   
     },
     {
