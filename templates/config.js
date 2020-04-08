@@ -8,8 +8,8 @@ let localPaths = {
 //let localPath = localPaths.andrew;
 let localPath = localPaths.prod;
 
-let html_extension = '.html';
-//let html_extension = ''; //uncomment this to make the url prettier
+//let html_extension = '.html';
+let html_extension = ''; //uncomment this to make the url prettier
 
 var links = {
   'index':    `${localPath}/index${html_extension}`,
