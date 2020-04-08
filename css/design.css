@@ -133,7 +133,7 @@ h1, h2, h3 {
   -webkit-justify-content: space-between;
   -moz-box-pack: justify;
   justify-content: space-between;
-  border-bottom: 1px solid #fff711;
+  border-bottom: 1px solid #99ceff;
 }
 .site-header a {
   color: #FFFFFF;
@@ -283,7 +283,7 @@ h1, h2, h3 {
 
 .mob-nav__link, .mob-nav__trigger {
   font-size: 1.4rem;
-  color: #fff711;
+  color: #99ceff;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 5px;
