@@ -2,10 +2,12 @@ let localPaths = {
   'andrew': 'C:/Users/andre/OneDrive/Documents/BruinSpace/Bruin-Spacecraft-Group.github.io/',
   'andy':   '/Users/Andy/Andy/Undergrad/Year_1/bspace/Bruin-Spacecraft-Group.github.io/',
   'prod':   '',
+  'summer': '/Users/wsiddiqi/github/Bruin-Spacecraft-Group.github.io/',
 };
 
 //let localPath = localPaths.andy;
 //let localPath = localPaths.andrew;
+let localPath = localPaths.summer;
 let localPath = localPaths.prod;
 
 //let html_extension = '.html';
