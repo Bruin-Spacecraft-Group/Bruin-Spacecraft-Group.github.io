@@ -1,0 +1,130 @@
+<div id="{{project}}-wrapper" class="parallax-wrapper">
+	<div class="project-header">
+		<div class="parallax-image-header parallax-image"></div>
+		<div class="project-header__title">
+			<h1>{{project}}</h1>
+		</div>
+	</div>
+	<div class="project-intro dark">
+		<h1>{{project_title}}</h1>
+		<p>{{project_subtitle}}</p>
+	</div>
+	<div class="parallax-image-header__follow parallax-image"></div>
+	<div class="project-description dark">
+		<h1 class="title">The Project</h1>
+		<div class="project-description__content">
+			<div class="image-container">
+				<img src="{{logo}}">
+			</div>
+			<p class="paragraph-container">
+				{{project_description}}
+			</p>
+		</div>
+	</div>
+	<div class="team-description light">
+		<h1 class="title">The Team</h1>
+		<div class="team-description__content">
+			<div class="image-container">
+				<img src="{{team_photo}}">
+			</div>
+			<div class="pm-bio paragraph-container">
+				<h2>Project Manager</h2>
+				<p>{{pm.name}}</p>
+				<p>{{pm.major}}, {{pm.year}}</p>
+				<a href="mailto:{{pm.email}}">{{pm.email}}</a>
+				{{#if ce}}
+				<h2>Chief Engineer</h2>
+				<p>{{ce.name}}</p>
+				<p>{{ce.major}}, {{ce.year}}</p>
+				<a href="mailto:{{ce.email}}">{{ce.email}}</a>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+	{{#if mission}}
+	<div class="mission-wrapper" id="{{mission.title}}">
+		<div class="title">
+			<h1>{{mission.title}}</h1>
+			<h2>{{mission.subtitle}}</h2>
+		</div>
+		<div class="mission-description">
+			{{#if mission.description_raw}}
+				{{{mission.description_raw}}}
+			{{else}}
+				<p class="paragraph-container">
+					{{{mission.description}}}
+				</p>
+			{{/if}}
+		</div>
+		{{#if mission.scrollables}}
+		<div class="scrollable-content">
+			<div class="scrollable-content__textboxes">
+				{{#each mission.scrollables}}
+					<div id="mission{{@index}}" class="scrollable-content__textbox" data-image="{{@index}}">
+						<h2>{{title}}</h2>
+						<p>
+							{{description}}
+						</p>
+					</div>
+				{{/each}}
+			</div>
+			<div class="scrollable-content__images">
+				{{#each mission.scrollables}}
+					<img id="mission{{@index}}_image" data-image="{{@index}}" src="{{picture}}">
+				{{/each}}
+			</div>
+			<script type="text/javascript" src="{{missionWidgetJS}}"></script>
+		</div>
+		{{/if}}
+		{{#if mission.model}}
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+		<script type="text/javascript" src="{{mission.model.model_loader_js}}"></script>
+		<div class="model-container" style="height: 50vh;">
+			<button class="button" onclick="load_model({{json mission.model}})">
+				<p>Load Model</p>
+				<p class="warning">(warning, large file size)</p>
+				</button>
+		</div>
+		{{/if}}
+		<div class="mission-description">
+			{{#if mission.description_2_raw}}
+				{{{mission.description_2_raw}}}
+			{{else}}
+				<p class="paragraph-container">
+					{{{mission.description_2}}}
+				</p>
+			{{/if}}
+		</div>
+	</div>
+	{{/if}}
+	<div class="parallax-image-2 parallax-image"></div>
+	<div class="call-to-action light">
+		{{#if mission.callToAction_raw}}
+			{{{mission.callToAction_raw}}}
+		{{else}}
+			<p class="paragraph-container">
+				{{{mission.callToAction}}}
+			</p>
+		{{/if}}
+	</div>
+	<div class="parallax-image-2__follow parallax-image"></div>
+	{{#if past_work}}
+		<div class="past-projects dark">
+			<h1 class="title">Past Work</h1>
+			<div class="past-projects__content">
+				{{#each past_work}}
+					<div class="text-image__container light {{#if_even @index}}text-left{{else}}text-right{{/if_even}}">
+				    <h1 class="title">{{title}}</h1>
+				    <div class="text-image {{#if_even @index}}image-left{{else}}image-right{{/if_even}}">
+				      <img src="{{picture}}">
+				      <div class="paragraph-container">
+				        {{{description}}}
+				      </div>
+				    </div>
+				  </div>
+				{{/each}}
+			</div>
+		</div>
+	{{/if}}
+</div>

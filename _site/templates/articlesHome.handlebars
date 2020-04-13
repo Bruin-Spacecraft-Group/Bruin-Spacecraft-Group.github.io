@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h1>Articles Home</h1>
+  <h3>Check out these cool articles on space policy</h3>
+</div>
+<div class="article-list">
+  {{#each articles}}
+    <div class="article-preview dark">
+      <div class="article-preview__text">
+        <a href={{"link"}}><h2>{{title}}</h2></a>
+        <h3>{{author}}</h3>
+        <p>{{preview}}</p>
+      </div>
+      <div class="article-preview__image">
+        <img src="{{picture}}">
+      </div>
+    </div>
+  {{/each}}
+</div>
