@@ -27,7 +27,7 @@ var context = {
     {
       'name':     'Maria Vincent',
       'position': 'Vice President of Marketing',
-      'picture':  `${links.people}/newmaria.JPEG`,
+      'picture':  `${links.people}/newmaria.jpeg`,
       'about':    '<p>Fourth Year, Geophysics/Astrophysics</p><p>I am passionate about planetary science, and a bibliophile with a love for writing, instrumental music, education, and public outreach.</p>',
       'link': 'https://www.linkedin.com/in/maria-vincent',
       'icon': `${links.icons}/linkedin.png`
@@ -48,7 +48,7 @@ var context = {
       'PM_description': 'Third year Physics',
       'CE': 'Taylor Lonner',
       'CE_description': 'Fourth year Planetary Physics',
-      'image': `${links.people}/newdacheng.JPEG`,
+      'image': `${links.people}/newdacheng.jpeg`,
       'image2': `${links.people}/newtaylor.JPEG`
 
     },
