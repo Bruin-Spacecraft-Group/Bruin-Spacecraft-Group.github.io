@@ -17,7 +17,7 @@ var context = {
     "subtitle":"Hands on experience building a scientific payload",
     "description_raw":`<div class="text-image__container light text-left">
       <div class="text-image image-left">
-        <img src="../images/Endeavour/hyperPhysicsMuon.gif">
+        <img src="../assets/images/Endeavour/hyperPhysicsMuon.gif">
         <div class="paragraph-container">
           <p>
             In collaboration with <a href="${links.overseer}">Project Overseer</a>, Endeavour is building a muon detector to collect samples at high altitudes and compare with ground measurements. Through this, the team will be recreating past experiments testing the principles of relativity.
