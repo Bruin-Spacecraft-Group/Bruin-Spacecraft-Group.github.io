@@ -270,7 +270,7 @@ div.site-nav__link:focus, div.site-nav__link:hover { color: #6bbed1; }
     color: $black;
 }
 */
-.button { display: inline-block; font-size: 1.6rem; padding: 0.5vw 1vw; margin: 0.5vw auto; border: 2px solid #FFFFFF; border-radius: 0.12em; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; background-color: #203C5B; text-align: center; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.button { display: inline-block; font-size: 1.6rem; padding: 0.5vw 1vw; margin: 0.5vw auto; border: 2px solid #FFFFFF; border-radius: 0.12em; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; background-color: #2e2e2e; text-align: center; -webkit-transition: all 0.2s; transition: all 0.2s; }
 
 .button:hover { color: #6bbed1; border-color: #6bbed1; }
 
