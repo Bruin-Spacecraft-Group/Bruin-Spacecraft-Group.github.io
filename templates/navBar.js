@@ -3,16 +3,8 @@ var context = {
   "logo":`${links.logos}/logo.png`,
   'links': [
     {'element':
-      `<li class="site-nav__item site-nav__item--parent">
-        <p class="site-nav__item site-nav__link site-nav__link--link">About Us</p>
-        <ul class="site-nav__dropdown" >
-          <li class="site-nav__dropdown-item">
-            <a class="site-nav__dropdown-link" href="${links.our_team}"><nobr>Our Team</nobr></a>
-          </li>
-          <li class="site-nav__dropdown-item">
-            <a class="site-nav__dropdown-link" href="${links.our_mascot}"><nobr>Our Mascot</nobr></a>
-          </li>
-        </ul>
+      `<li class="site-nav__item">
+        <a href="${links.our_team}" class="site-nav__link site-nav__link--link">Our Team</a>
       </li>`
     },
     {'element':

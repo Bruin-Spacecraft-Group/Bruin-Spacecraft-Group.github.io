@@ -14,7 +14,6 @@ let html_extension = ''; //uncomment this to make the url prettier
 var links = {
   'index':    `${localPath}/index${html_extension}`,
   'our_team': `${localPath}/our_team${html_extension}`,
-  'our_mascot':`${localPath}/our_mascot${html_extension}`,
   'join':     `${localPath}/join${html_extension}`,
   'openings': `${localPath}/openings${html_extension}`,
   'sponsor':  `${localPath}/sponsor${html_extension}`,
