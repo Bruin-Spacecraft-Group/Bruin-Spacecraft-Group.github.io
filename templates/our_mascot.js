@@ -1,18 +1,8 @@
 var context = {
-  "project": "FORGE",
-  "project_title": "Educational Project",
-  "project_subtitle": "Providing instruction for members in skills applicable to in-house projects.",
-  "logo": `${links.logos}/Forgelogo.jpg`,
-  "project_description": "Forge is the club's educational program which aims to provide instruction for members in skills applicable to in-house projects. We have workshops given by senior members of the club and guest lectures by industry professionals to train and cater to the excitement of the next generation of space scientists and engineers.",
 
-  "team_description": "",
-  "team_photo": `${links.pictures}/forgepeople.JPG`,
-  "pm": {
-    "name":"Justin Neal",
-    "major":"Computer Science",
-    "year":"3rd Year",
-    "email":"",
-  }
+  "logo": `${links.pictures}/bru.PNG`,
+  "project_description": "The most visible and powerful symbol of our vision is our mascot, Bru. The space bear was inspired by UCLA's Bruin Bear and represents the university's heritage, school spirit, and all that its student body embodies. Bru's space suit represents the club's focus on the various aspects of research and developement in the realm of space science and technology, including but not limited to scientific payloads, satelites, and radio communications. Bru in Space is a symbol of Bruin Space's unique approach in space mission studies and design, combining well-focused projects within timelines structured around the framework of the school year with a light-hearted and fun atmosphere for space nerds to get creative and begin to sketch out and build their dream.",
+
 }
 
 Handlebars.registerHelper('if_even', function(conditional, options) {
@@ -23,6 +13,6 @@ Handlebars.registerHelper('if_even', function(conditional, options) {
   }
 });
 
-var templateScript = Handlebars.templates.project(context);
+var templateScript = Handlebars.templates.our_mascot(context);
 
 $('main').append(templateScript);
