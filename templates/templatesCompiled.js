@@ -534,7 +534,7 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + alias4(((helper = (helper = helpers.project_title || (depth0 != null ? depth0.project_title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"project_title","hash":{},"data":data}) : helper)))
     + "</h1>\r\n		<p>"
     + alias4(((helper = (helper = helpers.project_subtitle || (depth0 != null ? depth0.project_subtitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"project_subtitle","hash":{},"data":data}) : helper)))
-    + "</p>\r\n	</div>\r\n	<div class=\"parallax-image-header__follow parallax-image\"></div>\r\n	<div class=\"project-description dark\">\r\n		<h1 class=\"title\"></h1>\r\n		<div class=\"project-description__content\">\r\n			<div class=\"image-container\">\r\n				<img src=\""
+    + "</p>\r\n	</div>\r\n	<div class=\"parallax-image-header__follow parallax-image\"></div>\r\n	<div class=\"project-description dark\">\r\n		<h1 class=\"title\">The Project</h1>\r\n		<div class=\"project-description__content\">\r\n			<div class=\"image-container\">\r\n				<img src=\""
     + alias4(((helper = (helper = helpers.logo || (depth0 != null ? depth0.logo : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logo","hash":{},"data":data}) : helper)))
     + "\">\r\n			</div>\r\n			<p class=\"paragraph-container\">\r\n				"
     + alias4(((helper = (helper = helpers.project_description || (depth0 != null ? depth0.project_description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"project_description","hash":{},"data":data}) : helper)))
