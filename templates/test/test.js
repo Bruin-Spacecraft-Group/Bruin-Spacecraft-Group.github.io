@@ -13,9 +13,9 @@ var context = {
                 "text": "It's a corner!!"
             }
         ]
-      },
-  }
-  
-  var templateScript = Handlebars.templates.test(context);
-  
-  $('main').append(templateScript);
+    },
+}
+
+var templateScript = Handlebars.templates['test/test'](context);
+
+$('main').append(templateScript);
