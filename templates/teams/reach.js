@@ -66,6 +66,6 @@ Handlebars.registerHelper('if_even', function(conditional, options) {
     }
 });
 
-var templateScript = Handlebars.templates['projects/project'](context);
+var templateScript = Handlebars.templates['teams/project'](context);
 
 $('main').append(templateScript);

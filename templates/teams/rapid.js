@@ -146,6 +146,6 @@ Handlebars.registerHelper('json', function(context) {
     return JSON.stringify(context);
 });
 
-var templateScript = Handlebars.templates['projects/project'](context);
+var templateScript = Handlebars.templates['teams/project'](context);
 
 $('main').append(templateScript);

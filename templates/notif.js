@@ -1,5 +1,5 @@
 var context = {
-  'notif-link': links.calendar,
+	'notif-link': links.calendar,
 }
 
 var templateScript = Handlebars.templates.notif(context);

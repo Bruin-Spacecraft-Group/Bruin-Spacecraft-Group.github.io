@@ -1,4 +1,5 @@
-/*//Retrieve the template data from the HTML .
+/*
+//Retrieve the template data from the HTML .
 var template = $('#handlebars-demo').html();
 
 var context = { "name" : "Andrew", "occupation" : "piece of garbage" };
@@ -12,9 +13,10 @@ var html = templateScript(context);
 //$(document.body).append(html);
 $("#handlebars-demo").html = html
 */
+
 var context = {
-  "name" : "Ritesh Kumar",
-  "occupation" : "developer"
+    "name" : "Ritesh Kumar",
+    "occupation" : "developer"
 }
 
 var templateScript = Handlebars.templates.test(context);
