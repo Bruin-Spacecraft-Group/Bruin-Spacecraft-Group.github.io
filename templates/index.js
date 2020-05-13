@@ -58,7 +58,7 @@ var context = {
             "logo":`${links.logos}/Endeavour Outline.png`
         }
     ],
-    "join":links.join,
+    "join": links.join,
     "sponsors": [
         {
             "company": "Millennium Space Systems",
