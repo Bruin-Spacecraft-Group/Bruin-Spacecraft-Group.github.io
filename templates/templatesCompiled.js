@@ -586,7 +586,82 @@ templates['our_team'] = template({"1":function(container,depth0,helpers,partials
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"faculty") : depth0),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":90,"column":4},"end":{"line":102,"column":13}}})) != null ? stack1 : "")
     + "  </div>\n</div>\n";
 },"useData":true});
-templates['project'] = template({"1":function(container,depth0,helpers,partials,data) {
+templates['sponsor'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div id=\"sponsor-wrapper\" class=\"parallax-wrapper\">\n  <div class=\"project-header\">\n    <div class=\"parallax-image-header parallax-image\"></div>\n    <div class=\"project-header__title\">\n      <h1>Sponsor Us</h1>\n    </div>\n  </div>\n  <div class=\"project-intro dark\">\n    <h1>Help us take this to the next level</h1>\n  </div>\n  <div class=\"parallax-image-header__follow parallax-image\"></div>\n  <div class=\"text-image__container light\">\n    <h1 class=\"title\">Why Bruin Space?</h1>\n    <div class=\"text-image\">\n      <video width=\"100%\" autoplay muted loop>\n        <source src=\""
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"video-link") || (depth0 != null ? lookupProperty(depth0,"video-link") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"video-link","hash":{},"data":data,"loc":{"start":{"line":16,"column":21},"end":{"line":16,"column":35}}}) : helper)))
+    + "\" type=\"video/mp4\">\n        HTML video is not supported by your browser.\n      </video>\n      <div class=\"paragraph-container\">\n        <ul>\n          <li>We are a young organization, looking for companies to build lasting relationships with.</li>\n          <li>We are rapidly expanding, getting more students involved from all over campus.</li>\n          <li>Plus, space is cool! Help us share our passion!</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div class=\"paragraph-container dark\">\n    <h1 class=\"title\">Here are the details</h1>\n    <div class=\"paragraph-container\">\n      <p>Donations to the Bruin Spacecraft Group are tax deductible and are accompanied with the following benefits:</p>\n      <ul>\n        <li>Donors can choose for their gift to be made to a specific project or to Bruin Space directly</li>\n        <li>Hardware donations will be assigned a monetary value based off the average market price for the item, and will count towards the donors’ gift total</li>\n        <li>Donation totals for funding levels (below) are considered by academic year</li>\n        <li>Donors will be given priority for campus events (talks, info-sessions, resume collections, tech-talks, etc.)</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"paragraph-container light\">\n    <h3>Bruin Space has four funding levels, each with distinct benefits. Each level also includes benefits of those underneath.</h3>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight:bold\">Voyager </span> $5000 and up</h2>\n    <ul>\n      <li>Publicized recruiting event</li>\n      <li>Logo on select flight hardware</li>\n    </ul>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight:bold\">Pioneer </span> $2500 - $4999</h2>\n    <ul>\n      <li>Posts on social media</li>\n    </ul>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight:bold\">Mariner </span> $500 - $2499</h2>\n    <ul>\n      <li>Access to the Bruin Space resume book</li>\n      <li>Swag distributed in the Bruin Space lab</li>\n    </ul>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight: bold\">Explorer </span> Up to $499</h2>\n    <ul>\n      <li>Recruiting post in the Bruin Space newsletter</li>\n      <li>Logo on the Bruin Space website</li>\n    </ul>\n  </div>\n  <div class=\"paragraph-container dark\">\n    <a class=\"button\" href=\"https://drive.google.com/file/d/1FrhBgh3YwD9OpEmQoXfNsleSXdl2-K2m/view\" target=\"_blank\">Become a Sponsor!</a>\n    <p>For any inquiries, contact uclabruinspace@gmail.com to get in touch with us, and we would be happy to negotiate the terms of your sponsorship.</p>\n  </div>\n</div>\n";
+},"useData":true});
+templates['test'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "				"
+    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"description_raw") : stack1), depth0)) != null ? stack1 : "")
+    + "\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "				<p class=\"paragraph-container\">\n					"
+    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"description") : stack1), depth0)) != null ? stack1 : "")
+    + "\n				</p>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "                    <button slot=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"slot") || (depth0 != null ? lookupProperty(depth0,"slot") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"slot","hash":{},"data":data,"loc":{"start":{"line":53,"column":34},"end":{"line":53,"column":42}}}) : helper)))
+    + "\" data-position=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"position") || (depth0 != null ? lookupProperty(depth0,"position") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"position","hash":{},"data":data,"loc":{"start":{"line":53,"column":59},"end":{"line":53,"column":71}}}) : helper)))
+    + "\" data-normal=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"normal") || (depth0 != null ? lookupProperty(depth0,"normal") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"normal","hash":{},"data":data,"loc":{"start":{"line":53,"column":86},"end":{"line":53,"column":96}}}) : helper)))
+    + "\">\n                        <div id=\"annotation\">"
+    + alias4(((helper = (helper = lookupProperty(helpers,"text") || (depth0 != null ? lookupProperty(depth0,"text") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"text","hash":{},"data":data,"loc":{"start":{"line":54,"column":45},"end":{"line":54,"column":53}}}) : helper)))
+    + "</div>\n                    </button>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div class=\"mission-wrapper\" id=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"title") : stack1), depth0))
+    + "\">\n		<div class=\"title\">\n			<h1>"
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"title") : stack1), depth0))
+    + "</h1>\n			<p>"
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"subtitle") : stack1), depth0))
+    + "</p>\n		</div>\n		<div class=\"mission-description\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"description_raw") : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data,"loc":{"start":{"line":7,"column":3},"end":{"line":13,"column":10}}})) != null ? stack1 : "")
+    + "		</div>\n        <script type=\"module\" src=\"https://unpkg.com/@google/model-viewer/dist/model-viewer.js\"></script>\n        <script nomodule src=\"https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js\"></script>\n		<style>\n            button{\n                display: block;\n                width: 20px;\n                height: 20px;\n                border-radius: 10px;\n                border: none;\n                background-color: blue;\n                box-sizing: border-box;\n            }\n\n            button[slot=\"hotspot-hand\"]{\n                --min-hotspot-opacity: 0;\n                background-color: red;\n            }\n\n            button[slot=\"hotspot-foot\"]:not([data-visible]) {\n                background-color: transparent;\n                border: 3px solid blue;\n            }\n\n            #annotation{\n                background-color: #888888;\n                position: absolute;\n                transform: translate(10px, 10px);\n                border-radius: 10px;\n                padding: 10px;\n            }\n            /* This keeps child nodes hidden while the element loads */\n            :not(:defined) > * {\n                display: none;\n            }\n            </style>\n        <div class=\"model-container\" style=\"height: 50vh;justify-content:center;\">\n			<model-viewer camera-controls src=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"modelURL") : stack1), depth0))
+    + "\" alt=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"modelAlt") : stack1), depth0))
+    + "\" style=\"width: 100%; height:100%;\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"annotations") : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":52,"column":16},"end":{"line":56,"column":25}}})) != null ? stack1 : "")
+    + "            </model-viewer>\n		</div>\n	</div>\n";
+},"useData":true});
+templates['projects/project'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -832,80 +907,5 @@ templates['project'] = template({"1":function(container,depth0,helpers,partials,
     + "	</div>\n	<div class=\"parallax-image-2__follow parallax-image\"></div>\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"past_work") : depth0),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":112,"column":1},"end":{"line":129,"column":8}}})) != null ? stack1 : "")
     + "</div>\n";
-},"useData":true});
-templates['sponsor'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "<div id=\"sponsor-wrapper\" class=\"parallax-wrapper\">\n  <div class=\"project-header\">\n    <div class=\"parallax-image-header parallax-image\"></div>\n    <div class=\"project-header__title\">\n      <h1>Sponsor Us</h1>\n    </div>\n  </div>\n  <div class=\"project-intro dark\">\n    <h1>Help us take this to the next level</h1>\n  </div>\n  <div class=\"parallax-image-header__follow parallax-image\"></div>\n  <div class=\"text-image__container light\">\n    <h1 class=\"title\">Why Bruin Space?</h1>\n    <div class=\"text-image\">\n      <video width=\"100%\" autoplay muted loop>\n        <source src=\""
-    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"video-link") || (depth0 != null ? lookupProperty(depth0,"video-link") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"video-link","hash":{},"data":data,"loc":{"start":{"line":16,"column":21},"end":{"line":16,"column":35}}}) : helper)))
-    + "\" type=\"video/mp4\">\n        HTML video is not supported by your browser.\n      </video>\n      <div class=\"paragraph-container\">\n        <ul>\n          <li>We are a young organization, looking for companies to build lasting relationships with.</li>\n          <li>We are rapidly expanding, getting more students involved from all over campus.</li>\n          <li>Plus, space is cool! Help us share our passion!</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div class=\"paragraph-container dark\">\n    <h1 class=\"title\">Here are the details</h1>\n    <div class=\"paragraph-container\">\n      <p>Donations to the Bruin Spacecraft Group are tax deductible and are accompanied with the following benefits:</p>\n      <ul>\n        <li>Donors can choose for their gift to be made to a specific project or to Bruin Space directly</li>\n        <li>Hardware donations will be assigned a monetary value based off the average market price for the item, and will count towards the donors’ gift total</li>\n        <li>Donation totals for funding levels (below) are considered by academic year</li>\n        <li>Donors will be given priority for campus events (talks, info-sessions, resume collections, tech-talks, etc.)</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"paragraph-container light\">\n    <h3>Bruin Space has four funding levels, each with distinct benefits. Each level also includes benefits of those underneath.</h3>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight:bold\">Voyager </span> $5000 and up</h2>\n    <ul>\n      <li>Publicized recruiting event</li>\n      <li>Logo on select flight hardware</li>\n    </ul>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight:bold\">Pioneer </span> $2500 - $4999</h2>\n    <ul>\n      <li>Posts on social media</li>\n    </ul>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight:bold\">Mariner </span> $500 - $2499</h2>\n    <ul>\n      <li>Access to the Bruin Space resume book</li>\n      <li>Swag distributed in the Bruin Space lab</li>\n    </ul>\n  </div>\n  <div class=\"sponsorship-level\">\n    <h2 class=\"title\"><span style=\"font-weight: bold\">Explorer </span> Up to $499</h2>\n    <ul>\n      <li>Recruiting post in the Bruin Space newsletter</li>\n      <li>Logo on the Bruin Space website</li>\n    </ul>\n  </div>\n  <div class=\"paragraph-container dark\">\n    <a class=\"button\" href=\"https://drive.google.com/file/d/1FrhBgh3YwD9OpEmQoXfNsleSXdl2-K2m/view\" target=\"_blank\">Become a Sponsor!</a>\n    <p>For any inquiries, contact uclabruinspace@gmail.com to get in touch with us, and we would be happy to negotiate the terms of your sponsorship.</p>\n  </div>\n</div>\n";
-},"useData":true});
-templates['test'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "				"
-    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"description_raw") : stack1), depth0)) != null ? stack1 : "")
-    + "\n";
-},"3":function(container,depth0,helpers,partials,data) {
-    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "				<p class=\"paragraph-container\">\n					"
-    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"description") : stack1), depth0)) != null ? stack1 : "")
-    + "\n				</p>\n";
-},"5":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "                    <button slot=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"slot") || (depth0 != null ? lookupProperty(depth0,"slot") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"slot","hash":{},"data":data,"loc":{"start":{"line":53,"column":34},"end":{"line":53,"column":42}}}) : helper)))
-    + "\" data-position=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"position") || (depth0 != null ? lookupProperty(depth0,"position") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"position","hash":{},"data":data,"loc":{"start":{"line":53,"column":59},"end":{"line":53,"column":71}}}) : helper)))
-    + "\" data-normal=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"normal") || (depth0 != null ? lookupProperty(depth0,"normal") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"normal","hash":{},"data":data,"loc":{"start":{"line":53,"column":86},"end":{"line":53,"column":96}}}) : helper)))
-    + "\">\n                        <div id=\"annotation\">"
-    + alias4(((helper = (helper = lookupProperty(helpers,"text") || (depth0 != null ? lookupProperty(depth0,"text") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"text","hash":{},"data":data,"loc":{"start":{"line":54,"column":45},"end":{"line":54,"column":53}}}) : helper)))
-    + "</div>\n                    </button>\n";
-},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "<div class=\"mission-wrapper\" id=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"title") : stack1), depth0))
-    + "\">\n		<div class=\"title\">\n			<h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"title") : stack1), depth0))
-    + "</h1>\n			<p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"subtitle") : stack1), depth0))
-    + "</p>\n		</div>\n		<div class=\"mission-description\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"description_raw") : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data,"loc":{"start":{"line":7,"column":3},"end":{"line":13,"column":10}}})) != null ? stack1 : "")
-    + "		</div>\n        <script type=\"module\" src=\"https://unpkg.com/@google/model-viewer/dist/model-viewer.js\"></script>\n        <script nomodule src=\"https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js\"></script>\n		<style>\n            button{\n                display: block;\n                width: 20px;\n                height: 20px;\n                border-radius: 10px;\n                border: none;\n                background-color: blue;\n                box-sizing: border-box;\n            }\n\n            button[slot=\"hotspot-hand\"]{\n                --min-hotspot-opacity: 0;\n                background-color: red;\n            }\n\n            button[slot=\"hotspot-foot\"]:not([data-visible]) {\n                background-color: transparent;\n                border: 3px solid blue;\n            }\n\n            #annotation{\n                background-color: #888888;\n                position: absolute;\n                transform: translate(10px, 10px);\n                border-radius: 10px;\n                padding: 10px;\n            }\n            /* This keeps child nodes hidden while the element loads */\n            :not(:defined) > * {\n                display: none;\n            }\n            </style>\n        <div class=\"model-container\" style=\"height: 50vh;justify-content:center;\">\n			<model-viewer camera-controls src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"modelURL") : stack1), depth0))
-    + "\" alt=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"modelAlt") : stack1), depth0))
-    + "\" style=\"width: 100%; height:100%;\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"annotations") : stack1),{"name":"each","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":52,"column":16},"end":{"line":56,"column":25}}})) != null ? stack1 : "")
-    + "            </model-viewer>\n		</div>\n	</div>\n";
 },"useData":true});
 })();
