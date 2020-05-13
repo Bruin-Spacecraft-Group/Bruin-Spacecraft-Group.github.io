@@ -27,7 +27,6 @@ function load_model(data) {
     }) 
 }
 
-
 // <model-viewer class="model-viewer" camera-controls src="{{mission.modelURL}}" alt="{{mission.modelAlt}}">
 //                 {{#each mission.annotations}}
 //                     <div class="annotation-button" slot="{{slot}}" data-position="{{position}}" data-normal="{{normal}}">

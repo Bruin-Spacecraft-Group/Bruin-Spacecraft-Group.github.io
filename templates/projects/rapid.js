@@ -38,7 +38,7 @@ var context = {
             "needing to recharge. The spacecraft bus is able to provide command and data handling, attitude " +
             "control, and communications with 2U of space, leaving 1U for the payload.",
         "model": {
-            "model_loader_js": `${links.js}/model_loader.js`,
+            "model_loader_js": `${links.js}/modelLoader.js`,
             "modelURL": `${links.models}/URSa.glb`,
             "modelAlt": "cube model",
             "annotations": [
