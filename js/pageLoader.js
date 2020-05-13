@@ -1,9 +1,12 @@
-/*var pageLoader =
-  `<div class="page-loader" id="PageLoader">
-    <img class="page-loader__spinner" src="${links.icons}/pageSpinner2.png" alt="Page spinner">
-  </div>`*/
+/*
+var pageLoader =
+    `<div class="page-loader" id="PageLoader">
+        <img class="page-loader__spinner" src="${links.icons}/pageSpinner2.png" alt="Page spinner">
+    </div>`
+*/
+
 var div = document.createElement('div')
-//div.classList.add("page-loader")
+// div.classList.add("page-loader")
 div.id = "PageLoader"
 div.style.position = 'fixed'
 div.style.top = 0
@@ -17,32 +20,32 @@ div.style.zIndex = 300
 var style = document.createElement('style');
 style.type = 'text/css';
 var keyFrames = `
-  @keyframes orbit {
-    0% {
-      transform: translateX(-2px) translateY(-14px) scale(1); opacity:1; }
+    @keyframes orbit {
+        0% {
+            transform: translateX(-2px) translateY(-14px) scale(1); opacity:1; }
 
-    30% {
-      transform: translateX(120px) translateY(-70px) scale(0.3); opacity:1;
-    }
-    40% {
-      transform: translateX(120px) translateY(-70px) scale(0.2); opacity:0;
-    }
-    50% {
-      transform: translateX(-125px) translateY(42px) scale(0.2); opacity:0;
-    }
-    60% {
-      transform: translateX(-125px) translateY(42px) scale(0.3); opacity:1;
-    }
-    100% {
-      transform: translateX(-2px) translateY(-14px) scale(1); opacity:1}
-  }`
+        30% {
+            transform: translateX(120px) translateY(-70px) scale(0.3); opacity:1;
+        }
+        40% {
+            transform: translateX(120px) translateY(-70px) scale(0.2); opacity:0;
+        }
+        50% {
+            transform: translateX(-125px) translateY(42px) scale(0.2); opacity:0;
+        }
+        60% {
+            transform: translateX(-125px) translateY(42px) scale(0.3); opacity:1;
+        }
+        100% {
+            transform: translateX(-2px) translateY(-14px) scale(1); opacity:1}
+    }`
 style.innerHTML = keyFrames
 document.getElementsByTagName('head')[0].appendChild(style);
 
-//img.src = `${links.icons}/pageSpinner2.png`
+// img.src = `${links.icons}/pageSpinner2.png`
 
 var background_img = document.createElement('div')
-//background_img.classList.add("page-loader__planet")
+// background_img.classList.add("page-loader__planet")
 background_img.style.position = 'fixed'
 let h = screen.height,
 w = screen.width
@@ -57,7 +60,7 @@ background_img.style.zIndex = '2'
 
 
 var img = document.createElement('div')
-//img.classList.add("page-loader__orbiter")
+// img.classList.add("page-loader__orbiter")
 img.style.position = 'fixed'
 img.style.width = '100px'
 img.style.height = '100px'
@@ -77,6 +80,6 @@ div.append(img)
 document.body.append(div)
 
 $(document).ready(function() {
-  document.getElementById('PageLoader').classList.add("loaded")
-  document.getElementById('page-wrapper').style.display = ''
+    document.getElementById('PageLoader').classList.add("loaded")
+    document.getElementById('page-wrapper').style.display = ''
 })
