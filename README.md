@@ -1,13 +1,25 @@
 # Bruin-Spacecraft-Group.github.io
-## Bruin Space Website!!
+
+## Bruin Space's Website
 
 Repository hosting the website for Bruin Spacecraft Group.
-Yeah, pretty straigtforward...  
+Yeah, pretty straightforward...  
 
-Developer note: if you are trying to work with the css, you'll need SASS.
-Download through npm or something, then just compile from the command line, or use some other tool.
- - There is a package on atom for autocompiling SASS.
+## Developer Notes
+ - If you are trying to work with the CSS, you'll need SASS. We use SASS to write our stylesheets as `.scss` files,
+ which we then compile into minified CSS.
+ - If you are trying to work with the HTML, you'll need Handlebars. We use Handlebars for its HTML templating,
+ which means a lot less repeated elements. Handlebars content goes in `.handlebars` and `.js` files, which it then
+loads into `.html` files via JavaScript.
 
- Compiling handlebars templates:
- - navigate to templates folder
- - run `handlebars . -f templatesCompiled.js`
+### Installation
+Download through NPM or elsewhere:
+```
+npm install -g uglifycss
+npm install -g sass
+npm install -g handlebars
+```
+
+### Compilation
+Run `make` from root to do everything at once, or take a look at Handlebars/SASS docs for more options.
+ - There may also packages for Atom/VSCode that do what you want.
