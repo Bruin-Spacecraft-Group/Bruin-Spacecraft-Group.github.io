@@ -1,7 +1,8 @@
 default:
-	# Compile all the Handlebars templates into templatesCompiled.js
+	@echo "Compiling Handlebars templates..."
 	handlebars templates/ -f templates/templatesCompiled.js
-	# Compile all the SASS stylesheets into the folder css/compiled
+	@echo "Compiling SASS stylesheets..."
 	sass css/sass:css/compiled
-	# Minify all the compiled CSS files into design.min.css
+	@echo "Minifying CSS files..."
 	uglifycss css/compiled/*.css > css/design.min.css
+	@echo "    Done!"

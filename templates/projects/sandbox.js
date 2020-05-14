@@ -72,6 +72,6 @@ Handlebars.registerHelper('if_even', function(conditional, options) {
         return options.inverse(this);
     }
 });
-var templateScript = Handlebars.templates['teams/project'](context);
+var templateScript = Handlebars.templates['projects/project'](context);
 console.log(context)
 $('main').append(templateScript);

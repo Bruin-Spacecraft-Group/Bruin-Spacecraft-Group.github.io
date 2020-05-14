@@ -5,6 +5,6 @@ var context = {
     "finance":`${links.pictures}/purchases.png`
 }
 
-var templateScript = Handlebars.templates['teams/admin'](context);
+var templateScript = Handlebars.templates['info/admin'](context);
 
 $('main').append(templateScript);
