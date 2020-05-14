@@ -1,6 +1,4 @@
-var context = {
-
-}
+var context = {};
 
 var templateScript = Handlebars.templates._404(context);
 
