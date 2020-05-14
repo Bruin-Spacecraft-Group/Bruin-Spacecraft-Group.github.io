@@ -477,11 +477,11 @@ templates['info/our_mascot'] = template({"compiler":[8,">= 4.3.0"],"main":functi
         return undefined
     };
 
-  return "<div id=\"team-wrapper\" class=\"parallax-wrapper\">\n    <div class=\"project-header\">\n        <div class=\"parallax-image-header parallax-image\"></div>\n        <div class=\"project-header__title\">\n            <h1>Our Mascot</h1>\n        </div>\n    </div>\n    <div class=\"project-intro dark\">\n        <h1>Bru in Space</h1>\n    </div>\n    <div class=\"parallax-image-header__follow parallax-image\"></div>\n    <div class=\"project-description dark\">\n        <h1 class=\"\"></h1>\n        <div class=\"project-description__content\">\n            <p> "
-    + alias4(((helper = (helper = lookupProperty(helpers,"project_description") || (depth0 != null ? lookupProperty(depth0,"project_description") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"project_description","hash":{},"data":data,"loc":{"start":{"line":15,"column":16},"end":{"line":15,"column":39}}}) : helper)))
-    + " </p>\n        <div class=\"image-container\">\n            <img src=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"logo") || (depth0 != null ? lookupProperty(depth0,"logo") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logo","hash":{},"data":data,"loc":{"start":{"line":17,"column":22},"end":{"line":17,"column":30}}}) : helper)))
-    + "\">\n        </div>\n        <div class=\"team-description light\">\n            <h4> Jeanin Lee, Creator </h4>\n    </div>\n</div>\n";
+  return "<div id=\"mascot-wrapper\" class=\"parallax-wrapper\">\n    <div class=\"project-header\">\n        <div class=\"parallax-image-header parallax-image\"></div>\n        <div class=\"project-header__title\">\n            <h1>Our Mascot</h1>\n        </div>\n    </div>\n    <div class=\"project-intro dark\">\n        <h1>Bru in Space</h1>\n    </div>\n    <div class=\"parallax-image-header__follow parallax-image\"></div>\n    <div class=\"project-description dark\">\n        <h1 class=\"title\"></h1>\n        <div class=\"project-description__content\">\n            <div class=\"image-container\"><img src=\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"logo") || (depth0 != null ? lookupProperty(depth0,"logo") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"logo","hash":{},"data":data,"loc":{"start":{"line":15,"column":51},"end":{"line":15,"column":59}}}) : helper)))
+    + "\"></div>\n            <p class=\"paragraph-container\"> "
+    + alias4(((helper = (helper = lookupProperty(helpers,"project_description") || (depth0 != null ? lookupProperty(depth0,"project_description") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"project_description","hash":{},"data":data,"loc":{"start":{"line":16,"column":44},"end":{"line":16,"column":67}}}) : helper)))
+    + " </p>\n             <div class=\"project-description dark\">\n                 <h1 class=\"title\"></h1>\n             </div>\n        </div>\n        <div class=\"team-description light\">\n            <p class=\"title\">\n                \"The creation of Bru was actually an accident, just like many other wonderful space discoveries!\n                They were supposed to be a funny little background doodle in presentation slide backgrounds, but\n                once the marketing team realized how adorable the character was, I had to evolve this little bear\n                into a full character. The name Bru was chosen because it is a pun for the name of the club (Bru\n                in Space). And now they reside, surrounded by stars and endless possibility, discovering and\n                learning just like the Bruins on Earth.'' -Jeanine Lee, Creator\n            </p>\n        </div>\n    </div>\n</div>\n";
 },"useData":true});
 templates['info/our_team'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -535,9 +535,8 @@ templates['info/our_team'] = template({"1":function(container,depth0,helpers,par
     + alias4(((helper = (helper = lookupProperty(helpers,"CE") || (depth0 != null ? lookupProperty(depth0,"CE") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"CE","hash":{},"data":data,"loc":{"start":{"line":70,"column":32},"end":{"line":70,"column":38}}}) : helper)))
     + "</h2>\n                            <p>"
     + alias4(((helper = (helper = lookupProperty(helpers,"CE_description") || (depth0 != null ? lookupProperty(depth0,"CE_description") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"CE_description","hash":{},"data":data,"loc":{"start":{"line":71,"column":31},"end":{"line":71,"column":49}}}) : helper)))
-    + "</p>\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"image2") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":72,"column":28},"end":{"line":74,"column":35}}})) != null ? stack1 : "")
-    + "                        </div>\n";
+    + "</p>\n                        </div>\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"image2") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":73,"column":24},"end":{"line":75,"column":31}}})) != null ? stack1 : "");
 },"5":function(container,depth0,helpers,partials,data) {
     var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -547,7 +546,7 @@ templates['info/our_team'] = template({"1":function(container,depth0,helpers,par
     };
 
   return "                            <img src=\""
-    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"image2") || (depth0 != null ? lookupProperty(depth0,"image2") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"image2","hash":{},"data":data,"loc":{"start":{"line":73,"column":38},"end":{"line":73,"column":48}}}) : helper)))
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"image2") || (depth0 != null ? lookupProperty(depth0,"image2") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"image2","hash":{},"data":data,"loc":{"start":{"line":74,"column":38},"end":{"line":74,"column":48}}}) : helper)))
     + "\">\n";
 },"7":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
