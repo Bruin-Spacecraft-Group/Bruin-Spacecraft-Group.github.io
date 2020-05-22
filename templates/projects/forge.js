@@ -3,10 +3,7 @@ var context = {
     "project_title": "Educational Project",
     "project_subtitle": "Providing instruction for members in skills applicable to in-house projects.",
     "logo": `${links.logos}/Forgelogo.jpg`,
-    "project_description": "Forge is the club's educational program which aims to provide instruction for members " +
-        "in skills applicable to in-house projects. We have workshops given by senior members of the club and guest " +
-        "lectures by industry professionals to train and cater to the excitement of the next generation of space " +
-        "scientists and engineers.",
+    "project_description": "Forge is the education and development program of Bruins Spacecraft Group. We are dedicated to developing the skills of club members to increase the overall skill level of the organization. Intro Series: The Intro Series is a series of workshops intended to give new members the skills they need to be productive members of a project. Workshops: Forge hosts workshops on varying subjects to develop skills that are in high demand within the organization.",
 
     "team_description": "",
     "team_photo": `${links.pictures}/forgepeople.JPG`,
