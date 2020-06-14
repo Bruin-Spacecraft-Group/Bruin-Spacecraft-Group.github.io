@@ -50,12 +50,12 @@ var context = {
     'projects': [
         {
             'title': "Overseer",
-            'PM': 'Dacheng Li',
-            'PM_description': 'Third year Physics',
-            'CE': 'Taylor Lonner',
-            'CE_description': 'Fourth year Planetary Physics',
-            'image': `${links.people}/newdacheng.jpeg`,
-            'image2': `${links.people}/newtaylor.JPEG`
+            'PM': 'Lorraine Nicholson',
+            'PM_description': 'Second year Astrophysics',
+            'CE': 'Ethan Salter',
+            'CE_description': 'Second year Bioengineering',
+            'image': `${links.people}/lorraine.png`,
+            'image2': `${links.people}/ethan.png`
 
         },
         {
@@ -68,7 +68,7 @@ var context = {
         {
             'title': "Forge",
             'PM': 'Justin Neal',
-            'PM_description': 'Physics',
+            'PM_description': 'Fourth year Physics',
             'image': `${links.people}/newjustin.HEIC`
 
         },
@@ -84,12 +84,12 @@ var context = {
         },
         {
             'title': "Rapid",
-            'PM': 'Shubhra Singh',
-            'PM_description': 'Fourth year Mechanical Engineering',
-            'CE': 'Andrew Evans',
-            'CE_description': 'Fourth year Aerospace Engineering',
-            'image': `${links.people}/newshubhra.JPG`,
-            'image2': `${links.people}/andrew.jpg`
+            'PM': 'Dacheng Li',
+            'PM_description': 'Fourth year Physics',
+            'CE': 'Justin Neal',
+            'CE_description': 'Fourth year Physics',
+            'image': `${links.people}/newdacheng.jpeg`,
+            'image2': `${links.people}/newjustin.HEIC`
         }
     ],
     'faculty': [
