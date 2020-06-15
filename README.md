@@ -3,7 +3,8 @@
 ## Bruin Space's Website
 
 Repository hosting the website for Bruin Spacecraft Group.
-Yeah, pretty straightforward...  
+
+Bruin Spacecraft Group is a science and engineering organization at UCLA dedicated to space mission engineering. For more information, check out [bruinspace.com](https://bruinspace.com)
 
 ## Developer Notes
  - If you are trying to work with the CSS, you'll need SASS. We use SASS to write our stylesheets as `.scss` files,
