@@ -15,7 +15,7 @@ var context = {
     "pm": {
         "name": "Harrison Cassar",
         "major": "Computer Science",
-        "year": "2nd Year",
+        "year": "3rd Year",
         "email": "",
     },
     "ce": {

@@ -75,7 +75,7 @@ var context = {
         {
             'title': "Reach",
             'PM': 'Harrison Cassar',
-            'PM_description': 'Second year Computer Science',
+            'PM_description': 'Third year Computer Science',
             'CE': 'Zefyr Scott',
             'CE_description': 'Fourth year Electrical Engineering',
             'image': `${links.people}/newharrison.JPEG`,

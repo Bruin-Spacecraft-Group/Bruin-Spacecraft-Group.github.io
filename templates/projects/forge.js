@@ -10,10 +10,10 @@ var context = {
     "team_description": "",
     "team_photo": `${links.pictures}/forgepeople.JPG`,
     "pm": {
-        "name":"Justin Neal",
-        "major":"Computer Science",
-        "year":"3rd Year",
-        "email":"",
+        "name": "Justin Neal",
+        "major": 'Physics',
+        "year": '4th Year',
+        "email": '',
     },
     /*
     "mission": {

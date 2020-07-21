@@ -13,16 +13,16 @@ var context = {
         "and/or industry partnerships to develop CubeSats for launch.",
     "team_photo": `${links.pictures}/Rapid Team Photo.jpg`,
     "pm": {
-        "name": "Shubhra Singh",
-        "major": "Mechanical Engineering",
+        "name": 'Dacheng Li',
+        "major": 'Physics',
         "year": "4th Year",
-        "email": ""
+        "email": 'dacheng.li3@gmail.com',
     },
     "ce": {
-        "name": "Andrew Evans",
-        "major": "Aerospace Engineering",
+        "name": 'Justin Neal',
+        "major": 'Physics',
         "year": "4th Year",
-        "email": "andrewevans@engineering.ucla.edu"
+        "email": '',
     },
     "mission": {
         "title": "URSa",
