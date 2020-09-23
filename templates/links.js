@@ -1,5 +1,4 @@
 // Links to images, assets, etc.
-
 let links = {
     'index':            `${localPath}/index${html_extension}`,
     'our_team':         `${localPath}/our_team${html_extension}`,

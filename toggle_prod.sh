@@ -1,1 +1,1 @@
-cp config_prod.js templates/config.js
+cat config_prod.js templates/links.js > templates/config.js
