@@ -29,7 +29,7 @@ var context = {
         "subtitle": "UCLA Reseach Satellite",
         "description": "Bruin Space is embarking on our first real spacecraft with URSa: a 3U CubeSat. Designed to " +
             "be a high power spacecraft bus, we will be supporting the research efforts of the " +
-            `<a href="wirz.seas.ucla.edu/plasma">Plasma and Space Propulsion Lab at UCLA</a>.`,
+            `<a href="https://www.wirz.seas.ucla.edu/plasma">Plasma and Space Propulsion Lab at UCLA</a>.`,
         "description_2": "The UCLA Research Satellite (URSa) is a conceptualized 3U CubeSat capable of supporting " +
             "up to a 60W Electric Propulsion (EP) payload by switching between charging and thrusting modes. " +
             `<a href="https://www.cubesat.org/">The CubeSat standard</a>, which is built upon 10x10x10cm Units ` +
