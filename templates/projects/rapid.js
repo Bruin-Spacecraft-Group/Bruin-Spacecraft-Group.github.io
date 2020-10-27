@@ -84,7 +84,7 @@ var context = {
             "we are looking for the best of the best to make it happen. If you are interested in being a part of " +
             "the first entirely student designed and built satellite, reach out to the Project Manager on Slack. " +
             "Project Rapid has a rolling application, and will accept new members as necessary. See " +
-            `<a href="${links.openings}">our openings page</a> for specific positions we are looking to fill.`,
+            `<a href="https://forms.gle/ntHnEQQ8ThKYgm8S7">our openings page</a> for specific positions we are looking to fill.`,
     },
     "past_work": [
         {
