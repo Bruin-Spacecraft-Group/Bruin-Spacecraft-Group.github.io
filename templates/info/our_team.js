@@ -1,49 +1,43 @@
 var context = {
     'officers':[
         {
-            'name':     'Karthik Pullela',
+            'name':     'Christopher Clavelli',
             'position': 'President',
-            'picture':  `${links.people}/newkarthik.jpg`,
-            'about':    '<p>Third Year, Computer Science and Engineering</p><p>I have a passion for space opera, ' +
-                        'can read 9 different languages, and I love The Expanse, calligraphy and food.</p>',
-            'link': 'https://www.linkedin.com/in/karthikpullela/',
+            'picture':  `${links.pictures}/aurora.jpg`,
+            'about':    '<p>Third Year, Aerospace Engineering</p><p></p>',
+            'link': 'https://www.linkedin.com/in/cclavelli/',
             'icon': `${links.icons}/linkedin.png`
         },
         {
-            'name':     'Kyle Johnson',
+            'name':     'Justin Neal',
             'position': 'Internal Vice President',
-            'picture':  `${links.people}/newkyle.HEIC`,
-            'about':    '<p>Fourth Year, Aerospace Engineering</p><p>I enjoy working with space technology, ' +
-                        'collegiate debate, and cycling.</p>',
-            'link': 'http://www.linkedin.com/in/kylerobertjohnson',
+            'picture':  `${links.people}/newjustin.HEIC`,
+            'about':    '<p>Fourth Year, Aerospace Engineering</p><p></p>',
+            'link': 'http://www.linkedin.com/in/justinrneal',
             'icon': `${links.icons}/linkedin.png`
         },
         {
-            'name':     'Hirday Gupta',
+            'name':     'Yuchen Chen',
             'position': 'External Vice President',
-            'picture':  `${links.people}/newhirday.jpg`,
-            'about':    '<p>Third Year, Computer Science</p><p>I have been passionate about space since I was ' +
-                        'little and Bruin Space\'s mission of making space travel more accessible really resonated ' +
-                        'with me.</p>',
-            'link': 'http://www.linkedin.com/in/hirday-gupta',
+            'picture':  `${links.pictures}/aurora.jpg`,
+            'about':    '<p>Third Year, Computer Science</p><p></p>',
+            'link': 'http://www.linkedin.com',
             'icon': `${links.icons}/linkedin.png`
         },
         {
-            'name':     'Maria Vincent',
+            'name':     'Jeanine Lee and Angela Zheng',
             'position': 'Vice President of Marketing',
-            'picture':  `${links.people}/newmaria.jpeg`,
-            'about':    '<p>Fourth Year, Geophysics/Astrophysics</p><p>I am passionate about planetary science, ' +
-                        'and a bibliophile with a love for writing, instrumental music, education, and public ' +
-                        'outreach.</p>',
-            'link': 'https://www.linkedin.com/in/maria-vincent',
+            'picture':  `${links.pictures}/aurora.jpg`,
+            'about':    '<p>Third Year</p><p></p>',
+            'link': 'https://www.linkedin.com',
             'icon': `${links.icons}/linkedin.png`
         },
         {
-            'name':     'Oscar Pham',
+            'name':     'Liana Huang',
             'position': 'Vice President of Finance',
-            'picture':  `${links.people}/newoscar.jpg`,
-            'about':    '<p>Second Year, Economics</p><p>I am interested in accounting and finance.</p>',
-            'link': 'https://www.linkedin.com/in/oscarpham08',
+            'picture':  `${links.pictures}/aurora.jpg`,
+            'about':    '<p>Third Year, Economics</p><p></p>',
+            'link': 'https://www.linkedin.com',
             'icon': `${links.icons}/linkedin.png`
         }
     ],
@@ -51,7 +45,7 @@ var context = {
         {
             'title': "Overseer",
             'PM': 'Lorraine Nicholson',
-            'PM_description': 'Second year Astrophysics',
+            'PM_description': 'Third year Astrophysics',
             'CE': 'Ethan Salter',
             'CE_description': 'Second year Bioengineering',
             'image': `${links.people}/lorraine.png`,
@@ -67,19 +61,19 @@ var context = {
         },
         {
             'title': "Forge",
-            'PM': 'Justin Neal',
+            'PM': 'Zefyr Scott',
             'PM_description': 'Fourth year Physics',
-            'image': `${links.people}/newjustin.HEIC`
+            'image': `${links.people}/newzefyr.HEIC`
 
         },
         {
             'title': "Reach",
             'PM': 'Harrison Cassar',
             'PM_description': 'Third year Computer Science',
-            'CE': 'Zefyr Scott',
-            'CE_description': 'Fourth year Electrical Engineering',
+            'CE': 'Andy Peng',
+            'CE_description': 'Third year Computer Science',
             'image': `${links.people}/newharrison.JPEG`,
-            'image2': `${links.people}/newzefyr.JPEG`
+            'image2': `${links.pictures}/aurora.jpg`
 
         },
         {
