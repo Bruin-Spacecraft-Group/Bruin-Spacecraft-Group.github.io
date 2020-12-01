@@ -63,7 +63,7 @@ var context = {
             'title': "Forge",
             'PM': 'Zefyr Scott',
             'PM_description': 'Fourth year Physics',
-            'image': `${links.people}/newzefyr.HEIC`
+            'image': `${links.people}/newzefyr.JPEG`
 
         },
         {
