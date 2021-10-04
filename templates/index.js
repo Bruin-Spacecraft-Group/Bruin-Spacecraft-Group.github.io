@@ -30,13 +30,6 @@ var context = {
             "logo":`${links.logos}/Rapid Outline.png`
         },
         {
-            "title":"Project Reach",
-            "subtitle":"Rocket Payloads",
-            "link":links.reach,
-            "image":`${links.pictures}/Reach.JPG`,
-            "logo":`${links.logos}/Reach Outline.png`
-        },
-        {
             "title":"Project Overseer",
             "subtitle":"High Altitude Balloons",
             "link":links.overseer,
@@ -44,18 +37,11 @@ var context = {
             "logo":`${links.logos}/Overseer Outline.png`
         },
         {
-            "title":"Forge Initiative",
+            "title":"Project Forge",
             "subtitle":"Educational Program",
             "link":links.forge,
             "image":`${links.pictures}/Forge.jpg`,
             "logo":`${links.logos}/Forge Outline.PNG`
-        },
-        {
-            "title":"Project Endeavour",
-            "subtitle":"Scientific Research",
-            "link":links.endeavour,
-            "image":`${links.pictures}/Endeavour.jpg`,
-            "logo":`${links.logos}/Endeavour Outline.png`
         }
     ],
     "join": links.join,
