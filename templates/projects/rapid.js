@@ -13,16 +13,16 @@ var context = {
         "and/or industry partnerships to develop CubeSats for launch.",
     "team_photo": `${links.pictures}/Rapid Team Photo.jpg`,
     "pm": {
-        "name": 'Dacheng Li',
-        "major": 'Physics',
+        "name": 'Iris Peng',
+        "major": 'Computer Science',
         "year": "4th Year",
-        "email": 'dacheng.li3@gmail.com',
+        "email": 'ziyipeng@g.ucla.edu',
     },
     "ce": {
-        "name": 'Justin Neal',
-        "major": 'Physics',
+        "name": 'Christopher Clavelli',
+        "major": 'Aerospace Engineering',
         "year": "4th Year",
-        "email": '',
+        "email": 'clavelli.christopher55@gmail.com',
     },
     "mission": {
         "title": "URSa",
