@@ -24,3 +24,5 @@ npm install -g handlebars
 ### Compilation
 Run `make` from root to do everything at once, or take a look at Handlebars/SASS docs for more options.
  - There may also packages for Atom/VSCode that do what you want.
+
+haha websites suck why do we have one
