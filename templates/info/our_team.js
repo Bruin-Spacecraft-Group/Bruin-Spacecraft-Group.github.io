@@ -4,7 +4,7 @@ var context = {
             'name':     'Christopher Clavelli',
             'position': 'President',
             'picture':  `${links.pictures}/aurora.jpg`,
-            'about':    '<p>Third Year, Aerospace Engineering</p><p></p>',
+            'about':    '<p>Fourth Year, Aerospace Engineering</p><p></p>',
             'link': 'https://www.linkedin.com/in/cclavelli/',
             'icon': `${links.icons}/linkedin.png`
         },
@@ -53,13 +53,6 @@ var context = {
 
         },
         {
-            'title': "Endeavour",
-            'PM': 'Raymond Ramlow',
-            'PM_description': 'Physics',
-            'image': `${links.people}/newraymond.HEIC`
-
-        },
-        {
             'title': "Forge",
             'PM': 'Zefyr Scott',
             'PM_description': 'Fourth year Physics',
@@ -67,23 +60,11 @@ var context = {
 
         },
         {
-            'title': "Reach",
-            'PM': 'Harrison Cassar',
-            'PM_description': 'Third year Computer Science',
-            'CE': 'Andy Peng',
-            'CE_description': 'Third year Computer Science',
-            'image': `${links.people}/newharrison.JPEG`,
-            'image2': `${links.pictures}/aurora.jpg`
-
-        },
-        {
             'title': "Rapid",
-            'PM': 'Dacheng Li',
-            'PM_description': 'Fourth year Physics',
-            'CE': 'Justin Neal',
-            'CE_description': 'Fourth year Physics',
-            'image': `${links.people}/newdacheng.jpeg`,
-            'image2': `${links.people}/newjustin.HEIC`
+            'PM': 'Govind Pimpale',
+            'PM_description': 'Second year Computer Science and Engineering',
+            'CE': 'Christopher Clavelli',
+            'CE_description': 'Fourth year Aerospace Engineering',
         }
     ],
     'faculty': [

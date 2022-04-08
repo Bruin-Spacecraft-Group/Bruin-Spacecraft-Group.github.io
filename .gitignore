@@ -1,2 +1,5 @@
 config_dev.js
 .vscode/
+
+.idea/*
+package-lock.json

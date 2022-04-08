@@ -13,10 +13,9 @@ var context = {
         "and/or industry partnerships to develop CubeSats for launch.",
     "team_photo": `${links.pictures}/Rapid Team Photo.jpg`,
     "pm": {
-        "name": 'Iris Peng',
-        "major": 'Computer Science',
-        "year": "4th Year",
-        "email": 'ziyipeng@g.ucla.edu',
+        "name": 'Govind Pimpale',
+        "major": 'Computer Science and Engineering',
+        "year": "2nd Year",
     },
     "ce": {
         "name": 'Christopher Clavelli',
@@ -26,7 +25,7 @@ var context = {
     },
     "mission": {
         "title": "URSa",
-        "subtitle": "UCLA Reseach Satellite",
+        "subtitle": "UCLA Research Satellite",
         "description": "Bruin Space is embarking on our first real spacecraft with URSa: a 3U CubeSat. Designed to " +
             "be a high power spacecraft bus, we will be supporting the research efforts of the " +
             `<a href="https://www.wirz.seas.ucla.edu/plasma">Plasma and Space Propulsion Lab at UCLA</a>.`,
