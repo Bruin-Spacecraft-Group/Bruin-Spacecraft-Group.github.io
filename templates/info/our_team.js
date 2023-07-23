@@ -3,37 +3,37 @@ var context = {
         {
             'name':     'Sahil Gosain',
             'position': 'President',
-            'picture':  `${links.people}/sahil.jpg`,
+            'picture':  `${links.people}/Sahil_Pres.jpg`,
             'about':    '<p>Third Year, Mechanical Engineering</p><p></p>',
             'link': 'https://www.linkedin.com/in/sahilgosain/',
             'icon': `${links.icons}/linkedin.png`
         },
         {
-            'name':     'Kaeshav Chandrasekar',
+            'name':     'Seth Ferrel',
             'position': 'Internal Vice President',
-            'picture':  `${links.people}/Kaeshav.jpg`,
-            'about':    '<p>Fourth Year, Electrical Engineering</p><p></p>',
-            'link': 'https://www.linkedin.com/in/kaeshav-chandrasekar/',
+            'picture':  `${links.people}/Seth_IVP.jpg`,
+            'about':    '<p>Second Year, Computer Engineering</p><p></p>',
+            'link': 'https://www.linkedin.com/in/sethmferrell/',
             'icon': `${links.icons}/linkedin.png`
         },
-        /*{
-            'name':     'Yuchen Chen',
-            'position': 'External Vice President',
-            'picture':  `${links.pictures}/aurora.jpg`,
-            'about':    '<p>Third Year, Computer Science</p><p></p>',
-            'link': 'http://www.linkedin.com',
-            'icon': `${links.icons}/linkedin.png`
-        },*/
         {
-            'name':     'Kristine Ly',
+            'name':     'Rit Agarwal',
+            'position': 'External Vice President',
+            'picture':  `${links.people}/rit_EVP.jpg`,
+            'about':    '<p>Third Year, Computer Science</p><p></p>',
+            'link': 'https://www.linkedin.com/in/ritagarwal/',
+            'icon': `${links.icons}/linkedin.png`
+        },
+        {
+            'name':     'Sonav Agarwal',
             'position': 'Vice President of Marketing',
             'picture':  `${links.pictures}/aurora.jpg`,
-            'about':    '<p>Third Year Civil Engineering</p><p></p>',
+            'about':    '<p>Second Year, Computer Science</p><p></p>',
             'link': 'https://www.linkedin.com',
             'icon': `${links.icons}/linkedin.png`
         },
         {
-            'name':     'Catherine Chen',
+            'name':     'Jack Shi',
             'position': 'Vice President of Finance',
             'picture':  `${links.pictures}/aurora.jpg`,
             'about':    '<p>Second Year, Business Economics</p><p></p>',
@@ -45,26 +45,27 @@ var context = {
         {
             'title': "Overseer",
             'PM': 'Taiga Asanuma',
-            'PM_description': 'Third year Aerospace Engineering',
+            'PM_description': 'Fourth year Aerospace Engineering',
             'CE': 'Tejas Kamtam',
-            'CE_description': 'Second year Computer Science',
-            //'image': `${links.people}/Taigapng.png`,
-            //'image2': `${links.people}/Tejaspng.png`
+            'CE_description': 'Third year Computer Science',
+            'image': `${links.people}/Taiga.jpg`,
+            'image2': `${links.people}/Tejas.jpg`
 
         },
         {
             'title': "Forge",
             'PM': 'Hugo Onghai',
-            'PM_description': 'First Year, Materials Engineering',
-            'image': `${links.people}/.JPEG`
+            'PM_description': 'Second Year, Materials Engineering',
+            'image': `${links.people}/Hugo.jpg`
 
         },
         {
             'title': "Rapid",
             'PM': 'Ian Lee',
-            'PM_description': 'Second year Mechanical Engineering',
-            'CE': 'Kaeshav Chandrasekar',
-            'CE_description': 'Fourth year Electrical Engineering',
+            'PM_description': 'Third year Mechanical Engineering',
+            'CE': 'Randall Scharpf',
+            'CE_description': 'Third Year, Computer Science',
+            'image': `${links.people}/Ian.jpg`
         }
     ],
     /*'faculty': [

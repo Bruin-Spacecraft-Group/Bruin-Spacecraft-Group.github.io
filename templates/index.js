@@ -54,7 +54,7 @@ var context = {
         {
             "company": "Tyvak Nano-Satellite Systems",
             "url": "https://www.tyvak.com",
-            "logo": `${links.sponsor_logos}/Tyvak_Logo_Color.png`
+            "logo": `${links.sponsor_logos}/Tyvak_Logo_Cgioolor.png`
         }
     ]
 }

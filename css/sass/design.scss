@@ -661,6 +661,7 @@ footer {
     h1 {
         text-align: left;
     }
+    padding-top: 5vh;
 }
 
 .project-description__content, .team-description__content, .past-projects__content, .project-timeline {
@@ -802,9 +803,12 @@ footer {
     text-transform: uppercase;
 }
 
+
 #team-wrapper {
     .parallax-image-header, .parallax-image-header__follow {
         background-image: url("../assets/images/pictures/meeting.jpg");
+        width: 100%;
+        height: 40vh;
     }
     .openings-link {
         width: 100%;

@@ -70,8 +70,8 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 2.5vw;
-  width: 45vw;
-  height: 50vw;
+  width: 15vw;
+  height: 20vw;
   position: relative;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -347,7 +347,6 @@
   .form-cards__container {
     padding: 0px 20vw;
   }
-
   .form-card {
     width: 24vw;
     margin: 20px 2vw;
