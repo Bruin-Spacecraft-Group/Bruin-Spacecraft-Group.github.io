@@ -11,7 +11,7 @@ var context = {
         {
             'name':     'Seth Ferrel',
             'position': 'Internal Vice President',
-            'picture':  `${links.people}/Seth_IVP.jpg`,
+            'picture':  `${links.people}/Seth_IVP.JPG`,
             'about':    '<p>Second Year, Computer Engineering</p><p></p>',
             'link': 'https://www.linkedin.com/in/sethmferrell/',
             'icon': `${links.icons}/linkedin.png`
