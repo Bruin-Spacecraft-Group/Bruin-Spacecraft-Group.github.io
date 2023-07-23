@@ -1,35 +1,31 @@
 var context = {
     "project": "rapid",
-    "project_title": "CubeSat Development",
-    "project_subtitle": " Developing the technology to facilitate space research.",
-    "logo": `${links.logos}/Rapid Photo.png`,
-    "project_description": "Project Rapid is dedicated to planning, structuring, and executing CubeSat missions " +
-        "at UCLA. Rapid missions are intended to encompass any and all space opportunities, including scientific " +
-        "investigations and technology demonstrations. They will be geared towards quick and efficient mission " +
-        "development so that students involved will have the opportunity to experience a CubeSat program " +
-        "end-to-end during their college career.",
+    "project_title": "3U CubeSat Ion-Thruster Technology Demonstrator",
+    "project_subtitle": "Developing satellite bus technology for demonstration and future payload operations",
+    "logo": `${links.logos}/semirapid.png`,
+    "project_description": "Project Rapid, the flagship project of Bruin Spacecraft Group at UCLA provides a professional environment for UCLA students to develop, manufacture, and launch a satellite as well as build the foundational bus for which to provide future students with ease of research access into space. Rapid is the beginning of student space experimentation and professional aerospace engineering development for research and other Bruin Spacecraft Group project endeavors. ",
     "team_description": "Under Project Rapid, students with the highest levels of engineering/management skills " +
         "and project experience will seek mission and flight opportunities that will incorporate UCLA researchers " +
         "and/or industry partnerships to develop CubeSats for launch.",
     "team_photo": `${links.pictures}/Rapid Team Photo.jpg`,
     "pm": {
-        "name": 'Govind Pimpale',
-        "major": 'Computer Science and Engineering',
-        "year": "2nd Year",
+        "name": 'Ian Lee',
+        "major": 'Mechanical Engineering',
+        "year": "3rd Year",
     },
     "ce": {
-        "name": 'Christopher Clavelli',
-        "major": 'Aerospace Engineering',
-        "year": "4th Year",
-        "email": 'clavelli.christopher55@gmail.com',
+        "name": 'Randall Scharpf',
+        "major": 'Computer Science',
+        "year": "3rd Year",
     },
     "mission": {
-        "title": "URSa",
-        "subtitle": "UCLA Research Satellite",
-        "description": "Bruin Space is embarking on our first real spacecraft with URSa: a 3U CubeSat. Designed to " +
+        "title": "Technical Details",
+        "subtitle": "Rapid",
+        "description": "Bruin Space is embarking on our first real spacecraft: a 3U CubeSat. Designed to " +
             "be a high power spacecraft bus, we will be supporting the research efforts of the " +
-            `<a href="https://www.wirz.seas.ucla.edu/plasma">Plasma and Space Propulsion Lab at UCLA</a>.`,
-        "description_2": "The UCLA Research Satellite (URSa) is a conceptualized 3U CubeSat capable of supporting " +
+            `<a href="https://www.linkedin.com/company/ucla-plasma-and-space-propulsion-laboratory-pspl/">Plasma and Space Propulsion Lab at UCLA</a>.`,
+        "description_2": "A 3U CubeSat capable of supporting " +
+        //need to update the link, only links to the linkedin
             "up to a 60W Electric Propulsion (EP) payload by switching between charging and thrusting modes. " +
             `<a href="https://www.cubesat.org/">The CubeSat standard</a>, which is built upon 10x10x10cm Units ` +
             "(U), provides a efficient platform for both design and launch. With a 40W solar array and a 50Whr " +
