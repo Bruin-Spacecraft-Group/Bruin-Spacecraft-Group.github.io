@@ -3,11 +3,11 @@ var context = {
     "project_title": "High Altitude Balloons",
     "project_subtitle": "Developing a platform for high altitude research.",
     "logo": `${links.logos}/Overseer Photo 2.png`,
-    "project_description": "Project Overseer is a long term project to develop a reliable platform for scientific " +
-        "payload and technology demonstrations through the use of high altitude balloon launches. Our mission is " +
-        "to provide a cost efficient and easily accessible resource for UCLA researchers seeking to perform " +
-        "experiments or increase hardware TRLs. We want to provide students who have limited engineering " +
-        "experience with an opportunity to develop and enhance skills useful in increasingly complex projects.",
+    "project_description": "Project Overseer is a quarterly project to develop a reliable platform for scientific " +
+        "payload and technology demonstrations through the use of high altitude balloon launches. Our goal is to" +
+        "provide students who have limited or no engineering experience with an opportunity to develop and enhance skills" +
+        "useful in increasingly complex projects. We aim to provide a cost efficient and accessible resource for" +
+        "UCLA researchers seeking to perform experiments or increase hardware TRLs.",
     "team_description": `<p class="paragraph-container">
         Project Overseer is composed of 4 different subteams, each working towards a series of successful, quarterly launches and interfacing with external parties in hopes of providing UCLA with a regular high altitude launch provider.
     </p>
@@ -18,22 +18,22 @@ var context = {
         <li><span class="larger">Tracking</span> - responsible for designing and implementing radio technologies to track the balloon during its flight, ensuring reliable recovery</li>
     </ul>`,
 
-    "team_photo":`${links.overseer_photos}/Team Photo.JPG`,
+    "team_photo":`${links.overseer_photos}/23Team.JPG`,
     "pm": {
-        "name": 'Lorraine Nicholson',
-        "major": 'Astrophysics',
-        "year": '2nd Year',
-        "email": 'lorrainen@g.ucla.edu',
+        "name": 'Taiga Asanuma',
+        "major": 'Aerospace Engineering',
+        "year": '3rd Year',
+        "email": 'tasanuma@g.ucla.edu',
     },
     "ce": {
-        "name": 'Ethan Salter',
-        "major": 'Bioengineering',
-        "year": '2nd Year',
-        "email": 'ethansalter3@gmail.com',
+        "name": 'Tejas Kamtam',
+        "major": 'Computer Science',
+        "year": '3rd Year',
+        "email": 'tejaskamtam@g.ucla.edu',
     },
     "mission": {
-        "title": "Horizon",
-        "subtitle": "Overseer 2.0",
+        "title": "Overseer",
+        "subtitle": "Overseer 2023",
         "description": "Overseer is designed as a broad multi-mission launch platform to support the launch and recovery of scientific instruments and incorporates many internal subsystems to make this goal a reality. While this is by no means a complete diagram, these pictures give a broad look at how Overseer’s components fit within its bus and how the internal volume of our missions is allocated.",
         "scrollables":[{
                 "title": "Overview",
