@@ -1,15 +1,16 @@
 <div id="team-wrapper" class="parallax-wrapper">
     <div class="project-header">
-        <div class="parallax-image-header parallax-image"></div>
         <div class="project-header__title">
             <h1>Our Team</h1>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
     <div class="project-intro dark">
         <h1>Who makes up Bruin Space?</h1>
         <p>It takes all backgrounds to build a spacecraft, and with over 60 members, we've got a wide variety.</p>
     </div>
-    <div class="parallax-image-header__follow parallax-image"></div>
     <div class="project-description light">
         <h1 class="title">The Officers</h1>
         <div class="project-description__content">
@@ -65,6 +66,7 @@
                         </div>
                         <img src="{{image}}">
                         {{#if CE_description}}
+                        <div class="card-content">
                         <div class="person dark">
                             <h3>Chief Engineer</h3>
                             <h2>{{CE}}</h2>
@@ -74,6 +76,7 @@
                             <img src="{{image2}}">
                         {{/if}}
                         {{/if}}
+                        </div>
                     </div>
                 </div>
             {{/each}}

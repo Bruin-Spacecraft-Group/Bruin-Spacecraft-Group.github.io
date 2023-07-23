@@ -247,7 +247,6 @@ body::-webkit-scrollbar-thumb {
   .video .caption__container .caption h3 {
     font-size: 6rem;
   }
-
   .scrollDown h3 {
     font-size: 4rem;
   }
@@ -291,8 +290,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
   }
 }
-@-webkit-keyframes arrow {
-  /*Safari and Chrome*/
+@-webkit-keyframes arrow { /*Safari and Chrome*/
   0% {
     opacity: 0;
   }
@@ -361,7 +359,6 @@ body::-webkit-scrollbar-thumb {
   .paragraph-container {
     padding: 5vw 12vh;
   }
-
   .title {
     padding: 2vw 5vw;
   }
@@ -370,7 +367,6 @@ body::-webkit-scrollbar-thumb {
   .paragraph-container {
     padding: 4vw 25vh;
   }
-
   .title {
     padding: 2vw 2vw;
   }
@@ -553,7 +549,6 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
   .text-image__container {
     padding: 2vw;
   }
-
   .text-image {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -569,7 +564,6 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
     max-width: 45%;
     max-height: 40vh;
   }
-
   .image-left {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -581,7 +575,6 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
   .text-image__container {
     padding: 1vw;
   }
-
   .text-image .paragraph-container {
     padding: 0.5vw 2vw;
     width: 60%;
@@ -632,6 +625,7 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
   -webkit-box-pack: left;
   -ms-flex-pack: left;
   justify-content: left;
+  padding-top: 5vh;
 }
 .project-intro h1 {
   text-align: left;
@@ -677,35 +671,31 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
     -ms-flex-direction: row;
     flex-direction: row;
   }
-
   .project-description__content .paragraph-container, .team-description__content .paragraph-container,
-.past-projects__content .paragraph-container, .project-timeline .paragraph-container {
+  .past-projects__content .paragraph-container, .project-timeline .paragraph-container {
     width: 95%;
     padding: 1vw 2vw;
     height: auto;
   }
-
   .project-description__content .image-container, .team-description__content .image-container,
-.past-projects__content .image-container, .project-timeline .image-container {
+  .past-projects__content .image-container, .project-timeline .image-container {
     width: 45%;
     max-height: 40vh;
   }
-
   .project-description__content img, .team-description__content img, .past-projects__content img,
-.project-timeline img {
+  .project-timeline img {
     height: 100%;
     margin: auto;
   }
 }
 @media (min-width: 1024px) {
   .project-description__content .paragraph-container, .team-description__content .paragraph-container,
-.past-projects__content .paragraph-container, .project-timeline .paragraph-container {
+  .past-projects__content .paragraph-container, .project-timeline .paragraph-container {
     padding: 0.5vw 2vw;
     width: 60%;
   }
-
   .project-description__content .image-container, .team-description__content .image-container,
-.past-projects__content .image-container, .project-timeline .image-container {
+  .past-projects__content .image-container, .project-timeline .image-container {
     width: 40%;
     min-height: 30vh;
   }
@@ -774,6 +764,8 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
 
 #team-wrapper .parallax-image-header, #team-wrapper .parallax-image-header__follow {
   background-image: url("../assets/images/pictures/meeting.jpg");
+  width: 100%;
+  height: 40vh;
 }
 #team-wrapper .openings-link {
   width: 100%;
@@ -884,12 +876,10 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
     -ms-flex: 50%;
     flex: 50%;
   }
-
   .scrollable-content__textbox {
     margin-bottom: 25vh;
     padding: 1vw;
   }
-
   .scrollable-content__images {
     -webkit-box-flex: 50%;
     -ms-flex: 50%;
@@ -906,11 +896,9 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
     -ms-flex: 40%;
     flex: 40%;
   }
-
   .scrollable-content__textbox {
     margin-bottom: 30vh;
   }
-
   .scrollable-content__images {
     top: 10%;
     -webkit-box-flex: 60%;
@@ -975,7 +963,6 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
     margin: auto;
     width: 80vw;
   }
-
   .article-preview {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -985,11 +972,9 @@ footer .contact a:link, footer .contact a:hover, footer .contact a:visited, foot
     margin: 10px;
     padding: 2vw;
   }
-
   .article-preview__text {
     width: 70%;
   }
-
   .article-preview__image {
     width: 30%;
   }
