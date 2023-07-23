@@ -33,10 +33,10 @@ var context = {
                 <p class="site-nav__item site-nav__link site-nav__link--link">Projects</p>
                 <ul class="site-nav__dropdown" >
                     <li class="site-nav__dropdown-item">
-                        <a class="site-nav__dropdown-link" href="${links.overseer}">Overseer</a>
+                    <a class="site-nav__dropdown-link" href="${links.rapid}">Rapid</a>
                     </li>
                     <li class="site-nav__dropdown-item">
-                        <a class="site-nav__dropdown-link" href="${links.rapid}">Rapid</a>
+                        <a class="site-nav__dropdown-link" href="${links.overseer}">Overseer</a>
                     </li>
                     <li class="site-nav__dropdown-item">
                         <a class="site-nav__dropdown-link" href="${links.forge}">Forge</a>
