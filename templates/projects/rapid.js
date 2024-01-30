@@ -81,6 +81,13 @@ var context = {
             "Project Rapid has a rolling application, and will accept new members as necessary. See " +
             `<a href="https://forms.gle/ntHnEQQ8ThKYgm8S7">our openings page</a> for specific positions we are looking to fill.`,
     },
+    "Sub-teams": [
+        {
+            "title": "Rapid Subteams",
+            "description": "ADCS (Attitude Determination and Control Systems)</br> Determine and control spacecraft orientation through" + 
+            "the use of positional and rotational sensors, control algorithms, and torque-generating actuators."
+        }
+    ],
     "past_work": [
         {
             "title": "Blue Dawn: A study in magnetohydrodynamics",
