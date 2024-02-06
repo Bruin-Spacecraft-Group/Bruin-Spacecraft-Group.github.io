@@ -85,7 +85,8 @@ var context = {
         {
             "title": "Rapid Subteams",
             "description": "ADCS (Attitude Determination and Control Systems)</br> Determine and control spacecraft orientation through" + 
-            "the use of positional and rotational sensors, control algorithms, and torque-generating actuators."
+            "the use of positional and rotational sensors, control algorithms, and torque-generating actuators.</br>" +
+            "CDH (Command and Data Handling):</br>Control operation of the spacecraft through communication to and from all subsystem hardware units (main brains)."
         }
     ],
     "past_work": [
