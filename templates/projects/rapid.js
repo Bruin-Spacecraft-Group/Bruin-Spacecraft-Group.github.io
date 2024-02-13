@@ -3,7 +3,7 @@ var context = {
     "project_title": "3U CubeSat Ion-Thruster Technology Demonstrator",
     "project_subtitle": "Developing satellite bus technology for demonstration and future payload operations",
     "logo": `${links.logos}/semirapid.png`,
-    "project_description": "Project Rapid, the flagship project of Bruin Spacecraft Group at UCLA provides a professional environment for UCLA students to develop, manufacture, and launch a satellite as well as build the foundational bus for which to provide future students with ease of research access into space. Rapid is the beginning of student space experimentation and professional aerospace engineering development for research and other Bruin Spacecraft Group project endeavors. ",
+    "project_description": "Project Rapid is a student satellite team a part of Bruin Spacecraft Group at UCLA aimed at developing and launching a 3U CubeSat as a technology demonstrator for an ion thruster. Project Rapid, the flagship project of Bruin Spacecraft Group at UCLA provides a professional environment for UCLA students to develop, manufacture, and launch a satellite as well as build the foundational bus for which to provide future students with ease of research access into space. Rapid is the beginning of student space experimentation and professional aerospace engineering development for research and other Bruin Spacecraft Group project endeavors. ",
     "team_description": "Under Project Rapid, students with the highest levels of engineering/management skills " +
         "and project experience will seek mission and flight opportunities that will incorporate UCLA researchers " +
         "and/or industry partnerships to develop CubeSats for launch.",
