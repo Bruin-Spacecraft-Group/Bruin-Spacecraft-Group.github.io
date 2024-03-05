@@ -7,7 +7,7 @@ var context = {
     "team_description": "Under Project Rapid, students with the highest levels of engineering/management skills " +
         "and project experience will seek mission and flight opportunities that will incorporate UCLA researchers " +
         "and/or industry partnerships to develop CubeSats for launch.",
-    "team_photo": `${links.pictures}/Rapid Team Photo.jpg`,
+    "team_photo": `${links.pictures}/rapid leads cc.png`,
     "pm": {
         "name": 'Ian Lee',
         "major": 'Mechanical Engineering',
@@ -84,7 +84,7 @@ var context = {
     "Sub-teams": [
         {
             "title": "Rapid Subteams",
-            "description": "ADCS (Attitude Determination and Control Systems)</br> Determine and control spacecraft orientation through" + 
+            "description": "ADCS (Attitude Determination and Control Systems)</br> Lead: Seth Ferrell</br>Determine and control spacecraft orientation through" + 
             "the use of positional and rotational sensors, control algorithms, and torque-generating actuators.</br>" +
             "CDH (Command and Data Handling):</br>Control operation of the spacecraft through communication to and from all subsystem hardware units (main brains)."
         }

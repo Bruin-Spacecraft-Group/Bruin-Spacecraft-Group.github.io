@@ -589,7 +589,7 @@ templates['info/sponsor'] = template({"compiler":[8,">= 4.3.0"],"main":function(
 
   return "<div id=\"sponsor-wrapper\" class=\"parallax-wrapper\">\n    <div class=\"project-header\">\n        <div class=\"parallax-image-header parallax-image\"></div>\n        <div class=\"project-header__title\">\n            <h1>Sponsor Us</h1>\n        </div>\n    </div>\n    <div class=\"project-intro dark\">\n        <h1>Help us take this to the next level</h1>\n    </div>\n    <div class=\"parallax-image-header__follow parallax-image\"></div>\n    <div class=\"text-image__container light\">\n        <h1 class=\"title\">Why Bruin Space?</h1>\n        <div class=\"text-image\">\n            <video width=\"100%\" autoplay muted loop>\n                <source src=\""
     + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"video-link") || (depth0 != null ? lookupProperty(depth0,"video-link") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"video-link","hash":{},"data":data,"loc":{"start":{"line":16,"column":29},"end":{"line":16,"column":43}}}) : helper)))
-    + "\" type=\"video/mp4\">\n                HTML video is not supported by your browser.\n            </video>\n            <div class=\"paragraph-container\">\n                <ul>\n                    <li>We are a young organization, looking for companies to build lasting relationships with.</li>\n                    <li>We are rapidly expanding, getting more students involved from all over campus.</li>\n                    <li>Plus, space is cool! Help us share our passion!</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n    <div class=\"paragraph-container dark\">\n        <h1 class=\"title\">Here are the details</h1>\n        <div class=\"paragraph-container\">\n            <p>Donations to the Bruin Spacecraft Group are tax deductible and are accompanied with the following\n                benefits:</p>\n            <ul>\n                <li>Donors can choose for their gift to be made to a specific project or to Bruin Space directly</li>\n                <li>Hardware donations will be assigned a monetary value based off the average market price for the\n                    item, and will count towards the donors’ gift total</li>\n                <li>Donation totals for funding levels (below) are considered by academic year</li>\n                <li>Donors will be given priority for campus events (talks, info-sessions, resume collections,\n                    tech-talks, etc.)</li>\n            </ul>\n        </div>\n    </div>\n    <div class=\"paragraph-container light\">\n        <h3>Bruin Space has four funding levels, each with distinct benefits. Each level also includes benefits of\n            those underneath.</h3>\n    </div>\n    <div class=\"sponsorship-level\">\n        <h2 class=\"title\"><span style=\"font-weight:bold\">Orbiter </span> $0 - $749</h2>\n        <ul>\n            <li>Publicized recruiting event</li>\n            <li>Logo on select flight hardware</li>\n        </ul>\n    </div>\n    <div class=\"sponsorship-level\">\n        <h2 class=\"title\"><span style=\"font-weight:bold\">Lander </span> $750 - $1,499</h2>\n        <ul>\n            <li>Posts on social media</li>\n        </ul>\n    </div>\n    <div class=\"sponsorship-level\">\n        <h2 class=\"title\"><span style=\"font-weight:bold\">Explorer </span> $1,500 - $4,999</h2>\n        <ul>\n            <li>Access to the Bruin Space resume book</li>\n            <li>Swag distributed in the Bruin Space lab</li>\n        </ul>\n    </div>\n    <div class=\"sponsorship-level\">\n        <h2 class=\"title\"><span style=\"font-weight: bold\">Voyager </span> $5,000 - $9,999</h2>\n        <ul>\n            <li>Recruiting post in the Bruin Space newsletter</li>\n            <li>Logo on the Bruin Space website</li>\n        </ul>\n    </div>\n    <div class=\"sponsorship-level\">\n        <h2 class=\"title\"><span style=\"font-weight: bold\">Interstellar </span> $10,000+</h2>\n        <ul>\n            <li>Recruiting post in the Bruin Space newsletter</li>\n            <li>Logo on the Bruin Space website</li>\n        </ul>\n    </div>\n    <div class=\"paragraph-container dark\">\n        <a class=\"button\" href=\"https://giving.ucla.edu/campaign/donate.aspx?Fund=63852O&Code=M-8295&AutoFN=Y\"\n            target=\"_blank\">Become a Sponsor!</a>\n        <p>For any inquiries, contact uclabruinspace@gmail.com to get in touch with us, and we would be happy to\n            negotiate the terms of your sponsorship.</p>\n    </div>\n</div>\n";
+    + "\" type=\"video/mp4\">\n                HTML video is not supported by your browser.\n            </video>\n            <div class=\"paragraph-container\">\n                <ul>\n                    <li>We are a young organization, looking for companies to build lasting relationships with.</li>\n                    <li>We are rapidly expanding, getting more students involved from all over campus.</li>\n                    <li>Plus, space is cool! Help us share our passion!</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n    <div class=\"paragraph-container dark\" style=\"text-align: center\">\n        <h1 class=\"title\">Become a Sponsor Today!</h1>\n        <a class=\"button\" href=\"https://giving.ucla.edu/campaign/donate.aspx?Fund=63852O&Code=M-8295&AutoFN=Y\"\n            target=\"_blank\">Sponsor Us!</a>\n    </div>\n    <div class=\"paragraph-container light\" style=\"text-align: center\">\n        <h3>Bruin Space has five funding levels, each with distinct benefits. Each level also includes benefits of\n            from the levels above.</h3>\n    </div>\n    <div class=\"tier-container\">\n        <h1 class=\"title\" style=\"text-align: center; margin-top:40px\">Sponsorship Tiers</h1>\n        <div style=\"margin-top:40px; margin-bottom:80px\">\n            <img src=\"../../assets/images/pictures/Sponsorship Tiers Visual (2024).png\" height=\"600\" width=\"1000\">\n        </div>\n    </div>\n    <div class=\"paragraph-container light\">\n        <h3>Additional Sponsorhip Information</h3>\n        <div class=\"paragraph-container\">\n            <p>Donations to the Bruin Spacecraft Group are tax deductible and are accompanied with the following\n                benefits:</p>\n            <ul>\n                <li>Donors can choose for their gift to be made to a specific project or to Bruin Space directly</li>\n                <li>Hardware donations will be assigned a monetary value based off the average market price for the\n                    item, and will count towards the donors’ gift total</li>\n                <li>Donation totals for funding levels (above) are considered by academic year</li>\n                <li>Donors will be given priority for campus events (talks, info-sessions, resume collections,\n                    tech-talks, etc.)</li>\n            </ul>\n        </div>\n    </div>\n    <div class=\"paragraph-container dark\">\n        <p style=\"text-align:center\">For any inquiries, contact uclabruinspace@gmail.com to get in touch with us, and we would be happy to\n            negotiate the terms of your sponsorship.</p>\n    </div>\n</div>\n";
 },"useData":true});
 templates['projects/project'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -766,33 +766,10 @@ templates['projects/project'] = template({"1":function(container,depth0,helpers,
         return undefined
     };
 
-  return "		<div class=\"parallax-image-2 parallax-image\"></div>\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"Sub-teams") : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":114,"column":2},"end":{"line":119,"column":11}}})) != null ? stack1 : "");
-},"24":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
-  return "			<h1 class=\"title\">"
-    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":115,"column":21},"end":{"line":115,"column":30}}}) : helper)))
-    + "</h1>\n			<div class=\"call-to-action light\">\n				"
-    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"description") || (depth0 != null ? lookupProperty(depth0,"description") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data,"loc":{"start":{"line":117,"column":4},"end":{"line":117,"column":21}}}) : helper))) != null ? stack1 : "")
-    + "\n		</div>\n";
-},"26":function(container,depth0,helpers,partials,data) {
-    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
-          return parent[propertyName];
-        }
-        return undefined
-    };
-
   return "		<div class=\"past-projects dark\">\n			<h1 class=\"title\">Past Work</h1>\n			<div class=\"past-projects__content\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"past_work") : depth0),{"name":"each","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":125,"column":4},"end":{"line":135,"column":13}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"past_work") : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":125,"column":4},"end":{"line":135,"column":13}}})) != null ? stack1 : "")
     + "			</div>\n		</div>\n";
-},"27":function(container,depth0,helpers,partials,data) {
+},"24":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -801,23 +778,23 @@ templates['projects/project'] = template({"1":function(container,depth0,helpers,
     };
 
   return "					<div class=\"text-image__container light "
-    + ((stack1 = (lookupProperty(helpers,"if_even")||(depth0 && lookupProperty(depth0,"if_even"))||alias2).call(alias1,(data && lookupProperty(data,"index")),{"name":"if_even","hash":{},"fn":container.program(28, data, 0),"inverse":container.program(30, data, 0),"data":data,"loc":{"start":{"line":126,"column":45},"end":{"line":126,"column":103}}})) != null ? stack1 : "")
+    + ((stack1 = (lookupProperty(helpers,"if_even")||(depth0 && lookupProperty(depth0,"if_even"))||alias2).call(alias1,(data && lookupProperty(data,"index")),{"name":"if_even","hash":{},"fn":container.program(25, data, 0),"inverse":container.program(27, data, 0),"data":data,"loc":{"start":{"line":126,"column":45},"end":{"line":126,"column":103}}})) != null ? stack1 : "")
     + "\">\n				    <h1 class=\"title\">"
     + alias4(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":127,"column":26},"end":{"line":127,"column":35}}}) : helper)))
     + "</h1>\n				    <div class=\"text-image "
-    + ((stack1 = (lookupProperty(helpers,"if_even")||(depth0 && lookupProperty(depth0,"if_even"))||alias2).call(alias1,(data && lookupProperty(data,"index")),{"name":"if_even","hash":{},"fn":container.program(32, data, 0),"inverse":container.program(34, data, 0),"data":data,"loc":{"start":{"line":128,"column":31},"end":{"line":128,"column":91}}})) != null ? stack1 : "")
+    + ((stack1 = (lookupProperty(helpers,"if_even")||(depth0 && lookupProperty(depth0,"if_even"))||alias2).call(alias1,(data && lookupProperty(data,"index")),{"name":"if_even","hash":{},"fn":container.program(29, data, 0),"inverse":container.program(31, data, 0),"data":data,"loc":{"start":{"line":128,"column":31},"end":{"line":128,"column":91}}})) != null ? stack1 : "")
     + "\">\n				      <img src=\""
     + alias4(((helper = (helper = lookupProperty(helpers,"picture") || (depth0 != null ? lookupProperty(depth0,"picture") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"picture","hash":{},"data":data,"loc":{"start":{"line":129,"column":20},"end":{"line":129,"column":31}}}) : helper)))
     + "\">\n				      <div class=\"paragraph-container\">\n				        "
     + ((stack1 = ((helper = (helper = lookupProperty(helpers,"description") || (depth0 != null ? lookupProperty(depth0,"description") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data,"loc":{"start":{"line":131,"column":12},"end":{"line":131,"column":29}}}) : helper))) != null ? stack1 : "")
     + "\n				      </div>\n				    </div>\n				  </div>\n";
-},"28":function(container,depth0,helpers,partials,data) {
+},"25":function(container,depth0,helpers,partials,data) {
     return "text-left";
-},"30":function(container,depth0,helpers,partials,data) {
+},"27":function(container,depth0,helpers,partials,data) {
     return "text-right";
-},"32":function(container,depth0,helpers,partials,data) {
+},"29":function(container,depth0,helpers,partials,data) {
     return "image-left";
-},"34":function(container,depth0,helpers,partials,data) {
+},"31":function(container,depth0,helpers,partials,data) {
     return "image-right";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -857,9 +834,8 @@ templates['projects/project'] = template({"1":function(container,depth0,helpers,
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"mission") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":44,"column":1},"end":{"line":100,"column":8}}})) != null ? stack1 : "")
     + "	<div class=\"parallax-image-2 parallax-image\"></div>\n	<div class=\"call-to-action light\">\n"
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"mission") : depth0)) != null ? lookupProperty(stack1,"callToAction_raw") : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(21, data, 0),"data":data,"loc":{"start":{"line":103,"column":2},"end":{"line":109,"column":9}}})) != null ? stack1 : "")
-    + "	</div>\n	<div class=\"parallax-image-2__follow parallax-image\"></div>\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"Sub-teams") : depth0),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":112,"column":1},"end":{"line":120,"column":8}}})) != null ? stack1 : "")
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"past_work") : depth0),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":121,"column":1},"end":{"line":138,"column":8}}})) != null ? stack1 : "")
+    + "	</div>\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"past_work") : depth0),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":121,"column":1},"end":{"line":138,"column":8}}})) != null ? stack1 : "")
     + "</div>\n";
 },"useData":true});
 templates['test/test'] = template({"1":function(container,depth0,helpers,partials,data) {
