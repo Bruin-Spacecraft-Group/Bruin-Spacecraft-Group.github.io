@@ -259,6 +259,9 @@ templates['notif'] = template({"compiler":[8,">= 4.3.0"],"main":function(contain
     + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"notif-link") || (depth0 != null ? lookupProperty(depth0,"notif-link") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"notif-link","hash":{},"data":data,"loc":{"start":{"line":10,"column":68},"end":{"line":10,"column":82}}}) : helper)))
     + "\">Wedensday, October 2nd</a>!\n        </p>\n    </div>\n</div>\n";
 },"useData":true});
+templates['_404'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div id=\"_404-wrapper\">\r\n    <h1>Oops... Looks like the page you are searching for does not exist!</h1>\r\n    <h2>Let's get you back to <a href=\"http://bruinspace.com\">safety</a></h2>\r\n</div>\r\n";
+},"useData":true});
 templates['articles/articlesHome'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
