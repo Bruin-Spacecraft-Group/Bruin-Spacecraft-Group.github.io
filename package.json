@@ -1,0 +1,20 @@
+{
+  "name": "bruin-spacecraft-group.github.io",
+  "version": "1.0.0",
+  "description": "## Bruin Space's Website",
+  "main": "config_prod.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "sass": "^1.69.5",
+    "scss": "^0.2.4",
+    "uglifycss": "^0.0.29"
+  }
+}

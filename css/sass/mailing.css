@@ -1,0 +1,89 @@
+.mailing-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mailing-list .mailing-list-icon {
+  height: 5vh;
+  width: 5vh;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+}
+.mailing-list .mailing-list-icon img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(-25px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mailing-list-modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #1A1A1A;
+}
+.mailing-list-modal .mailing-list-modal-header {
+  border-bottom: #203C5B 2px solid;
+  margin-bottom: 8px;
+}
+.mailing-list-modal .mailing-list-modal-content {
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.mailing-list-modal .mailing-list-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.mailing-list-modal .mailing-list-close:hover, .mailing-list-modal .mailing-list-close:focus {
+  color: #6bbed1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mailing-list-modal #mc_embed_signup_scroll, .mailing-list-modal .clear, .mailing-list-modal .mc-field-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+}
+.mailing-list-modal #mc_embed_signup_scroll input, .mailing-list-modal .clear input, .mailing-list-modal .mc-field-group input {
+  border: #1A1A1A solid 2px;
+}
+
+@media (min-width: 768px) {
+  .mailing-list-modal #mc_embed_signup_scroll, .mailing-list-modal .clear, .mailing-list-modal .mc-field-group {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  .mailing-list-modal #mc_embed_signup_scroll, .mailing-list-modal .clear, .mailing-list-modal .mc-field-group {
+    width: 75%;
+  }
+}/*# sourceMappingURL=mailing.css.map */

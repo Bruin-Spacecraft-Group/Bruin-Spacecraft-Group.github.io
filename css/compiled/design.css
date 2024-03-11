@@ -350,6 +350,14 @@ body::-webkit-scrollbar-thumb {
   padding: 5vw;
 }
 
+.tier-container {
+  position: relative;
+  display: inline-block;
+  padding-left: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .title {
   padding: 2vw 5vw;
   margin: 0;

@@ -1,5 +1,9 @@
-config_dev.js
+config_prod.js
 .vscode/
 
 .idea/*
 package-lock.json
+
+.DS_Store
+
+node_modules/
