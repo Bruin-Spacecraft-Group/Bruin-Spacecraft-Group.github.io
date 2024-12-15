@@ -114,49 +114,73 @@ export default function Home() {
               width={500}
               height={500}
               alt="Nandana Venkitesh - FVP"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Nandana Venkitesh</span> <br /> Finance Vice-President</p>
-          </div>
-          <div>
-            <Image
+              />
+              <br />
+              <p className="text-center">
+                {" "}
+                <span className="font-semibold">
+                  Nandana Venkitesh
+                </span> <br /> Finance Vice-President
+              </p>
+            </div>
+            <div>
+              <Image
               src="/pictures/leadership/Adrian2.jpg"
               width={500}
               height={500}
               alt="Adrian Hernandez - MVP"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Adrian Hernandez</span> <br />Marketing Vice-President</p>
+              />
+              <br />
+              <p className="text-center">
+                {" "}
+                <span className="font-semibold">Adrian Hernandez</span> <br />
+                Marketing Vice-President
+              </p>
+            </div>
           </div>
-
-        </div>
-      </section>
-      <section className="pb-10 md:pb-14 mt-40 mb-10 px-10 lg:px-24">
-        <div className='relative flex flex-col justify-end h-full'>
-          <p className='mb-10 text-2xl lg:text-6xl font-thin px-wrapper-mobile lg:px-wrapper-desktop hidden-br hidden-br--xl'>
-            Our Mascot - Bru
-          </p>
-        </div>
-        <div className='grid grid-cols-8 max-md:grid-cols-1 gap-6 lg:gap-12 mb-10 place-items-center'>
-          <div className='col-span-3'>
-            <Image
-              src="/icons/bru.png"
-              width={500}
-              height={500}
-              alt="Bru"
-            />
-          </div>
-          <div className='col-span-5'>
-            <p>
-              The most visible and powerful symbol of our vision is our mascot, Bru. The space bear was inspired by UCLA's Bruin Bear and represents the university's heritage, school spirit, and all that its student body embodies. Bru's space suit represents the club's focus on the various aspects of research and development in the realm of space science and technology, including but not limited to scientific payloads, satelites, and radio communications. Bru in Space is a symbol of BruinSpace's unique approach in space mission studies and design, combining well-focused projects within timelines structured around the framework of the school year with a light-hearted and fun atmosphere for space nerds to get creative and begin to sketch out and build their dream.
-            </p>
-            <br /><br />
-            <p className='text-sm text-light'>
-              "The creation of Bru was actually an accident, just like many other wonderful space discoveries! They were supposed to be a funny little background doodle in presentation slide backgrounds, but once the marketing team realized how adorable the character was, I had to evolve this little bear into a full character. The name Bru was chosen because it is a pun for the name of the club (Bru in Space). And now they reside, surrounded by stars and endless possibility, discovering and learning just like the Bruins on Earth.'' <br /><br />- Jeanine Lee, Creator
+        </section>
+        <section className="pb-10 md:pb-14 mt-40 mb-10 px-10 lg:px-24">
+          <div className="relative flex flex-col justify-end h-full">
+            <p className="mb-10 text-2xl lg:text-6xl font-thin px-wrapper-mobile lg:px-wrapper-desktop hidden-br hidden-br--xl">
+              Our Mascot - Bru
             </p>
           </div>
-        </div>
-      </section>
-    </main >
-  )
-}
+          <div className="grid grid-cols-8 max-md:grid-cols-1 gap-6 lg:gap-12 mb-10 place-items-center">
+            <div className="col-span-3">
+              <Image src="/icons/bru.png" width={500} height={500} alt="Bru" />
+            </div>
+            <div className="col-span-5">
+              <p>
+                The most visible and powerful symbol of our vision is our mascot,
+                Bru. The space bear was inspired by UCLA's Bruin Bear and
+                represents the university's heritage, school spirit, and all that
+                its student body embodies. Bru's space suit represents the club's
+                focus on the various aspects of research and development in the
+                realm of space science and technology, including but not limited
+                to scientific payloads, satelites, and radio communications. Bru
+                in Space is a symbol of BruinSpace's unique approach in space
+                mission studies and design, combining well-focused projects within
+                timelines structured around the framework of the school year with
+                a light-hearted and fun atmosphere for space nerds to get creative
+                and begin to sketch out and build their dream.
+              </p>
+              <br />
+              <br />
+              <p className="text-sm text-light">
+                "The creation of Bru was actually an accident, just like many
+                other wonderful space discoveries! They were supposed to be a
+                funny little background doodle in presentation slide backgrounds,
+                but once the marketing team realized how adorable the character
+                was, I had to evolve this little bear into a full character. The
+                name Bru was chosen because it is a pun for the name of the club
+                (Bru in Space). And now they reside, surrounded by stars and
+                endless possibility, discovering and learning just like the Bruins
+                on Earth.'' <br />
+                <br />- Jeanine Lee, Creator
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    );
+  }
