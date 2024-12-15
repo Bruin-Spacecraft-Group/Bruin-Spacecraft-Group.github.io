@@ -21,7 +21,7 @@ export default function Home() {
             Join BruinSpace Today
           </h1>
           <h3 className="text-xl text-light font-extrabold lg:text-l px-wrapper-mobile lg:px-wrapper-desktop lg:mt-0 mb-2 lg:mb-7 hidden-br hidden-br--xl">
-            Learn how you can be a member of this growing organization!
+            Learn how you can be a member!
           </h3>
         </div>
       </section>
