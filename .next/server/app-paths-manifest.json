@@ -1,6 +1,0 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(routes)/about/page": "app/(routes)/about/page.js",
-  "/(routes)/page": "app/(routes)/page.js",
-  "/(routes)/rapid/page": "app/(routes)/rapid/page.js"
-}
