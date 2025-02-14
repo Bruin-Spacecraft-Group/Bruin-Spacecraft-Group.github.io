@@ -162,7 +162,7 @@ export default function Home() {
           </div>
 
           {/* Row 4 */}
-          <div className="mt-16">Large Payload Volume</div>
+          {/* <div className="mt-16">Large Payload Volume</div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-8">
               <Image
@@ -184,7 +184,7 @@ export default function Home() {
                 <li>1U Payload</li>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <hr className="my-10 mx-80 text-light opacity-50" />
