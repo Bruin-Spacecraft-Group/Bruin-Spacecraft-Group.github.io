@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+=======
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image'
+import SignUpFormReact from '../_components/Newsletter';
+>>>>>>> 15200cd5 (This might break things,)
 
 export default function Home() {
   return (
@@ -17,8 +24,13 @@ export default function Home() {
             className="op-dim object-cover object-center w-full h-full"
           ></video>
         </div>
+<<<<<<< HEAD
         <div className="relative flex flex-col justify-end h-full">
           <h1 className="mb-10 text-8xl lg:text-10xl font-light px-wrapper-mobile lg:px-wrapper-desktop lg:mt-0 md:w-9/12 lg:w-8/12 2xl:w-7/12 hidden-br hidden-br--xl">
+=======
+        <div className='relative flex flex-col justify-end h-full'>
+          <h1 className='mb-10 text-7xl lg:text-10xl font-light px-wrapper-mobile lg:px-wrapper-desktop lg:mt-0 md:w-9/12 lg:w-8/12 2xl:w-7/12 hidden-br hidden-br--xl'>
+>>>>>>> 15200cd5 (This might break things,)
             Creating Future Space Leaders
           </h1>
           <p className="text-xl text-light font-extrabold lg:text-l px-wrapper-mobile lg:px-wrapper-desktop lg:mt-0 mb-2 lg:mb-7 md:w-9/12 lg:w-8/12 2xl:w-7/12 hidden-br hidden-br--xl">
@@ -129,9 +141,13 @@ export default function Home() {
               width={300}
               height={300}
             />
+<<<<<<< HEAD
             <p className="text-xl text-[#e1ec50] text-center">
               EDUCATIONAL PROGRAM
             </p>
+=======
+            <p className='text-xl text-[#e1ec50] text-center'>CAREER PROGRAM</p>
+>>>>>>> 15200cd5 (This might break things,)
           </Link>
         </div>
       </section>

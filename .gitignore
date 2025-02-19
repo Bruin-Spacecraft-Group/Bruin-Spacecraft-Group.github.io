@@ -1,11 +1,4 @@
-# Node modules
-node_modules/
-
-# Logs
-npm-debug.log*
-
-# Next.js build output
-.next/
-
-# Environment variables
-.env
+node_modules
+node_modules
+node_modules
+node_modules
