@@ -1,4 +1,4 @@
-// File: /Users/aarana/Documents/BruinSpace/Website/Bruin-Spacecraft-Group.github.io/app/(routes)/page.js
+// File: /Users/mohsensarrafan/Desktop/Bruin-Spacecraft-Group.github.io/app/(routes)/page.js
 import * as entry from '../../../../app/(routes)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

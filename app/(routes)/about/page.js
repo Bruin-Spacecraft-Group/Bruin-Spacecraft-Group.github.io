@@ -67,68 +67,64 @@ export default function Home() {
             Admin Leadership
           </p>
         </div>
-        <div className='grid grid-cols-3 max-md:grid-cols-1 gap-10 lg:gap-12 mb-10'>
-          <div>
-            <Image
-              src="/pictures/leadership/Rit.jpg"
-              width={500}
-              height={500}
-              alt="Rit - President"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Rit Agarwal</span> <br /> President</p>
+        <div className='mb-10'>
+          {/* Top row - 3 people */}
+          <div className='grid grid-cols-3 max-md:grid-cols-1 gap-10 lg:gap-12 mb-10'>
+            <div>
+              <Image
+                src="/pictures/leadership/2025-26 board photos/Jenna.jpg"
+                width={500}
+                height={500}
+                alt="Jenna - President"
+              />
+              <br />
+              <p className='text-center'> <span className='font-semibold'>Jenna</span> <br /> President</p>
+            </div>
+            <div>
+              <Image
+                src="/pictures/leadership/2025-26 board photos/Alec.jpg"
+                width={500}
+                height={500}
+                alt="Alec - Internal Vice-President"
+              />
+              <br />
+              <p className='text-center'> <span className='font-semibold'>Alec</span> <br /> Internal Vice-President</p>
+            </div>
+            <div>
+              <Image
+                src="/pictures/leadership/2025-26 board photos/Celine.jpg"
+                width={500}
+                height={500}
+                alt="Celine - External Vice-President"
+              />
+              <br />
+              <p className='text-center'> <span className='font-semibold'>Celine</span> <br /> External Vice-President</p>
+            </div>
           </div>
-          <div>
-            <Image
-              src="/pictures/leadership/June.jpg"
-              width={500}
-              height={500}
-              alt="June Lee - Internal Vice-President"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>June Lee</span> <br /> Internal Vice-President</p>
+          
+          {/* Bottom row - 2 people centered */}
+          <div className='flex justify-center gap-10 lg:gap-12'>
+            <div className='w-1/3 max-w-[500px]'>
+              <Image
+                src="/pictures/leadership/2025-26 board photos/Mohsen.jpg"
+                width={500}
+                height={500}
+                alt="Mohsen - Marketing Vice-President"
+              />
+              <br />
+              <p className='text-center'> <span className='font-semibold'>Mohsen</span> <br /> Marketing Vice-President</p>
+            </div>
+            <div className='w-1/3 max-w-[500px]'>
+              <Image
+                src="/pictures/leadership/2025-26 board photos/Nasser.jpg"
+                width={500}
+                height={500}
+                alt="Nasser - Finance Vice-President"
+              />
+              <br />
+              <p className='text-center'> <span className='font-semibold'>Nasser</span> <br /> Finance Vice-President</p>
+            </div>
           </div>
-          <div>
-            <Image
-              src="/pictures/leadership/Adrian.jpg"
-              width={500}
-              height={500}
-              alt="Adrian Arana - External Vice-President"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Adrian Rodriguez-Arana</span> <br /> External Vice-President</p>
-          </div>
-          <div>
-            <Image
-              src="/pictures/leadership/Noor.jpg"
-              width={500}
-              height={500}
-              alt="Noor Saiedy - FVP"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Noor Saiedy</span> <br /> Finance Vice-President</p>
-          </div>
-          <div>
-            <Image
-              src="/pictures/leadership/Nandana.jpg"
-              width={500}
-              height={500}
-              alt="Nandana Venkitesh - FVP"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Nandana Venkitesh</span> <br /> Finance Vice-President</p>
-          </div>
-          <div>
-            <Image
-              src="/pictures/leadership/Adrian2.jpg"
-              width={500}
-              height={500}
-              alt="Adrian Hernandez - MVP"
-            />
-            <br />
-            <p className='text-center'> <span className='font-semibold'>Adrian Hernandez</span> <br />Marketing Vice-President</p>
-          </div>
-
         </div>
       </section>
       <section className="pb-10 md:pb-14 mt-40 mb-10 px-10 lg:px-24">
