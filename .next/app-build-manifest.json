@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(routes)/page": [
+    "/(routes)/overseer/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/page.js"
+      "static/chunks/app/(routes)/overseer/page.js"
     ],
     "/(routes)/layout": [
       "static/chunks/webpack.js",
@@ -15,6 +15,21 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(routes)/loading.js"
+    ],
+    "/(routes)/rapid/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/rapid/page.js"
+    ],
+    "/(routes)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(routes)/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
