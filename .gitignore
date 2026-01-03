@@ -1,4 +1,6 @@
 node_modules
-node_modules
-node_modules
-node_modules
+.next/
+.turbo/
+.vercel/
+.cache/
+out/
