@@ -14,7 +14,7 @@ export default function CTABanner() {
             <div className='px-10 w-full h-full grid grid-cols-1 md:grid-cols-2 cta-bg rounded-[50px]'>
                 <div className='place-self-center'>
                     <h1 className='text-4xl text-center md:text-left font-light lg:text-10xl px-wrapper-mobile lg:px-wrapper-desktop lg:mt-0 hidden-br hidden-br--xl'>
-                        Interested? <br></br>Join the BruinSpace Newsletter Today.
+                        BruinSpace is open to all students. <br></br> Interested? <br></br> Join the BruinSpace Newsletter today!
                     </h1>
                 </div>
                 <div className='place-self-center'>
