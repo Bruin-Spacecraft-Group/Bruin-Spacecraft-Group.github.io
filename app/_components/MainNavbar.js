@@ -105,7 +105,7 @@ export default function MainNavbar() {
             <Link className="self-center" href="/partnerships">
               PARTNERSHIPS
             </Link>
-            <Link className="self-center" href="/partnerships">
+            <Link className="self-center" href="/overseer">
               OVERSEER
             </Link>
             <Link href="/started" className='self-center'>
