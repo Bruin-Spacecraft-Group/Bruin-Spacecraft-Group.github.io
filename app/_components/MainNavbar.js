@@ -62,6 +62,9 @@ export default function MainNavbar() {
               <Link className="flex-auto decoration-2 hover:underline hover:decoration-highlight font-semibold text-sm" href="/partnerships">
                 PARTNERSHIPS
               </Link>
+              <Link className="flex-auto decoration-2 hover:underline hover:decoration-highlight font-semibold text-sm" href="/overseer">
+                OVERSEER
+              </Link>
             </div>
             <div className='flex items-center justify-self-end'>
               <Link href="/join" className=''>
@@ -101,6 +104,9 @@ export default function MainNavbar() {
             </Link>
             <Link className="self-center" href="/partnerships">
               PARTNERSHIPS
+            </Link>
+            <Link className="self-center" href="/overseer">
+              OVERSEER
             </Link>
             <Link href="/started" className='self-center'>
               <MainButton btn_txt='join' />
