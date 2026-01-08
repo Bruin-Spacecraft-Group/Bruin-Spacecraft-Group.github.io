@@ -10,8 +10,8 @@ export default function Home() {
         <div className='absolute inset-0 z-0'>
           <Image
             src='/projects/overseer.jpg' // TODO: replace with an Overseer-specific background, e.g. /overseer_bg.png
-            width={400}
-            height={400}
+            width={4000}
+            height={4000}
             alt="Overseer"
             className="op-dim object-cover object-center w-full h-full"
           />
@@ -144,12 +144,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-     
 
-      {/* Overall System / Flight Graphic */}
+
+     {/* flight graphic - rapid 
+
+       
       <section className='pb-10 md:pb-10 mt-20 mb-20'>
         <Image
-          src="/rapid_overall.png" // TODO: replace with Overseer-specific system diagram, e.g. /overseer_overall.png
+          src="/public/bruinspace_overall.png" // TODO: replace with Overseer-specific system diagram, e.g. /overseer_overall.png
           alt="Project Overseer System Overview"
           style={{
             width: '100%',
@@ -160,41 +162,99 @@ export default function Home() {
         />
       </section>
 
+      */}
+
       {/* Leadership */}
       <section className="pb-10 md:pb-14 mt-20 mb-10 px-10 lg:px-24">
-        <div className='relative flex flex-col justify-end h-full'>
-          <p className='mb-10 text-2xl text-center lg:text-6xl font-thin px-wrapper-mobile lg:px-wrapper-desktop hidden-br hidden-br--xl'>
+        <div className="relative flex flex-col justify-end h-full">
+          <p className="mb-10 text-2xl text-center lg:text-6xl font-thin px-wrapper-mobile lg:px-wrapper-desktop hidden-br hidden-br--xl">
             Project Leadership
           </p>
           <br />
         </div>
-        <div className='grid grid-cols-2 max-md:grid-cols-1 gap-10 lg:gap-12 mb-10 place-items-center'>
-          <div>
-            <Image
-              src="/pictures/leadership/Ian.png"
-              width={500}
-              height={500}
-              alt="Ian Lee - Project Manager"
-            />
-            <br />
-            <p className='text-center'>
-              <span className='font-semibold'>Ian Lee</span> <br /> Project Manager
-            </p>
-          </div>
-          <div>
-            <Image
-              src="/pictures/leadership/Randall.png"
-              width={500}
-              height={500}
-              alt="Randall Scharpf - Chief Engineer"
-            />
-            <br />
-            <p className='text-center'>
-              <span className='font-semibold'>Randall Scharpf</span> <br /> Chief Engineer
-            </p>
-          </div>
-        </div>
+
+        {(() => {
+          const LEADERS = [
+            {
+              name: "Sam Katz",
+              year: "Second Year",
+              major: "Physics Major",
+              src: "/pictures/leadership/sam.png",
+            },
+            {
+              name: "Frances",
+              year: "Second Year",
+              major: "Astro Major",
+              src: "/pictures/leadership/francess.png",
+            },
+            {
+              name: "Gangyi Chen",
+              year: "Second Year",
+              major: "MechE Engineer",
+              src: "/pictures/leadership/gangyi.png", 
+            },
+            {
+              name: "Mabel Neyyan",
+              year: "Third Year",
+              major: "CompE Major",
+              src: "/pictures/leadership/mabeln.png",
+            },
+            {
+              name: "Andrew Rice",
+              year: "Second Year",
+              major: "Aero Major",
+              src: "/pictures/leadership/andrew.png",
+            },
+            {
+              name: "Zaara Amin - Overseer Lead",
+              year: "Third Year",
+              major: "Aero Major",
+              src: "/pictures/leadership/zaara.png",
+            },
+          ];
+
+          return (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-10 gap-y-14 place-items-center">
+              {LEADERS.map((p, idx) => {
+                const centerLast =
+                  idx === LEADERS.length - 1 && LEADERS.length % 5 === 1;
+
+                return (
+                  <div
+                    key={p.name}
+                    className={centerLast ? "lg:col-span-5 flex justify-center w-full" : ""}
+                  >
+                    <div className="flex flex-col items-center text-center">
+                      <div className="relative w-[170px] h-[170px] sm:w-[190px] sm:h-[190px]">
+                        <Image
+                          src={p.src}
+                          alt={p.name}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 220px, 240px"
+                        />
+                      </div>
+
+                      <p className="mt-6 text-3xl font-light leading-tight">
+                        {p.name}
+                      </p>
+                      <p className="mt-2 text-2xl font-light leading-tight">
+                        {p.year}
+                      </p>
+                      <p className="text-2xl font-light leading-tight">
+                        {p.major}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })()}
       </section>
+
+
+      
     </main>
   );
 }
