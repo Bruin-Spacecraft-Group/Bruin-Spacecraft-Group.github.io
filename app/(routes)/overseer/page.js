@@ -9,7 +9,7 @@ export default function Home() {
       <section className='relative overflow-hidden pb-10 md:pb-14 mb-30 h-screen px-10 lg:px-24'>
         <div className='absolute inset-0 z-0'>
           <Image
-            src='/projects/overseer.jpg' // TODO: replace with an Overseer-specific background, e.g. /overseer_bg.png
+            src='/projects/overseer_bg.jpg' // TODO: replace with an Overseer-specific background, e.g. /overseer_bg.png
             width={4000}
             height={4000}
             alt="Overseer"
